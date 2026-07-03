@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { tick } from "svelte";
+    import { onMount, tick } from "svelte";
     import { base } from "$app/paths";
     import { browser } from "$app/environment";
     import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
@@ -41,7 +41,6 @@
     let streak = $state(0);
     let correctCount = $state(0);
     let totalCount = $state(0);
-    let started = $state(false);
     let awaiting = $state(false);
     let answer = $state("");
     let hint = $state("");
@@ -180,10 +179,9 @@
         if (feedback) nextRound(0);
     }
 
-    function start() {
-        started = true;
+    onMount(() => {
         nextRound(0);
-    }
+    });
 </script>
 
 {#snippet stat(label: string, value: string | number)}
@@ -281,16 +279,6 @@
         <div
             class="relative rounded-lg border border-line bg-surface p-12 text-center xl:col-start-2 xl:row-start-1 xl:flex xl:flex-col xl:justify-center xl:self-stretch"
         >
-            {#if !started}
-                <div class="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-surface">
-                    <button
-                        class="cursor-pointer rounded-md bg-accent px-[2.2rem] py-[0.7rem] text-base font-normal text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
-                        onclick={start}
-                    >
-                        Start
-                    </button>
-                </div>
-            {/if}
             <div
                 class="mb-2 flex min-h-28 items-center justify-center text-[1.8rem] font-medium leading-snug select-none"
             >
@@ -337,7 +325,6 @@
                     spellcheck="false"
                     placeholder="Type the missing verb form"
                     disabled={!awaiting}
-                    class:invisible={!started}
                     class:shake
                     class="w-full rounded-md border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
                 />
@@ -350,7 +337,6 @@
                     </button>
                 {:else}
                     <button
-                        class:invisible={!started}
                         disabled={!awaiting}
                         onclick={check}
                         class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
