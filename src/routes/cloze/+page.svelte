@@ -6,6 +6,7 @@
     import { normalize, sleep } from "$lib/utils";
     import { TOPICS, TOPIC_GROUPS } from "$lib/topics";
     import Reference from "$lib/Reference.svelte";
+    import StressText from "$lib/StressText.svelte";
     import Keyboard from "$lib/Keyboard.svelte";
     import cloze from "$lib/cloze.json";
 
@@ -295,20 +296,20 @@
             >
                 {#if item}
                     <span>
-                        {parts[0]}{#if feedback}<span class={feedback.good ? "text-good" : "text-bad"}
-                                >{item.answers[0]}</span
+                        <StressText text={parts[0]} />{#if feedback}<span
+                                class={feedback.good ? "text-good" : "text-bad"}>{item.answers[0]}</span
                             >{:else}<span class="relative inline-block"
                                 ><span class="invisible">{item.answers[0]}</span><span
                                     class="absolute inset-x-0 bottom-1 border-b-2 border-muted"
                                 ></span></span
-                            >{/if}{parts[1]}
+                            >{/if}<StressText text={parts[1]} />
                     </span>
                 {/if}
             </div>
             <hr class="mb-6 border-line" />
             <div class="mb-2 flex min-h-[1.9em] items-center justify-center gap-2">
                 {#if item}
-                    <span class="text-[1.05rem] font-semibold">{displayBase}</span>
+                    <span class="text-[1.05rem] font-semibold"><StressText text={displayBase} /></span>
                     {#each taskBadges as badge}
                         <span class="rounded-md bg-fg/10 px-2 py-0.5 text-[0.75rem] font-medium text-muted">
                             {badge}
