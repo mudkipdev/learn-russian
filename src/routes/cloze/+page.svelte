@@ -21,6 +21,7 @@
     const ITEMS: ClozeItem[] = cloze;
     const RECENT_LIMIT = 10;
     const TOPICS_STORAGE_KEY = "cloze-topics";
+    const STRESS_STORAGE_KEY = "cloze-stress";
     const DEFAULT_TOPICS = ["type1", "type2", "type1b"];
 
     function loadEnabledTopics(): string[] {
@@ -67,6 +68,7 @@
 
     let history = $state(loadHistory());
     let enabledTopics = $state(loadEnabledTopics());
+    let showStress = $state(browser ? localStorage.getItem(STRESS_STORAGE_KEY) !== "false" : true);
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
@@ -77,8 +79,17 @@
         localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(history));
     });
 
+    $effect(() => {
+        localStorage.setItem(STRESS_STORAGE_KEY, String(showStress));
+    });
+
     const accuracy = $derived(totalCount ? Math.round((correctCount / totalCount) * 100) + "%" : "-");
-    const parts = $derived(item ? item.text.split("___") : ["", ""]);
+    const displayText = $derived.by(() => {
+        if (!item) return "";
+        return showStress ? item.text : item.text.replaceAll("\u0301", "");
+    });
+    const displayBase = $derived(item ? (showStress ? item.base : item.base.replaceAll("\u0301", "")) : "");
+    const parts = $derived(displayText ? displayText.split("___") : ["", ""]);
     const maskedHint = $derived.by(() => {
         if (!item) return "";
         let text = item.hint;
@@ -208,7 +219,7 @@
                 </div>
             </aside>
             <aside class="rounded-lg border border-line bg-surface p-6 text-left xl:flex-1">
-                <h2 class="mb-4 text-[0.95rem] font-semibold">Topics</h2>
+                <h2 class="mb-4 text-[0.95rem] font-semibold">Settings</h2>
                 {#each TOPIC_GROUPS as group}
                     <div class="mb-5 last:mb-0">
                         <div class="mb-2 text-[0.8rem] text-muted">{group.label}</div>
@@ -228,6 +239,17 @@
                         </div>
                     </div>
                 {/each}
+                <div class="mt-5">
+                    <div class="mb-2 text-[0.8rem] text-muted">Display</div>
+                    <button
+                        class="cursor-pointer rounded-md px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {showStress
+                            ? 'bg-fg/20 text-fg'
+                            : 'bg-fg/10 text-muted'} hover:scale-105"
+                        onclick={() => (showStress = !showStress)}
+                    >
+                        Stress marks
+                    </button>
+                </div>
             </aside>
         </div>
         <aside
@@ -286,7 +308,7 @@
             <hr class="mb-6 border-line" />
             <div class="mb-2 flex min-h-[1.9em] items-center justify-center gap-2">
                 {#if item}
-                    <span class="text-[1.05rem] font-semibold">{item.base}</span>
+                    <span class="text-[1.05rem] font-semibold">{displayBase}</span>
                     {#each taskBadges as badge}
                         <span class="rounded-md bg-fg/10 px-2 py-0.5 text-[0.75rem] font-medium text-muted">
                             {badge}
