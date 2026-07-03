@@ -24,12 +24,14 @@
 
 <style>
     .stress::after {
-        content: "´";
+        content: "";
         position: absolute;
-        top: -0.34em;
+        top: 0.1em;
         left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.75em;
-        line-height: 1;
+        height: 0.24em;
+        width: 0.09em;
+        border-radius: 0.06em;
+        background: currentColor;
+        transform: translateX(-30%) rotate(24deg);
     }
 </style>
