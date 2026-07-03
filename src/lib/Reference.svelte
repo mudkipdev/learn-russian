@@ -46,15 +46,15 @@
         ["они", "живут", "they live"],
     ];
 
-    const SUMMARY_HEADERS = ["", "знать (1)", "говорить (2)", "жить (1B)", "ехать (1B)"];
+    const SUMMARY_HEADERS = ["", "знать (1)", "жить (1B)", "ехать (1B)", "говорить (2)"];
     const SUMMARY_ROWS = [
-        ["Stem", "зна-", "говор-", "жив-", "ед-"],
-        ["я", "-ю", "-ю", "-у", "-у"],
-        ["ты", "-ешь", "-ишь", "-ёшь", "-ешь"],
-        ["вы", "-ете", "-ите", "-ёте", "-ете"],
-        ["он/она/оно", "-ет", "-ит", "-ёт", "-ет"],
-        ["мы", "-ем", "-им", "-ём", "-ем"],
-        ["они", "-ют", "-ят", "-ут", "-ут"],
+        ["Stem", "зна-", "жив-", "ед-", "говор-"],
+        ["я", "-ю", "-у", "-у", "-ю"],
+        ["ты", "-ешь", "-ёшь", "-ешь", "-ишь"],
+        ["вы", "-ете", "-ёте", "-ете", "-ите"],
+        ["он/она/оно", "-ет", "-ёт", "-ет", "-ит"],
+        ["мы", "-ем", "-ём", "-ем", "-им"],
+        ["они", "-ют", "-ут", "-ут", "-ят"],
     ];
 
     const MORE_VERBS_HEADERS = ["Infinitive", "Type", "Stem", "я-form", "Meaning"];
@@ -214,13 +214,6 @@
         </p>
         {@render table(["", "", ""], ZNAT)}
 
-        {@render heading("Type 2: говорить (to speak)")}
-        <p class="mb-1 text-muted">
-            The standard example of the second conjugation. The stem is говор-. Note the <b class="text-fg">-ят</b>
-            ending of the они-form.
-        </p>
-        {@render table(["", "", ""], GOVORIT)}
-
         {@render heading("Type 1B: ехать (to go by transport)")}
         <p class="mb-1 text-muted">
             Type 1B verbs take much the same endings as знать, but the stem cannot be predicted from the infinitive. The
@@ -235,6 +228,13 @@
             When the ending is stressed, е becomes ё: живёшь, живёт.
         </p>
         {@render table(["", "", ""], ZHIT)}
+
+        {@render heading("Type 2: говорить (to speak)")}
+        <p class="mb-1 text-muted">
+            The standard example of the second conjugation. The stem is говор-. Note the <b class="text-fg">-ят</b>
+            ending of the они-form.
+        </p>
+        {@render table(["", "", ""], GOVORIT)}
 
         {@render heading("Verb Summary Table")}
         {@render table(SUMMARY_HEADERS, SUMMARY_ROWS)}

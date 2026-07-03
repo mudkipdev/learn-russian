@@ -13,8 +13,8 @@ export const TOPIC_GROUPS: TopicGroup[] = [
         label: "Present",
         topics: [
             { key: "type1", label: "Type 1" },
-            { key: "type2", label: "Type 2" },
             { key: "type1b", label: "Type 1B" },
+            { key: "type2", label: "Type 2" },
             { key: "mutation", label: "Mutation" },
             { key: "ovat", label: "-овать" },
             { key: "avat", label: "-авать" },
