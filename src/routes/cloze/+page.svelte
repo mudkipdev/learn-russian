@@ -365,10 +365,12 @@
             />
         </div>
         <div
-            class="rounded-lg border border-line bg-surface p-8 text-left lg:col-span-2 xl:col-span-1 xl:col-start-3 xl:row-span-2 xl:row-start-1 xl:h-[calc(100vh-7rem)] xl:overflow-y-auto"
+            class="relative rounded-lg border border-line bg-surface text-left lg:col-span-2 xl:col-span-1 xl:col-start-3 xl:row-span-2 xl:row-start-1 xl:self-stretch"
         >
-            <h2 class="mb-4 text-[0.95rem] font-semibold">Grammar Reference</h2>
-            <Reference />
+            <div class="p-8 xl:absolute xl:inset-0 xl:overflow-y-auto">
+                <h2 class="mb-4 text-[0.95rem] font-semibold">Grammar Reference</h2>
+                <Reference />
+            </div>
         </div>
     </div>
 </main>
