@@ -253,6 +253,7 @@
                     </span>
                 {/if}
             </div>
+            <hr class="mb-6 border-line" />
             <div class="mb-2 flex min-h-[1.9em] items-center justify-center gap-2">
                 {#if item}
                     <span class="text-[1.05rem] font-semibold">{item.base}</span>
