@@ -44,7 +44,7 @@
     let answer = $state("");
     let hint = $state("");
     let shake = $state(false);
-    let history = $state<{ answer: string; base: string; good: boolean }[]>([]);
+    let history = $state<{ typed: string; answer: string; base: string; good: boolean }[]>([]);
     // Rows shown in the history panel; the list is clipped, not scrolled.
     const HISTORY_LIMIT = 10;
     let enabledTopics = $state(loadEnabledTopics());
@@ -135,8 +135,14 @@
                 retryQueue.push({ item: missed, due: 3 });
             }
         }
-        history = [{ answer: item.answers[0], base: item.base, good: correct }, ...history].slice(0, HISTORY_LIMIT);
-        nextRound(correct ? 1000 : 2500);
+        history = [{ typed, answer: item.answers[0], base: item.base, good: correct }, ...history].slice(
+            0,
+            HISTORY_LIMIT,
+        );
+    }
+
+    function next() {
+        if (feedback) nextRound(0);
     }
 
     function start() {
@@ -157,8 +163,9 @@
 </svelte:head>
 
 <svelte:window
-    onkeydown={() => {
-        if (awaiting && document.activeElement !== input) input?.focus();
+    onkeydown={(event) => {
+        if (event.key === "Enter" && feedback) next();
+        else if (awaiting && document.activeElement !== input) input?.focus();
     }}
 />
 
@@ -217,8 +224,8 @@
                                     mini
                                     class={entry.good ? "shrink-0 text-good" : "shrink-0 text-bad"}
                                 />
-                                <span class="font-medium">{entry.answer}</span>
-                                <span class="ml-auto text-muted">{entry.base}</span>
+                                <span class="font-medium">{entry.typed || "-"}</span>
+                                <span class="ml-auto text-muted">{entry.good ? entry.base : entry.answer}</span>
                             </li>
                         {/each}
                     </ul>
@@ -271,7 +278,12 @@
                 <input
                     bind:this={input}
                     bind:value={answer}
-                    onkeydown={(event) => event.key === "Enter" && check()}
+                    onkeydown={(event) => {
+                        if (event.key === "Enter") {
+                            event.stopPropagation();
+                            check();
+                        }
+                    }}
                     onanimationend={() => (shake = false)}
                     type="text"
                     autocomplete="off"
@@ -283,14 +295,23 @@
                     class:shake
                     class="w-full rounded-md border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
                 />
-                <button
-                    class:invisible={!started}
-                    disabled={!awaiting}
-                    onclick={check}
-                    class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
-                >
-                    Submit
-                </button>
+                {#if feedback}
+                    <button
+                        onclick={next}
+                        class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
+                    >
+                        Next
+                    </button>
+                {:else}
+                    <button
+                        class:invisible={!started}
+                        disabled={!awaiting}
+                        onclick={check}
+                        class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
+                    >
+                        Submit
+                    </button>
+                {/if}
             </div>
             <div class="mt-5 min-h-[3em] text-[0.9rem] text-muted">
                 {hint}
