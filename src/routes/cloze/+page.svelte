@@ -44,14 +44,37 @@
     let answer = $state("");
     let hint = $state("");
     let shake = $state(false);
-    let history = $state<{ typed: string; answer: string; base: string; good: boolean }[]>([]);
     // Rows shown in the history panel; the list is clipped, not scrolled.
     const HISTORY_LIMIT = 10;
+    const HISTORY_STORAGE_KEY = "cloze-history";
+
+    interface HistoryEntry {
+        typed: string;
+        answer: string;
+        base: string;
+        good: boolean;
+    }
+
+    function loadHistory(): HistoryEntry[] {
+        if (!browser) return [];
+        try {
+            const saved: HistoryEntry[] = JSON.parse(localStorage.getItem(HISTORY_STORAGE_KEY) ?? "[]");
+            return saved.slice(0, HISTORY_LIMIT);
+        } catch {
+            return [];
+        }
+    }
+
+    let history = $state(loadHistory());
     let enabledTopics = $state(loadEnabledTopics());
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
         localStorage.setItem(TOPICS_STORAGE_KEY, JSON.stringify(enabledTopics));
+    });
+
+    $effect(() => {
+        localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(history));
     });
 
     const accuracy = $derived(totalCount ? Math.round((correctCount / totalCount) * 100) + "%" : "-");

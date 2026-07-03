@@ -1,6 +1,7 @@
 <script lang="ts">
     import { tick } from "svelte";
     import { base } from "$app/paths";
+    import { browser } from "$app/environment";
     import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
     import { ALL_WORDS, syllables, type Word } from "$lib/words";
     import { normalize, sleep } from "$lib/utils";
@@ -27,10 +28,32 @@
     let awaiting = $state(false);
     let answer = $state("");
     let shake = $state(false);
-    let history = $state<{ russian: string; answer: string; good: boolean }[]>([]);
     // Rows shown in the history panel; the list is clipped, not scrolled.
     const HISTORY_LIMIT = 10;
+    const HISTORY_STORAGE_KEY = "reading-history";
+
+    interface HistoryEntry {
+        russian: string;
+        answer: string;
+        good: boolean;
+    }
+
+    function loadHistory(): HistoryEntry[] {
+        if (!browser) return [];
+        try {
+            const saved: HistoryEntry[] = JSON.parse(localStorage.getItem(HISTORY_STORAGE_KEY) ?? "[]");
+            return saved.slice(0, HISTORY_LIMIT);
+        } catch {
+            return [];
+        }
+    }
+
+    let history = $state(loadHistory());
     let input = $state<HTMLInputElement>();
+
+    $effect(() => {
+        localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(history));
+    });
 
     const speedText = $derived(started ? `${syllableMs} ms` : "-");
     const bestText = $derived(started ? `${best} ms` : "-");
