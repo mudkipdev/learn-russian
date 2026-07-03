@@ -1,0 +1,320 @@
+<script lang="ts">
+    import { tick } from "svelte";
+    import { base } from "$app/paths";
+    import { browser } from "$app/environment";
+    import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
+    import { normalize, sleep } from "$lib/utils";
+    import { TOPICS, TOPIC_GROUPS } from "$lib/topics";
+    import Reference from "$lib/Reference.svelte";
+    import Keyboard from "$lib/Keyboard.svelte";
+    import cloze from "$lib/cloze.json";
+
+    interface ClozeItem {
+        text: string;
+        base: string;
+        answers: string[];
+        hint: string;
+        translation: string;
+        topic: string;
+    }
+
+    const ITEMS: ClozeItem[] = cloze;
+    const RECENT_LIMIT = 10;
+    const TOPICS_STORAGE_KEY = "cloze-topics";
+    const DEFAULT_TOPICS = ["type1", "type2", "type1b"];
+
+    function loadEnabledTopics(): string[] {
+        if (!browser) return DEFAULT_TOPICS;
+        try {
+            const saved: string[] = JSON.parse(localStorage.getItem(TOPICS_STORAGE_KEY) ?? "[]");
+            const valid = saved.filter((key) => TOPICS.some((topic) => topic.key === key));
+            return valid.length ? valid : DEFAULT_TOPICS;
+        } catch {
+            return DEFAULT_TOPICS;
+        }
+    }
+
+    let item = $state<ClozeItem | null>(null);
+    let feedback = $state<{ good: boolean } | null>(null);
+    let streak = $state(0);
+    let correctCount = $state(0);
+    let totalCount = $state(0);
+    let started = $state(false);
+    let awaiting = $state(false);
+    let answer = $state("");
+    let hint = $state("");
+    let shake = $state(false);
+    let history = $state<{ answer: string; base: string; good: boolean }[]>([]);
+    // Rows shown in the history panel; the list is clipped, not scrolled.
+    const HISTORY_LIMIT = 10;
+    let enabledTopics = $state(loadEnabledTopics());
+    let input = $state<HTMLInputElement>();
+
+    $effect(() => {
+        localStorage.setItem(TOPICS_STORAGE_KEY, JSON.stringify(enabledTopics));
+    });
+
+    const accuracy = $derived(totalCount ? Math.round((correctCount / totalCount) * 100) + "%" : "-");
+    const parts = $derived(item ? item.text.split("___") : ["", ""]);
+    const maskedHint = $derived.by(() => {
+        if (!item) return "";
+        let text = item.hint;
+        for (const known of item.answers) {
+            text = text.replace(new RegExp(`(?<![а-яё])${known}(?![а-яё])`, "gi"), "…");
+        }
+        return text;
+    });
+    const taskBadges = $derived.by(() => {
+        if (!item) return [];
+        const current = item;
+        const topicLabel = TOPICS.find((topic) => topic.key === current.topic)?.label ?? "";
+        const groupLabel =
+            TOPIC_GROUPS.find((group) => group.topics.some((topic) => topic.key === current.topic))?.label ?? "";
+        const tense = `${groupLabel} tense`;
+        return topicLabel.toLowerCase().includes(groupLabel.toLowerCase()) ? [topicLabel] : [topicLabel, tense];
+    });
+    const activeItems = $derived(ITEMS.filter((entry) => enabledTopics.includes(entry.topic)));
+
+    let recentTexts: string[] = [];
+    // Missed items, requeued to reappear a few rounds later.
+    let retryQueue: { item: ClozeItem; due: number }[] = [];
+
+    function toggleTopic(key: string) {
+        if (enabledTopics.includes(key)) {
+            if (enabledTopics.length > 1) enabledTopics = enabledTopics.filter((topic) => topic !== key);
+        } else {
+            enabledTopics = [...enabledTopics, key];
+        }
+    }
+
+    function pickItem(): ClozeItem {
+        // A missed item that has waited long enough comes back for another try.
+        for (const entry of retryQueue) entry.due--;
+        const readyIndex = retryQueue.findIndex((entry) => entry.due <= 0 && enabledTopics.includes(entry.item.topic));
+        if (readyIndex !== -1) return retryQueue.splice(readyIndex, 1)[0].item;
+
+        let next;
+        do {
+            next = activeItems[Math.floor(Math.random() * activeItems.length)];
+        } while (recentTexts.includes(next.text) && activeItems.length > recentTexts.length);
+        recentTexts.push(next.text);
+        if (recentTexts.length > RECENT_LIMIT) recentTexts.shift();
+        return next;
+    }
+
+    async function nextRound(delay: number) {
+        awaiting = false;
+        await sleep(delay);
+        item = pickItem();
+        feedback = null;
+        hint = "";
+        awaiting = true;
+        shake = false;
+        answer = "";
+        await tick();
+        input?.focus();
+    }
+
+    function check() {
+        if (!awaiting || !item) return;
+        const typed = answer.trim();
+        const correct = item.answers.map(normalize).includes(normalize(typed));
+        awaiting = false;
+        totalCount++;
+        feedback = { good: correct };
+        if (correct) {
+            streak++;
+            correctCount++;
+            hint = item.translation;
+        } else {
+            streak = 0;
+            hint = `Answer: ${item.answers[0]}` + (typed ? ` (you typed: ${typed})` : "") + `. ${item.translation}`;
+            shake = true;
+            const missed = item;
+            if (!retryQueue.some((entry) => entry.item.text === missed.text)) {
+                retryQueue.push({ item: missed, due: 3 });
+            }
+        }
+        history = [{ answer: item.answers[0], base: item.base, good: correct }, ...history].slice(0, HISTORY_LIMIT);
+        nextRound(correct ? 1000 : 2500);
+    }
+
+    function start() {
+        started = true;
+        nextRound(0);
+    }
+</script>
+
+{#snippet stat(label: string, value: string | number)}
+    <div class="flex items-center justify-between text-[0.9rem]">
+        <span class="text-muted">{label}</span>
+        <b class="font-semibold text-fg tabular-nums">{value}</b>
+    </div>
+{/snippet}
+
+<svelte:head>
+    <title>Grammar Cloze</title>
+</svelte:head>
+
+<svelte:window
+    onkeydown={() => {
+        if (awaiting && document.activeElement !== input) input?.focus();
+    }}
+/>
+
+<main class="w-[min(96vw,1900px)]">
+    <a href="{base}/" class="mb-3 inline-flex items-center gap-1.5 text-[0.9rem] text-muted hover:text-fg">
+        <Icon src={ArrowLeft} size="16" mini />
+        Back
+    </a>
+    <div class="grid items-start gap-4 lg:grid-cols-[340px_1fr] xl:grid-cols-[1fr_640px_1fr]">
+        <div class="flex flex-col gap-4 xl:col-start-1 xl:row-start-1 xl:self-stretch">
+            <aside class="rounded-lg border border-line bg-surface p-6 text-left">
+                <h2 class="mb-4 text-[0.95rem] font-semibold">Stats</h2>
+                <div class="space-y-2">
+                    {@render stat("Streak", streak)}
+                    {@render stat("Accuracy", accuracy)}
+                    {@render stat("Correct", `${correctCount} / ${totalCount}`)}
+                </div>
+            </aside>
+            <aside class="rounded-lg border border-line bg-surface p-6 text-left xl:flex-1">
+                <h2 class="mb-4 text-[0.95rem] font-semibold">Topics</h2>
+                {#each TOPIC_GROUPS as group}
+                    <div class="mb-5 last:mb-0">
+                        <div class="mb-2 text-[0.8rem] text-muted">{group.label}</div>
+                        <div class="flex flex-wrap gap-2">
+                            {#each group.topics as topic}
+                                <button
+                                    class="cursor-pointer rounded-md px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {enabledTopics.includes(
+                                        topic.key,
+                                    )
+                                        ? 'bg-fg/20 text-fg'
+                                        : 'bg-fg/10 text-muted'} hover:scale-105"
+                                    onclick={() => toggleTopic(topic.key)}
+                                >
+                                    {topic.label}
+                                </button>
+                            {/each}
+                        </div>
+                    </div>
+                {/each}
+            </aside>
+        </div>
+        <aside
+            class="rounded-lg border border-line bg-surface p-6 text-left xl:col-start-1 xl:row-start-2 xl:self-stretch"
+        >
+            <h2 class="mb-4 text-[0.95rem] font-semibold">History</h2>
+            <div class="h-72 overflow-hidden">
+                {#if history.length === 0}
+                    <p class="text-[0.85rem] text-muted">Your answers will appear here.</p>
+                {:else}
+                    <ul class="space-y-2 text-[0.9rem]">
+                        {#each history as entry}
+                            <li class="flex items-center gap-2">
+                                <Icon
+                                    src={entry.good ? Check : XMark}
+                                    size="16"
+                                    mini
+                                    class={entry.good ? "shrink-0 text-good" : "shrink-0 text-bad"}
+                                />
+                                <span class="font-medium">{entry.answer}</span>
+                                <span class="ml-auto text-muted">{entry.base}</span>
+                            </li>
+                        {/each}
+                    </ul>
+                {/if}
+            </div>
+        </aside>
+        <div
+            class="relative rounded-lg border border-line bg-surface p-12 text-center xl:col-start-2 xl:row-start-1 xl:flex xl:flex-col xl:justify-center xl:self-stretch"
+        >
+            {#if !started}
+                <div class="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-surface">
+                    <button
+                        class="cursor-pointer rounded-md bg-accent px-[2.2rem] py-[0.7rem] text-base font-normal text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
+                        onclick={start}
+                    >
+                        Start
+                    </button>
+                </div>
+            {/if}
+            <div
+                class="mb-2 flex min-h-28 items-center justify-center text-[1.8rem] font-medium leading-snug select-none"
+            >
+                {#if item}
+                    <span>
+                        {parts[0]}{#if feedback}<span class={feedback.good ? "text-good" : "text-bad"}
+                                >{item.answers[0]}</span
+                            >{:else}<span class="relative inline-block"
+                                ><span class="invisible">{item.answers[0]}</span><span
+                                    class="absolute inset-x-0 bottom-1 border-b-2 border-muted"
+                                ></span></span
+                            >{/if}{parts[1]}
+                    </span>
+                {/if}
+            </div>
+            <div class="mb-2 flex min-h-[1.9em] items-center justify-center gap-2">
+                {#if item}
+                    <span class="text-[1.05rem] font-semibold">{item.base}</span>
+                    {#each taskBadges as badge}
+                        <span class="rounded-md bg-fg/10 px-2 py-0.5 text-[0.75rem] font-medium text-muted">
+                            {badge}
+                        </span>
+                    {/each}
+                {/if}
+            </div>
+            <div class="mb-6 min-h-[1.5em] text-[0.9rem] text-muted">
+                {#if item}{feedback ? item.hint : maskedHint}{/if}
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <input
+                    bind:this={input}
+                    bind:value={answer}
+                    onkeydown={(event) => event.key === "Enter" && check()}
+                    onanimationend={() => (shake = false)}
+                    type="text"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    placeholder="Type the missing verb form"
+                    disabled={!awaiting}
+                    class:invisible={!started}
+                    class:shake
+                    class="w-full rounded-md border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
+                />
+                <button
+                    class:invisible={!started}
+                    disabled={!awaiting}
+                    onclick={check}
+                    class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
+                >
+                    Submit
+                </button>
+            </div>
+            <div class="mt-5 min-h-[3em] text-[0.9rem] text-muted">
+                {hint}
+            </div>
+        </div>
+        <div class="rounded-lg border border-line bg-surface p-6 xl:col-start-2 xl:row-start-2 xl:self-stretch">
+            <h2 class="mb-4 text-left text-[0.95rem] font-semibold">Keyboard</h2>
+            <Keyboard
+                onkey={(letter) => {
+                    if (!awaiting) return;
+                    answer += letter;
+                    input?.focus();
+                }}
+                onbackspace={() => {
+                    if (!awaiting) return;
+                    answer = answer.slice(0, -1);
+                    input?.focus();
+                }}
+            />
+        </div>
+        <div
+            class="rounded-lg border border-line bg-surface p-8 text-left lg:col-span-2 xl:col-span-1 xl:col-start-3 xl:row-span-2 xl:row-start-1 xl:h-[calc(100vh-7rem)] xl:overflow-y-auto"
+        >
+            <h2 class="mb-4 text-[0.95rem] font-semibold">Grammar Reference</h2>
+            <Reference />
+        </div>
+    </div>
+</main>

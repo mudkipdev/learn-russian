@@ -1,0 +1,54 @@
+@import "@fontsource-variable/inter";
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --color-bg: light-dark(#f2f2f2, #222222);
+    --color-surface: light-dark(#ffffff, #2b2b2b);
+    --color-fg: light-dark(#1a1a1a, #e8e8e8);
+    --color-muted: light-dark(#999999, #909090);
+    --color-line: light-dark(#dddddd, #414141);
+    --color-accent: light-dark(#444444, #555555);
+    --color-accent-fg: #ffffff;
+    --color-good: light-dark(#16a34a, #57c98a);
+    --color-bad: light-dark(#dc2626, #f07070);
+}
+
+html {
+    color-scheme: light dark;
+    font-size: 125%;
+}
+
+.shake {
+    animation: shake 0.4s;
+    border-color: var(--color-bad) !important;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-9px);
+    }
+    40% {
+        transform: translateX(9px);
+    }
+    60% {
+        transform: translateX(-6px);
+    }
+    80% {
+        transform: translateX(6px);
+    }
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-fg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

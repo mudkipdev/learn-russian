@@ -1,0 +1,1030 @@
+[
+    {
+        "russian": "бар",
+        "answers": ["bar"]
+    },
+    {
+        "russian": "код",
+        "answers": ["code"]
+    },
+    {
+        "russian": "тон",
+        "answers": ["tone"]
+    },
+    {
+        "russian": "лорд",
+        "answers": ["lord"]
+    },
+    {
+        "russian": "ринг",
+        "answers": ["ring"]
+    },
+    {
+        "russian": "эра",
+        "answers": ["era"]
+    },
+    {
+        "russian": "бас",
+        "answers": ["bass"]
+    },
+    {
+        "russian": "сорт",
+        "answers": ["sort"]
+    },
+    {
+        "russian": "порт",
+        "answers": ["port"]
+    },
+    {
+        "russian": "форт",
+        "answers": ["fort"]
+    },
+    {
+        "russian": "атом",
+        "answers": ["atom"]
+    },
+    {
+        "russian": "банк",
+        "answers": ["bank"]
+    },
+    {
+        "russian": "бокс",
+        "answers": ["box", "boxing"]
+    },
+    {
+        "russian": "гель",
+        "answers": ["gel"]
+    },
+    {
+        "russian": "дата",
+        "answers": ["data"]
+    },
+    {
+        "russian": "диск",
+        "answers": ["disk", "disc"]
+    },
+    {
+        "russian": "зона",
+        "answers": ["zone"]
+    },
+    {
+        "russian": "идея",
+        "answers": ["idea"]
+    },
+    {
+        "russian": "кафе",
+        "answers": ["cafe"]
+    },
+    {
+        "russian": "клип",
+        "answers": ["clip"]
+    },
+    {
+        "russian": "клуб",
+        "answers": ["club"]
+    },
+    {
+        "russian": "лифт",
+        "answers": ["lift"]
+    },
+    {
+        "russian": "парк",
+        "answers": ["park"]
+    },
+    {
+        "russian": "план",
+        "answers": ["plan"]
+    },
+    {
+        "russian": "поэт",
+        "answers": ["poet"]
+    },
+    {
+        "russian": "приз",
+        "answers": ["prize"]
+    },
+    {
+        "russian": "роль",
+        "answers": ["role"]
+    },
+    {
+        "russian": "спам",
+        "answers": ["spam"]
+    },
+    {
+        "russian": "стоп",
+        "answers": ["stop"]
+    },
+    {
+        "russian": "старт",
+        "answers": ["start"]
+    },
+    {
+        "russian": "танк",
+        "answers": ["tank"]
+    },
+    {
+        "russian": "тест",
+        "answers": ["test"]
+    },
+    {
+        "russian": "факт",
+        "answers": ["fact"]
+    },
+    {
+        "russian": "флаг",
+        "answers": ["flag"]
+    },
+    {
+        "russian": "спорт",
+        "answers": ["sport", "sports"]
+    },
+    {
+        "russian": "соло",
+        "answers": ["solo"]
+    },
+    {
+        "russian": "смог",
+        "answers": ["smog"]
+    },
+    {
+        "russian": "шок",
+        "answers": ["shock"]
+    },
+    {
+        "russian": "чек",
+        "answers": ["check"]
+    },
+    {
+        "russian": "матч",
+        "answers": ["match"]
+    },
+    {
+        "russian": "суп",
+        "answers": ["soup"]
+    },
+    {
+        "russian": "бум",
+        "answers": ["boom"]
+    },
+    {
+        "russian": "тур",
+        "answers": ["tour"]
+    },
+    {
+        "russian": "хит",
+        "answers": ["hit"]
+    },
+    {
+        "russian": "нота",
+        "answers": ["note"]
+    },
+    {
+        "russian": "гол",
+        "answers": ["goal"]
+    },
+    {
+        "russian": "сайт",
+        "answers": ["site", "website"]
+    },
+    {
+        "russian": "файл",
+        "answers": ["file"]
+    },
+    {
+        "russian": "кофе",
+        "answers": ["coffee"]
+    },
+    {
+        "russian": "фото",
+        "answers": ["photo"]
+    },
+    {
+        "russian": "гриль",
+        "answers": ["grill"]
+    },
+    {
+        "russian": "адрес",
+        "answers": ["address"]
+    },
+    {
+        "russian": "арена",
+        "answers": ["arena"]
+    },
+    {
+        "russian": "аудио",
+        "answers": ["audio"]
+    },
+    {
+        "russian": "балет",
+        "answers": ["ballet"]
+    },
+    {
+        "russian": "вирус",
+        "answers": ["virus"]
+    },
+    {
+        "russian": "доктор",
+        "answers": ["doctor"]
+    },
+    {
+        "russian": "драма",
+        "answers": ["drama"]
+    },
+    {
+        "russian": "зебра",
+        "answers": ["zebra"]
+    },
+    {
+        "russian": "йога",
+        "answers": ["yoga"]
+    },
+    {
+        "russian": "кактус",
+        "answers": ["cactus"]
+    },
+    {
+        "russian": "камера",
+        "answers": ["camera"]
+    },
+    {
+        "russian": "канал",
+        "answers": ["canal", "channel"]
+    },
+    {
+        "russian": "класс",
+        "answers": ["class"]
+    },
+    {
+        "russian": "медаль",
+        "answers": ["medal"]
+    },
+    {
+        "russian": "метро",
+        "answers": ["metro"]
+    },
+    {
+        "russian": "модель",
+        "answers": ["model"]
+    },
+    {
+        "russian": "момент",
+        "answers": ["moment"]
+    },
+    {
+        "russian": "мотор",
+        "answers": ["motor"]
+    },
+    {
+        "russian": "пилот",
+        "answers": ["pilot"]
+    },
+    {
+        "russian": "радио",
+        "answers": ["radio"]
+    },
+    {
+        "russian": "регион",
+        "answers": ["region"]
+    },
+    {
+        "russian": "робот",
+        "answers": ["robot"]
+    },
+    {
+        "russian": "секрет",
+        "answers": ["secret"]
+    },
+    {
+        "russian": "сигнал",
+        "answers": ["signal"]
+    },
+    {
+        "russian": "статус",
+        "answers": ["status"]
+    },
+    {
+        "russian": "текст",
+        "answers": ["text"]
+    },
+    {
+        "russian": "теннис",
+        "answers": ["tennis"]
+    },
+    {
+        "russian": "финал",
+        "answers": ["final"]
+    },
+    {
+        "russian": "фильм",
+        "answers": ["film"]
+    },
+    {
+        "russian": "бонус",
+        "answers": ["bonus"]
+    },
+    {
+        "russian": "вилла",
+        "answers": ["villa"]
+    },
+    {
+        "russian": "вокал",
+        "answers": ["vocal"]
+    },
+    {
+        "russian": "индекс",
+        "answers": ["index"]
+    },
+    {
+        "russian": "кобра",
+        "answers": ["cobra"]
+    },
+    {
+        "russian": "кредит",
+        "answers": ["credit"]
+    },
+    {
+        "russian": "масса",
+        "answers": ["mass"]
+    },
+    {
+        "russian": "овал",
+        "answers": ["oval"]
+    },
+    {
+        "russian": "педаль",
+        "answers": ["pedal"]
+    },
+    {
+        "russian": "период",
+        "answers": ["period"]
+    },
+    {
+        "russian": "салон",
+        "answers": ["salon"]
+    },
+    {
+        "russian": "сектор",
+        "answers": ["sector"]
+    },
+    {
+        "russian": "фактор",
+        "answers": ["factor"]
+    },
+    {
+        "russian": "фокус",
+        "answers": ["focus"]
+    },
+    {
+        "russian": "форум",
+        "answers": ["forum"]
+    },
+    {
+        "russian": "вектор",
+        "answers": ["vector"]
+    },
+    {
+        "russian": "маркер",
+        "answers": ["marker"]
+    },
+    {
+        "russian": "мораль",
+        "answers": ["moral"]
+    },
+    {
+        "russian": "скандал",
+        "answers": ["scandal"]
+    },
+    {
+        "russian": "спираль",
+        "answers": ["spiral"]
+    },
+    {
+        "russian": "пресса",
+        "answers": ["press"]
+    },
+    {
+        "russian": "компас",
+        "answers": ["compass"]
+    },
+    {
+        "russian": "контакт",
+        "answers": ["contact"]
+    },
+    {
+        "russian": "комета",
+        "answers": ["comet"]
+    },
+    {
+        "russian": "планета",
+        "answers": ["planet"]
+    },
+    {
+        "russian": "реформа",
+        "answers": ["reform"]
+    },
+    {
+        "russian": "легенда",
+        "answers": ["legend"]
+    },
+    {
+        "russian": "проблема",
+        "answers": ["problem"]
+    },
+    {
+        "russian": "диплом",
+        "answers": ["diploma"]
+    },
+    {
+        "russian": "актер",
+        "answers": ["actor"]
+    },
+    {
+        "russian": "банан",
+        "answers": ["banana"]
+    },
+    {
+        "russian": "бренд",
+        "answers": ["brand"]
+    },
+    {
+        "russian": "гараж",
+        "answers": ["garage"]
+    },
+    {
+        "russian": "дизайн",
+        "answers": ["design"]
+    },
+    {
+        "russian": "кабель",
+        "answers": ["cable"]
+    },
+    {
+        "russian": "климат",
+        "answers": ["climate"]
+    },
+    {
+        "russian": "кризис",
+        "answers": ["crisis"]
+    },
+    {
+        "russian": "лазер",
+        "answers": ["laser"]
+    },
+    {
+        "russian": "лампа",
+        "answers": ["lamp"]
+    },
+    {
+        "russian": "лидер",
+        "answers": ["leader"]
+    },
+    {
+        "russian": "лимон",
+        "answers": ["lemon"]
+    },
+    {
+        "russian": "магнит",
+        "answers": ["magnet"]
+    },
+    {
+        "russian": "маска",
+        "answers": ["mask"]
+    },
+    {
+        "russian": "метод",
+        "answers": ["method"]
+    },
+    {
+        "russian": "опера",
+        "answers": ["opera"]
+    },
+    {
+        "russian": "офис",
+        "answers": ["office"]
+    },
+    {
+        "russian": "паника",
+        "answers": ["panic"]
+    },
+    {
+        "russian": "пицца",
+        "answers": ["pizza"]
+    },
+    {
+        "russian": "принц",
+        "answers": ["prince"]
+    },
+    {
+        "russian": "сезон",
+        "answers": ["season"]
+    },
+    {
+        "russian": "студия",
+        "answers": ["studio"]
+    },
+    {
+        "russian": "талант",
+        "answers": ["talent"]
+    },
+    {
+        "russian": "театр",
+        "answers": ["theater", "theatre"]
+    },
+    {
+        "russian": "туризм",
+        "answers": ["tourism"]
+    },
+    {
+        "russian": "турист",
+        "answers": ["tourist"]
+    },
+    {
+        "russian": "физика",
+        "answers": ["physics"]
+    },
+    {
+        "russian": "форма",
+        "answers": ["form"]
+    },
+    {
+        "russian": "фраза",
+        "answers": ["phrase"]
+    },
+    {
+        "russian": "фрукт",
+        "answers": ["fruit"]
+    },
+    {
+        "russian": "футбол",
+        "answers": ["football", "soccer"]
+    },
+    {
+        "russian": "визит",
+        "answers": ["visit"]
+    },
+    {
+        "russian": "жанр",
+        "answers": ["genre"]
+    },
+    {
+        "russian": "норма",
+        "answers": ["norm"]
+    },
+    {
+        "russian": "сервис",
+        "answers": ["service"]
+    },
+    {
+        "russian": "сумма",
+        "answers": ["sum"]
+    },
+    {
+        "russian": "сфера",
+        "answers": ["sphere"]
+    },
+    {
+        "russian": "схема",
+        "answers": ["scheme"]
+    },
+    {
+        "russian": "тема",
+        "answers": ["theme"]
+    },
+    {
+        "russian": "эпизод",
+        "answers": ["episode"]
+    },
+    {
+        "russian": "кабина",
+        "answers": ["cabin"]
+    },
+    {
+        "russian": "нюанс",
+        "answers": ["nuance"]
+    },
+    {
+        "russian": "тариф",
+        "answers": ["tariff"]
+    },
+    {
+        "russian": "витамин",
+        "answers": ["vitamin"]
+    },
+    {
+        "russian": "диалог",
+        "answers": ["dialog", "dialogue"]
+    },
+    {
+        "russian": "доллар",
+        "answers": ["dollar"]
+    },
+    {
+        "russian": "клиент",
+        "answers": ["client"]
+    },
+    {
+        "russian": "коридор",
+        "answers": ["corridor"]
+    },
+    {
+        "russian": "микроб",
+        "answers": ["microbe"]
+    },
+    {
+        "russian": "монитор",
+        "answers": ["monitor"]
+    },
+    {
+        "russian": "паспорт",
+        "answers": ["passport"]
+    },
+    {
+        "russian": "пикник",
+        "answers": ["picnic"]
+    },
+    {
+        "russian": "пластик",
+        "answers": ["plastic"]
+    },
+    {
+        "russian": "принтер",
+        "answers": ["printer"]
+    },
+    {
+        "russian": "рекорд",
+        "answers": ["record"]
+    },
+    {
+        "russian": "трактор",
+        "answers": ["tractor"]
+    },
+    {
+        "russian": "контроль",
+        "answers": ["control"]
+    },
+    {
+        "russian": "миллион",
+        "answers": ["million"]
+    },
+    {
+        "russian": "продукт",
+        "answers": ["product"]
+    },
+    {
+        "russian": "профиль",
+        "answers": ["profile"]
+    },
+    {
+        "russian": "фестиваль",
+        "answers": ["festival"]
+    },
+    {
+        "russian": "формат",
+        "answers": ["format"]
+    },
+    {
+        "russian": "формула",
+        "answers": ["formula"]
+    },
+    {
+        "russian": "фрагмент",
+        "answers": ["fragment"]
+    },
+    {
+        "russian": "эффект",
+        "answers": ["effect"]
+    },
+    {
+        "russian": "максимум",
+        "answers": ["maximum"]
+    },
+    {
+        "russian": "минимум",
+        "answers": ["minimum"]
+    },
+    {
+        "russian": "комфорт",
+        "answers": ["comfort"]
+    },
+    {
+        "russian": "антенна",
+        "answers": ["antenna"]
+    },
+    {
+        "russian": "аппетит",
+        "answers": ["appetite"]
+    },
+    {
+        "russian": "галерея",
+        "answers": ["gallery"]
+    },
+    {
+        "russian": "жираф",
+        "answers": ["giraffe"]
+    },
+    {
+        "russian": "журнал",
+        "answers": ["journal"]
+    },
+    {
+        "russian": "колледж",
+        "answers": ["college"]
+    },
+    {
+        "russian": "концерт",
+        "answers": ["concert"]
+    },
+    {
+        "russian": "костюм",
+        "answers": ["costume"]
+    },
+    {
+        "russian": "лимонад",
+        "answers": ["lemonade"]
+    },
+    {
+        "russian": "мелодия",
+        "answers": ["melody"]
+    },
+    {
+        "russian": "механик",
+        "answers": ["mechanic"]
+    },
+    {
+        "russian": "ресторан",
+        "answers": ["restaurant"]
+    },
+    {
+        "russian": "секунда",
+        "answers": ["second"]
+    },
+    {
+        "russian": "система",
+        "answers": ["system"]
+    },
+    {
+        "russian": "стандарт",
+        "answers": ["standard"]
+    },
+    {
+        "russian": "терраса",
+        "answers": ["terrace"]
+    },
+    {
+        "russian": "тренер",
+        "answers": ["trainer"]
+    },
+    {
+        "russian": "триумф",
+        "answers": ["triumph"]
+    },
+    {
+        "russian": "чемпион",
+        "answers": ["champion"]
+    },
+    {
+        "russian": "автобус",
+        "answers": ["autobus", "bus"]
+    },
+    {
+        "russian": "батарея",
+        "answers": ["battery"]
+    },
+    {
+        "russian": "гитара",
+        "answers": ["guitar"]
+    },
+    {
+        "russian": "комедия",
+        "answers": ["comedy"]
+    },
+    {
+        "russian": "культура",
+        "answers": ["culture"]
+    },
+    {
+        "russian": "медицина",
+        "answers": ["medicine"]
+    },
+    {
+        "russian": "министр",
+        "answers": ["minister"]
+    },
+    {
+        "russian": "портрет",
+        "answers": ["portrait"]
+    },
+    {
+        "russian": "сарказм",
+        "answers": ["sarcasm"]
+    },
+    {
+        "russian": "синоним",
+        "answers": ["synonym"]
+    },
+    {
+        "russian": "терапия",
+        "answers": ["therapy"]
+    },
+    {
+        "russian": "транзит",
+        "answers": ["transit"]
+    },
+    {
+        "russian": "фантазия",
+        "answers": ["fantasy"]
+    },
+    {
+        "russian": "шампунь",
+        "answers": ["shampoo"]
+    },
+    {
+        "russian": "кристалл",
+        "answers": ["crystal"]
+    },
+    {
+        "russian": "пингвин",
+        "answers": ["penguin"]
+    },
+    {
+        "russian": "концепт",
+        "answers": ["concept"]
+    },
+    {
+        "russian": "баланс",
+        "answers": ["balance"]
+    },
+    {
+        "russian": "километр",
+        "answers": ["kilometer", "kilometre"]
+    },
+    {
+        "russian": "деталь",
+        "answers": ["detail"]
+    },
+    {
+        "russian": "телефон",
+        "answers": ["telephone", "phone"]
+    },
+    {
+        "russian": "микрофон",
+        "answers": ["microphone"]
+    },
+    {
+        "russian": "документ",
+        "answers": ["document"]
+    },
+    {
+        "russian": "инструмент",
+        "answers": ["instrument"]
+    },
+    {
+        "russian": "инспектор",
+        "answers": ["inspector"]
+    },
+    {
+        "russian": "интернет",
+        "answers": ["internet"]
+    },
+    {
+        "russian": "календарь",
+        "answers": ["calendar"]
+    },
+    {
+        "russian": "материал",
+        "answers": ["material"]
+    },
+    {
+        "russian": "транспорт",
+        "answers": ["transport"]
+    },
+    {
+        "russian": "эксперимент",
+        "answers": ["experiment"]
+    },
+    {
+        "russian": "эксперт",
+        "answers": ["expert"]
+    },
+    {
+        "russian": "эскалатор",
+        "answers": ["escalator"]
+    },
+    {
+        "russian": "телеграмма",
+        "answers": ["telegram"]
+    },
+    {
+        "russian": "аргумент",
+        "answers": ["argument"]
+    },
+    {
+        "russian": "температура",
+        "answers": ["temperature"]
+    },
+    {
+        "russian": "литература",
+        "answers": ["literature"]
+    },
+    {
+        "russian": "программа",
+        "answers": ["program", "programme"]
+    },
+    {
+        "russian": "профессор",
+        "answers": ["professor"]
+    },
+    {
+        "russian": "автомобиль",
+        "answers": ["automobile"]
+    },
+    {
+        "russian": "академия",
+        "answers": ["academy"]
+    },
+    {
+        "russian": "аквариум",
+        "answers": ["aquarium"]
+    },
+    {
+        "russian": "архитектор",
+        "answers": ["architect"]
+    },
+    {
+        "russian": "калькулятор",
+        "answers": ["calculator"]
+    },
+    {
+        "russian": "категория",
+        "answers": ["category"]
+    },
+    {
+        "russian": "компьютер",
+        "answers": ["computer"]
+    },
+    {
+        "russian": "лаборатория",
+        "answers": ["laboratory", "lab"]
+    },
+    {
+        "russian": "математика",
+        "answers": ["mathematics", "math"]
+    },
+    {
+        "russian": "оркестр",
+        "answers": ["orchestra"]
+    },
+    {
+        "russian": "парламент",
+        "answers": ["parliament"]
+    },
+    {
+        "russian": "перспектива",
+        "answers": ["perspective"]
+    },
+    {
+        "russian": "президент",
+        "answers": ["president"]
+    },
+    {
+        "russian": "территория",
+        "answers": ["territory"]
+    },
+    {
+        "russian": "фотография",
+        "answers": ["photography"]
+    },
+    {
+        "russian": "характер",
+        "answers": ["character"]
+    },
+    {
+        "russian": "экономика",
+        "answers": ["economics", "economy"]
+    },
+    {
+        "russian": "атмосфера",
+        "answers": ["atmosphere"]
+    },
+    {
+        "russian": "биография",
+        "answers": ["biography"]
+    },
+    {
+        "russian": "параграф",
+        "answers": ["paragraph"]
+    },
+    {
+        "russian": "механизм",
+        "answers": ["mechanism"]
+    },
+    {
+        "russian": "оптимизм",
+        "answers": ["optimism"]
+    },
+    {
+        "russian": "профессионал",
+        "answers": ["professional"]
+    }
+]
