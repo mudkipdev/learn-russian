@@ -71,7 +71,7 @@
                 <button
                     tabindex="-1"
                     onclick={() => onkey?.(key.letter)}
-                    class="key relative flex h-10 cursor-pointer items-center justify-center rounded-md border pt-1 text-[1.05rem] font-medium transition-all duration-100 active:scale-90 {pressed.includes(
+                    class="key relative flex h-10 cursor-pointer items-center justify-center border pt-1 text-[1.05rem] font-medium transition-all duration-100 active:scale-90 {pressed.includes(
                         key.code,
                     )
                         ? 'border-white bg-white text-black'
@@ -86,7 +86,7 @@
                     tabindex="-1"
                     onclick={() => onbackspace?.()}
                     aria-label="Backspace"
-                    class="key relative flex h-10 cursor-pointer items-center justify-center rounded-md border border-line bg-bg text-[1.05rem] transition-all duration-100 hover:bg-fg/10 active:scale-90 active:border-white active:bg-white active:text-black"
+                    class="key relative flex h-10 cursor-pointer items-center justify-center border border-line bg-bg text-[1.05rem] transition-all duration-100 hover:bg-fg/10 active:scale-90 active:border-white active:bg-white active:text-black"
                 >
                     <Icon src={Backspace} size="18" mini />
                 </button>

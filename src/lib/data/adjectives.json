@@ -5,7 +5,7 @@
         "answers": [
             "новый"
         ],
-        "hint": "(новый → новый)",
+        "hint": "",
         "translation": "This is a new house.",
         "topic": "masculine"
     },
@@ -15,7 +15,7 @@
         "answers": [
             "умный"
         ],
-        "hint": "(умный → умный)",
+        "hint": "",
         "translation": "This is a smart student.",
         "topic": "masculine"
     },
@@ -25,7 +25,7 @@
         "answers": [
             "старый"
         ],
-        "hint": "(старый → старый)",
+        "hint": "",
         "translation": "My old brother lives here.",
         "topic": "masculine"
     },
@@ -35,7 +35,7 @@
         "answers": [
             "большой"
         ],
-        "hint": "(большой → большой)",
+        "hint": "",
         "translation": "This is a big city.",
         "topic": "masculine"
     },
@@ -45,7 +45,7 @@
         "answers": [
             "молодой"
         ],
-        "hint": "(молодой → молодой)",
+        "hint": "",
         "translation": "The young teacher is very kind.",
         "topic": "masculine"
     },
@@ -55,7 +55,7 @@
         "answers": [
             "интересный"
         ],
-        "hint": "(интересный → интересный)",
+        "hint": "",
         "translation": "This is an interesting magazine.",
         "topic": "masculine"
     },
@@ -65,7 +65,7 @@
         "answers": [
             "синий"
         ],
-        "hint": "(синий → синий)",
+        "hint": "",
         "translation": "This is a blue pencil.",
         "topic": "masculine"
     },
@@ -75,7 +75,7 @@
         "answers": [
             "русский"
         ],
-        "hint": "(русский → русский)",
+        "hint": "",
         "translation": "This is a Russian student.",
         "topic": "masculine"
     },
@@ -85,7 +85,7 @@
         "answers": [
             "маленький"
         ],
-        "hint": "(маленький → маленький)",
+        "hint": "",
         "translation": "This is a small table.",
         "topic": "masculine"
     },
@@ -95,7 +95,7 @@
         "answers": [
             "дорогой"
         ],
-        "hint": "(дорогой → дорогой)",
+        "hint": "",
         "translation": "This is an expensive suit.",
         "topic": "masculine"
     },
@@ -105,7 +105,7 @@
         "answers": [
             "голубой"
         ],
-        "hint": "(голубой → голубой)",
+        "hint": "",
         "translation": "This is a light-blue scarf.",
         "topic": "masculine"
     },
@@ -115,7 +115,7 @@
         "answers": [
             "хороший"
         ],
-        "hint": "(хороший → хороший)",
+        "hint": "",
         "translation": "This is good bread.",
         "topic": "masculine"
     },
@@ -125,7 +125,7 @@
         "answers": [
             "новая"
         ],
-        "hint": "(новый → новая)",
+        "hint": "",
         "translation": "This is a new car.",
         "topic": "feminine"
     },
@@ -135,7 +135,7 @@
         "answers": [
             "интересная"
         ],
-        "hint": "(интересный → интересная)",
+        "hint": "",
         "translation": "This is an interesting book.",
         "topic": "feminine"
     },
@@ -145,7 +145,7 @@
         "answers": [
             "молодая"
         ],
-        "hint": "(молодой → молодая)",
+        "hint": "",
         "translation": "The young woman is very beautiful.",
         "topic": "feminine"
     },
@@ -155,7 +155,7 @@
         "answers": [
             "большая"
         ],
-        "hint": "(большой → большая)",
+        "hint": "",
         "translation": "This is a big room.",
         "topic": "feminine"
     },
@@ -165,7 +165,7 @@
         "answers": [
             "синяя"
         ],
-        "hint": "(синий → синяя)",
+        "hint": "",
         "translation": "This is a blue pen.",
         "topic": "feminine"
     },
@@ -175,7 +175,7 @@
         "answers": [
             "русская"
         ],
-        "hint": "(русский → русская)",
+        "hint": "",
         "translation": "This is a Russian student.",
         "topic": "feminine"
     },
@@ -185,7 +185,7 @@
         "answers": [
             "маленькая"
         ],
-        "hint": "(маленький → маленькая)",
+        "hint": "",
         "translation": "This is a small dog.",
         "topic": "feminine"
     },
@@ -195,7 +195,7 @@
         "answers": [
             "хорошая"
         ],
-        "hint": "(хороший → хорошая)",
+        "hint": "",
         "translation": "This is good weather.",
         "topic": "feminine"
     },
@@ -205,7 +205,7 @@
         "answers": [
             "широкая"
         ],
-        "hint": "(широкий → широкая)",
+        "hint": "",
         "translation": "This is a wide street.",
         "topic": "feminine"
     },
@@ -215,7 +215,7 @@
         "answers": [
             "вкусная"
         ],
-        "hint": "(вкусный → вкусная)",
+        "hint": "",
         "translation": "This is tasty food.",
         "topic": "feminine"
     },
@@ -225,7 +225,7 @@
         "answers": [
             "голубая"
         ],
-        "hint": "(голубой → голубая)",
+        "hint": "",
         "translation": "This is a light-blue lamp.",
         "topic": "feminine"
     },
@@ -235,7 +235,7 @@
         "answers": [
             "домашняя"
         ],
-        "hint": "(домашний → домашняя)",
+        "hint": "",
         "translation": "This is homework.",
         "topic": "feminine"
     },
@@ -245,7 +245,7 @@
         "answers": [
             "большое"
         ],
-        "hint": "(большой → большое)",
+        "hint": "",
         "translation": "This is a big window.",
         "topic": "neuter"
     },
@@ -255,7 +255,7 @@
         "answers": [
             "интересное"
         ],
-        "hint": "(интересный → интересное)",
+        "hint": "",
         "translation": "This is an interesting letter.",
         "topic": "neuter"
     },
@@ -265,7 +265,7 @@
         "answers": [
             "красивое"
         ],
-        "hint": "(красивый → красивое)",
+        "hint": "",
         "translation": "This is a beautiful dress.",
         "topic": "neuter"
     },
@@ -275,7 +275,7 @@
         "answers": [
             "синее"
         ],
-        "hint": "(синий → синее)",
+        "hint": "",
         "translation": "This is a blue sea.",
         "topic": "neuter"
     },
@@ -285,7 +285,7 @@
         "answers": [
             "хорошее"
         ],
-        "hint": "(хороший → хорошее)",
+        "hint": "",
         "translation": "This is a good morning.",
         "topic": "neuter"
     },
@@ -295,7 +295,7 @@
         "answers": [
             "новое"
         ],
-        "hint": "(новый → новое)",
+        "hint": "",
         "translation": "This is a new word.",
         "topic": "neuter"
     },
@@ -305,7 +305,7 @@
         "answers": [
             "старое"
         ],
-        "hint": "(старый → старое)",
+        "hint": "",
         "translation": "This is an old building.",
         "topic": "neuter"
     },
@@ -315,7 +315,7 @@
         "answers": [
             "вкусное"
         ],
-        "hint": "(вкусный → вкусное)",
+        "hint": "",
         "translation": "This is tasty milk.",
         "topic": "neuter"
     },
@@ -325,7 +325,7 @@
         "answers": [
             "высокое"
         ],
-        "hint": "(высокий → высокое)",
+        "hint": "",
         "translation": "This is a tall tree.",
         "topic": "neuter"
     },
@@ -335,7 +335,7 @@
         "answers": [
             "последнее"
         ],
-        "hint": "(последний → последнее)",
+        "hint": "",
         "translation": "This is the last exercise.",
         "topic": "neuter"
     },
@@ -345,7 +345,7 @@
         "answers": [
             "свободное"
         ],
-        "hint": "(свободный → свободное)",
+        "hint": "",
         "translation": "This is a free seat.",
         "topic": "neuter"
     },
@@ -355,7 +355,7 @@
         "answers": [
             "жаркое"
         ],
-        "hint": "(жаркий → жаркое)",
+        "hint": "",
         "translation": "This is a hot summer.",
         "topic": "neuter"
     },
@@ -365,7 +365,7 @@
         "answers": [
             "новые"
         ],
-        "hint": "(новый → новые)",
+        "hint": "",
         "translation": "These are new houses.",
         "topic": "plural"
     },
@@ -375,7 +375,7 @@
         "answers": [
             "интересные"
         ],
-        "hint": "(интересный → интересные)",
+        "hint": "",
         "translation": "These are interesting books.",
         "topic": "plural"
     },
@@ -385,7 +385,7 @@
         "answers": [
             "умные"
         ],
-        "hint": "(умный → умные)",
+        "hint": "",
         "translation": "These are smart students.",
         "topic": "plural"
     },
@@ -395,7 +395,7 @@
         "answers": [
             "большие"
         ],
-        "hint": "(большой → большие)",
+        "hint": "",
         "translation": "These are big cities.",
         "topic": "plural"
     },
@@ -405,7 +405,7 @@
         "answers": [
             "синие"
         ],
-        "hint": "(синий → синие)",
+        "hint": "",
         "translation": "These are blue pens.",
         "topic": "plural"
     },
@@ -415,7 +415,7 @@
         "answers": [
             "русские"
         ],
-        "hint": "(русский → русские)",
+        "hint": "",
         "translation": "These are Russian students.",
         "topic": "plural"
     },
@@ -425,7 +425,7 @@
         "answers": [
             "маленькие"
         ],
-        "hint": "(маленький → маленькие)",
+        "hint": "",
         "translation": "These are small dogs.",
         "topic": "plural"
     },
@@ -435,7 +435,7 @@
         "answers": [
             "красивые"
         ],
-        "hint": "(красивый → красивые)",
+        "hint": "",
         "translation": "These are beautiful flowers.",
         "topic": "plural"
     },
@@ -445,7 +445,7 @@
         "answers": [
             "старые"
         ],
-        "hint": "(старый → старые)",
+        "hint": "",
         "translation": "These are old friends.",
         "topic": "plural"
     },
@@ -455,7 +455,7 @@
         "answers": [
             "широкие"
         ],
-        "hint": "(широкий → широкие)",
+        "hint": "",
         "translation": "These are wide streets.",
         "topic": "plural"
     },
@@ -465,7 +465,7 @@
         "answers": [
             "дорогие"
         ],
-        "hint": "(дорогой → дорогие)",
+        "hint": "",
         "translation": "These are expensive cars.",
         "topic": "plural"
     },
@@ -475,7 +475,7 @@
         "answers": [
             "вкусные"
         ],
-        "hint": "(вкусный → вкусные)",
+        "hint": "",
         "translation": "These are tasty apples.",
         "topic": "plural"
     },
@@ -485,7 +485,7 @@
         "answers": [
             "новую"
         ],
-        "hint": "Feminine (новый → новую)",
+        "hint": "Feminine",
         "translation": "I bought a new car.",
         "topic": "accusative"
     },
@@ -495,7 +495,7 @@
         "answers": [
             "интересную"
         ],
-        "hint": "Feminine (интересный → интересную)",
+        "hint": "Feminine",
         "translation": "I am reading an interesting book.",
         "topic": "accusative"
     },
@@ -505,7 +505,7 @@
         "answers": [
             "большой"
         ],
-        "hint": "Masculine inanimate (большой → большой)",
+        "hint": "Masculine inanimate",
         "translation": "I see a big house.",
         "topic": "accusative"
     },
@@ -515,7 +515,7 @@
         "answers": [
             "умного"
         ],
-        "hint": "Masculine animate (умный → умного)",
+        "hint": "Masculine animate",
         "translation": "I know a smart student.",
         "topic": "accusative"
     },
@@ -525,7 +525,7 @@
         "answers": [
             "маленькую"
         ],
-        "hint": "Feminine (маленький → маленькую)",
+        "hint": "Feminine",
         "translation": "I love the little dog.",
         "topic": "accusative"
     },
@@ -535,7 +535,7 @@
         "answers": [
             "молодого"
         ],
-        "hint": "Masculine animate (молодой → молодого)",
+        "hint": "Masculine animate",
         "translation": "I see a young boy.",
         "topic": "accusative"
     },
@@ -545,7 +545,7 @@
         "answers": [
             "синюю"
         ],
-        "hint": "Feminine (синий → синюю)",
+        "hint": "Feminine",
         "translation": "I bought a blue pen.",
         "topic": "accusative"
     },
@@ -555,7 +555,7 @@
         "answers": [
             "длинное"
         ],
-        "hint": "Neuter (длинный → длинное)",
+        "hint": "Neuter",
         "translation": "I am reading a long letter.",
         "topic": "accusative"
     },
@@ -565,7 +565,7 @@
         "answers": [
             "красивую"
         ],
-        "hint": "Feminine (красивый → красивую)",
+        "hint": "Feminine",
         "translation": "I see a beautiful girl.",
         "topic": "accusative"
     },
@@ -575,7 +575,7 @@
         "answers": [
             "старого"
         ],
-        "hint": "Masculine animate (старый → старого)",
+        "hint": "Masculine animate",
         "translation": "I met an old friend.",
         "topic": "accusative"
     },
@@ -585,7 +585,7 @@
         "answers": [
             "дорогой"
         ],
-        "hint": "Masculine inanimate (дорогой → дорогой)",
+        "hint": "Masculine inanimate",
         "translation": "I bought an expensive suit.",
         "topic": "accusative"
     },
@@ -595,7 +595,7 @@
         "answers": [
             "вкусное"
         ],
-        "hint": "Neuter (вкусный → вкусное)",
+        "hint": "Neuter",
         "translation": "I am eating a tasty apple.",
         "topic": "accusative"
     },
@@ -605,7 +605,7 @@
         "answers": [
             "новой"
         ],
-        "hint": "Feminine (новый → новой)",
+        "hint": "Feminine",
         "translation": "I do not have a new car.",
         "topic": "genitive"
     },
@@ -615,7 +615,7 @@
         "answers": [
             "старого"
         ],
-        "hint": "Masculine (старый → старого)",
+        "hint": "Masculine",
         "translation": "This is the old brother's house.",
         "topic": "genitive"
     },
@@ -625,7 +625,7 @@
         "answers": [
             "умного"
         ],
-        "hint": "Masculine (умный → умного)",
+        "hint": "Masculine",
         "translation": "The smart student has a book.",
         "topic": "genitive"
     },
@@ -635,7 +635,7 @@
         "answers": [
             "свободного"
         ],
-        "hint": "Neuter (свободный → свободного)",
+        "hint": "Neuter",
         "translation": "I have no free time.",
         "topic": "genitive"
     },
@@ -645,7 +645,7 @@
         "answers": [
             "красивой"
         ],
-        "hint": "Feminine (красивый → красивой)",
+        "hint": "Feminine",
         "translation": "This is the beautiful girl's car.",
         "topic": "genitive"
     },
@@ -655,7 +655,7 @@
         "answers": [
             "большого"
         ],
-        "hint": "Masculine (большой → большого)",
+        "hint": "Masculine",
         "translation": "A car stands near the big house.",
         "topic": "genitive"
     },
@@ -665,7 +665,7 @@
         "answers": [
             "интересных"
         ],
-        "hint": "Plural (интересный → интересных)",
+        "hint": "Plural",
         "translation": "I have many interesting books.",
         "topic": "genitive"
     },
@@ -675,7 +675,7 @@
         "answers": [
             "маленького"
         ],
-        "hint": "Masculine (маленький → маленького)",
+        "hint": "Masculine",
         "translation": "The little boy has no dog.",
         "topic": "genitive"
     },
@@ -685,7 +685,7 @@
         "answers": [
             "молодого"
         ],
-        "hint": "Masculine (молодой → молодого)",
+        "hint": "Masculine",
         "translation": "This is the young brother's room.",
         "topic": "genitive"
     },
@@ -695,7 +695,7 @@
         "answers": [
             "синей"
         ],
-        "hint": "Feminine (синий → синей)",
+        "hint": "Feminine",
         "translation": "I do not have a blue pen.",
         "topic": "genitive"
     },
@@ -705,7 +705,7 @@
         "answers": [
             "нового"
         ],
-        "hint": "Masculine (новый → нового)",
+        "hint": "Masculine",
         "translation": "This is the key to the new house.",
         "topic": "genitive"
     },
@@ -715,7 +715,7 @@
         "answers": [
             "свежего"
         ],
-        "hint": "Neuter (свежий → свежего)",
+        "hint": "Neuter",
         "translation": "We have no fresh milk.",
         "topic": "genitive"
     },
@@ -725,7 +725,7 @@
         "answers": [
             "умному"
         ],
-        "hint": "Masculine (умный → умному)",
+        "hint": "Masculine",
         "translation": "I gave a book to the smart student.",
         "topic": "dative"
     },
@@ -735,7 +735,7 @@
         "answers": [
             "большому"
         ],
-        "hint": "Masculine (большой → большому)",
+        "hint": "Masculine",
         "translation": "I am walking to the big house.",
         "topic": "dative"
     },
@@ -745,7 +745,7 @@
         "answers": [
             "старой"
         ],
-        "hint": "Feminine (старый → старой)",
+        "hint": "Feminine",
         "translation": "I help my old mother.",
         "topic": "dative"
     },
@@ -755,7 +755,7 @@
         "answers": [
             "красивой"
         ],
-        "hint": "Feminine (красивый → красивой)",
+        "hint": "Feminine",
         "translation": "I gave flowers to the beautiful girl.",
         "topic": "dative"
     },
@@ -765,7 +765,7 @@
         "answers": [
             "молодому"
         ],
-        "hint": "Masculine (молодой → молодому)",
+        "hint": "Masculine",
         "translation": "I am going to my young friend.",
         "topic": "dative"
     },
@@ -775,7 +775,7 @@
         "answers": [
             "доброму"
         ],
-        "hint": "Masculine (добрый → доброму)",
+        "hint": "Masculine",
         "translation": "I am calling my kind brother.",
         "topic": "dative"
     },
@@ -785,7 +785,7 @@
         "answers": [
             "маленькой"
         ],
-        "hint": "Feminine (маленький → маленькой)",
+        "hint": "Feminine",
         "translation": "I give food to the little dog.",
         "topic": "dative"
     },
@@ -795,7 +795,7 @@
         "answers": [
             "хорошей"
         ],
-        "hint": "Feminine (хороший → хорошей)",
+        "hint": "Feminine",
         "translation": "I am glad about the good weather.",
         "topic": "dative"
     },
@@ -805,7 +805,7 @@
         "answers": [
             "синему"
         ],
-        "hint": "Neuter (синий → синему)",
+        "hint": "Neuter",
         "translation": "I am walking to the blue sea.",
         "topic": "dative"
     },
@@ -815,7 +815,7 @@
         "answers": [
             "новым"
         ],
-        "hint": "Plural (новый → новым)",
+        "hint": "Plural",
         "translation": "I help the new students.",
         "topic": "dative"
     },
@@ -825,7 +825,7 @@
         "answers": [
             "русскому"
         ],
-        "hint": "Masculine (русский → русскому)",
+        "hint": "Masculine",
         "translation": "I bought a gift for the Russian teacher.",
         "topic": "dative"
     },
@@ -835,7 +835,7 @@
         "answers": [
             "старому"
         ],
-        "hint": "Neuter (старый → старому)",
+        "hint": "Neuter",
         "translation": "I approached the old building.",
         "topic": "dative"
     },
@@ -845,7 +845,7 @@
         "answers": [
             "умным"
         ],
-        "hint": "Masculine (умный → умным)",
+        "hint": "Masculine",
         "translation": "I am talking with the smart student.",
         "topic": "instrumental"
     },
@@ -855,7 +855,7 @@
         "answers": [
             "хорошим"
         ],
-        "hint": "Masculine (хороший → хорошим)",
+        "hint": "Masculine",
         "translation": "He became a good doctor.",
         "topic": "instrumental"
     },
@@ -865,7 +865,7 @@
         "answers": [
             "старым"
         ],
-        "hint": "Masculine (старый → старым)",
+        "hint": "Masculine",
         "translation": "I am proud of my old brother.",
         "topic": "instrumental"
     },
@@ -875,7 +875,7 @@
         "answers": [
             "синим"
         ],
-        "hint": "Masculine (синий → синим)",
+        "hint": "Masculine",
         "translation": "I am writing with a blue pencil.",
         "topic": "instrumental"
     },
@@ -885,7 +885,7 @@
         "answers": [
             "маленькой"
         ],
-        "hint": "Feminine (маленький → маленькой)",
+        "hint": "Feminine",
         "translation": "I am walking with the little dog.",
         "topic": "instrumental"
     },
@@ -895,7 +895,7 @@
         "answers": [
             "молодым"
         ],
-        "hint": "Masculine (молодой → молодым)",
+        "hint": "Masculine",
         "translation": "He works as a young engineer.",
         "topic": "instrumental"
     },
@@ -905,7 +905,7 @@
         "answers": [
             "большим"
         ],
-        "hint": "Masculine (большой → большим)",
+        "hint": "Masculine",
         "translation": "I live next to the big park.",
         "topic": "instrumental"
     },
@@ -915,7 +915,7 @@
         "answers": [
             "красивой"
         ],
-        "hint": "Feminine (красивый → красивой)",
+        "hint": "Feminine",
         "translation": "I met a beautiful girl.",
         "topic": "instrumental"
     },
@@ -925,7 +925,7 @@
         "answers": [
             "русским"
         ],
-        "hint": "Masculine (русский → русским)",
+        "hint": "Masculine",
         "translation": "We are proud of the Russian city.",
         "topic": "instrumental"
     },
@@ -935,7 +935,7 @@
         "answers": [
             "горячим"
         ],
-        "hint": "Neuter (горячий → горячим)",
+        "hint": "Neuter",
         "translation": "I love tea with hot milk.",
         "topic": "instrumental"
     },
@@ -945,7 +945,7 @@
         "answers": [
             "новыми"
         ],
-        "hint": "Plural (новый → новыми)",
+        "hint": "Plural",
         "translation": "I am talking with the new students.",
         "topic": "instrumental"
     },
@@ -955,7 +955,7 @@
         "answers": [
             "доброй"
         ],
-        "hint": "Feminine (добрый → доброй)",
+        "hint": "Feminine",
         "translation": "She became a kind teacher.",
         "topic": "instrumental"
     },
@@ -965,7 +965,7 @@
         "answers": [
             "большом"
         ],
-        "hint": "Masculine (большой → большом)",
+        "hint": "Masculine",
         "translation": "I live in a big house.",
         "topic": "prepositional"
     },
@@ -975,7 +975,7 @@
         "answers": [
             "интересном"
         ],
-        "hint": "Masculine (интересный → интересном)",
+        "hint": "Masculine",
         "translation": "We are talking about an interesting film.",
         "topic": "prepositional"
     },
@@ -985,7 +985,7 @@
         "answers": [
             "старом"
         ],
-        "hint": "Masculine (старый → старом)",
+        "hint": "Masculine",
         "translation": "The book is on the old table.",
         "topic": "prepositional"
     },
@@ -995,7 +995,7 @@
         "answers": [
             "красивой"
         ],
-        "hint": "Feminine (красивый → красивой)",
+        "hint": "Feminine",
         "translation": "I am thinking about the beautiful girl.",
         "topic": "prepositional"
     },
@@ -1005,7 +1005,7 @@
         "answers": [
             "русском"
         ],
-        "hint": "Masculine (русский → русском)",
+        "hint": "Masculine",
         "translation": "We live in a Russian city.",
         "topic": "prepositional"
     },
@@ -1015,7 +1015,7 @@
         "answers": [
             "новой"
         ],
-        "hint": "Feminine (новый → новой)",
+        "hint": "Feminine",
         "translation": "He is in the new car.",
         "topic": "prepositional"
     },
@@ -1025,7 +1025,7 @@
         "answers": [
             "интересном"
         ],
-        "hint": "Neuter (интересный → интересном)",
+        "hint": "Neuter",
         "translation": "I dream about an interesting journey.",
         "topic": "prepositional"
     },
@@ -1035,7 +1035,7 @@
         "answers": [
             "хорошей"
         ],
-        "hint": "Feminine (хороший → хорошей)",
+        "hint": "Feminine",
         "translation": "We are talking about the good weather.",
         "topic": "prepositional"
     },
@@ -1045,7 +1045,7 @@
         "answers": [
             "синем"
         ],
-        "hint": "Neuter (синий → синем)",
+        "hint": "Neuter",
         "translation": "The fish swims in the blue sea.",
         "topic": "prepositional"
     },
@@ -1055,7 +1055,7 @@
         "answers": [
             "старых"
         ],
-        "hint": "Plural (старый → старых)",
+        "hint": "Plural",
         "translation": "I am telling about old friends.",
         "topic": "prepositional"
     },
@@ -1065,7 +1065,7 @@
         "answers": [
             "маленькой"
         ],
-        "hint": "Feminine (маленький → маленькой)",
+        "hint": "Feminine",
         "translation": "He lives in a small apartment.",
         "topic": "prepositional"
     },
@@ -1075,7 +1075,7 @@
         "answers": [
             "последнем"
         ],
-        "hint": "Masculine (последний → последнем)",
+        "hint": "Masculine",
         "translation": "We are talking about the last lesson.",
         "topic": "prepositional"
     }
