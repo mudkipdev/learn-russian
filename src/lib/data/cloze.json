@@ -2,367 +2,459 @@
     {
         "text": "Я ___ отве́т.",
         "base": "знать",
-        "answers": ["знаю"],
-        "hint": "Type 1 (знать), stem зна-",
+        "answers": [
+            "знаю"
+        ],
+        "hint": "Stem зна-",
         "translation": "I know the answer.",
         "topic": "type1"
     },
     {
         "text": "Ты ___ его́ бра́та?",
         "base": "знать",
-        "answers": ["знаешь"],
-        "hint": "Type 1 (знать), stem зна-",
+        "answers": [
+            "знаешь"
+        ],
+        "hint": "Stem зна-",
         "translation": "Do you know his brother?",
         "topic": "type1"
     },
     {
         "text": "Она́ ___ ру́сский язы́к.",
         "base": "знать",
-        "answers": ["знает"],
-        "hint": "Type 1 (знать), stem зна-",
+        "answers": [
+            "знает"
+        ],
+        "hint": "Stem зна-",
         "translation": "She knows Russian.",
         "topic": "type1"
     },
     {
         "text": "Мы ___ э́тот го́род.",
         "base": "знать",
-        "answers": ["знаем"],
-        "hint": "Type 1 (знать), stem зна-",
+        "answers": [
+            "знаем"
+        ],
+        "hint": "Stem зна-",
         "translation": "We know this city.",
         "topic": "type1"
     },
     {
         "text": "Вы ___ мою́ сестру́?",
         "base": "знать",
-        "answers": ["знаете"],
-        "hint": "Type 1 (знать), stem зна-",
+        "answers": [
+            "знаете"
+        ],
+        "hint": "Stem зна-",
         "translation": "Do you know my sister?",
         "topic": "type1"
     },
     {
         "text": "Они́ ___ доро́гу.",
         "base": "знать",
-        "answers": ["знают"],
-        "hint": "Type 1 (знать), stem зна-",
+        "answers": [
+            "знают"
+        ],
+        "hint": "Stem зна-",
         "translation": "They know the way.",
         "topic": "type1"
     },
     {
         "text": "Я ___ по-ру́сски.",
         "base": "говори́ть",
-        "answers": ["говорю"],
-        "hint": "Type 2 (говорить), stem говор-",
+        "answers": [
+            "говорю"
+        ],
+        "hint": "Stem говор-",
         "translation": "I speak Russian.",
         "topic": "type2"
     },
     {
         "text": "Ты ___ сли́шком бы́стро.",
         "base": "говори́ть",
-        "answers": ["говоришь"],
-        "hint": "Type 2 (говорить), stem говор-",
+        "answers": [
+            "говоришь"
+        ],
+        "hint": "Stem говор-",
         "translation": "You speak too fast.",
         "topic": "type2"
     },
     {
         "text": "Он ___ по-англи́йски.",
         "base": "говори́ть",
-        "answers": ["говорит"],
-        "hint": "Type 2 (говорить), stem говор-",
+        "answers": [
+            "говорит"
+        ],
+        "hint": "Stem говор-",
         "translation": "He speaks English.",
         "topic": "type2"
     },
     {
         "text": "Мы ___ о пого́де.",
         "base": "говори́ть",
-        "answers": ["говорим"],
-        "hint": "Type 2 (говорить), stem говор-",
+        "answers": [
+            "говорим"
+        ],
+        "hint": "Stem говор-",
         "translation": "We are talking about the weather.",
         "topic": "type2"
     },
     {
         "text": "Вы ___ по-неме́цки?",
         "base": "говори́ть",
-        "answers": ["говорите"],
-        "hint": "Type 2 (говорить), stem говор-",
+        "answers": [
+            "говорите"
+        ],
+        "hint": "Stem говор-",
         "translation": "Do you speak German?",
         "topic": "type2"
     },
     {
         "text": "Они́ ___ о рабо́те.",
         "base": "говори́ть",
-        "answers": ["говорят"],
-        "hint": "Type 2 (говорить), stem говор-",
+        "answers": [
+            "говорят"
+        ],
+        "hint": "Stem говор-",
         "translation": "They are talking about work.",
         "topic": "type2"
     },
     {
         "text": "Я ___ в Москве́.",
         "base": "жить",
-        "answers": ["живу"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живу"
+        ],
+        "hint": "Stem жив-",
         "translation": "I live in Moscow.",
         "topic": "type1b"
     },
     {
         "text": "Ты ___ здесь?",
         "base": "жить",
-        "answers": ["живёшь"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живёшь"
+        ],
+        "hint": "Stem жив-",
         "translation": "Do you live here?",
         "topic": "type1b"
     },
     {
         "text": "Она́ ___ в большо́м до́ме.",
         "base": "жить",
-        "answers": ["живёт"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живёт"
+        ],
+        "hint": "Stem жив-",
         "translation": "She lives in a big house.",
         "topic": "type1b"
     },
     {
         "text": "Мы ___ в Росси́и.",
         "base": "жить",
-        "answers": ["живём"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живём"
+        ],
+        "hint": "Stem жив-",
         "translation": "We live in Russia.",
         "topic": "type1b"
     },
     {
         "text": "Вы ___ в го́роде?",
         "base": "жить",
-        "answers": ["живёте"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живёте"
+        ],
+        "hint": "Stem жив-",
         "translation": "Do you live in the city?",
         "topic": "type1b"
     },
     {
         "text": "Они́ ___ в дере́вне.",
         "base": "жить",
-        "answers": ["живут"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живут"
+        ],
+        "hint": "Stem жив-",
         "translation": "They live in the countryside.",
         "topic": "type1b"
     },
     {
         "text": "Я ___ домо́й.",
         "base": "е́хать",
-        "answers": ["еду"],
-        "hint": "Type 1B (ехать), stem ед-",
+        "answers": [
+            "еду"
+        ],
+        "hint": "Stem ед-",
         "translation": "I am going home (by transport).",
         "topic": "type1b"
     },
     {
         "text": "Ты ___ в центр?",
         "base": "е́хать",
-        "answers": ["едешь"],
-        "hint": "Type 1B (ехать), stem ед-",
+        "answers": [
+            "едешь"
+        ],
+        "hint": "Stem ед-",
         "translation": "Are you going downtown?",
         "topic": "type1b"
     },
     {
         "text": "Он ___ на рабо́ту.",
         "base": "е́хать",
-        "answers": ["едет"],
-        "hint": "Type 1B (ехать), stem ед-",
+        "answers": [
+            "едет"
+        ],
+        "hint": "Stem ед-",
         "translation": "He is going to work.",
         "topic": "type1b"
     },
     {
         "text": "Мы ___ в Москву́.",
         "base": "е́хать",
-        "answers": ["едем"],
-        "hint": "Type 1B (ехать), stem ед-",
+        "answers": [
+            "едем"
+        ],
+        "hint": "Stem ед-",
         "translation": "We are going to Moscow.",
         "topic": "type1b"
     },
     {
         "text": "Вы ___ на по́езде?",
         "base": "е́хать",
-        "answers": ["едете"],
-        "hint": "Type 1B (ехать), stem ед-",
+        "answers": [
+            "едете"
+        ],
+        "hint": "Stem ед-",
         "translation": "Are you going by train?",
         "topic": "type1b"
     },
     {
         "text": "Они́ ___ на мо́ре.",
         "base": "е́хать",
-        "answers": ["едут"],
-        "hint": "Type 1B (ехать), stem ед-",
+        "answers": [
+            "едут"
+        ],
+        "hint": "Stem ед-",
         "translation": "They are going to the sea.",
         "topic": "type1b"
     },
     {
         "text": "Я ___ интере́сную кни́гу.",
         "base": "чита́ть",
-        "answers": ["читаю"],
-        "hint": "Type 1 (знать-type), stem чита-",
+        "answers": [
+            "читаю"
+        ],
+        "hint": "Stem чита-",
         "translation": "I am reading an interesting book.",
         "topic": "type1"
     },
     {
         "text": "Они́ ___ газе́ту.",
         "base": "чита́ть",
-        "answers": ["читают"],
-        "hint": "Type 1 (знать-type), stem чита-",
+        "answers": [
+            "читают"
+        ],
+        "hint": "Stem чита-",
         "translation": "They are reading a newspaper.",
         "topic": "type1"
     },
     {
         "text": "Он ___ в ба́нке.",
         "base": "рабо́тать",
-        "answers": ["работает"],
-        "hint": "Type 1 (знать-type), stem работа-",
+        "answers": [
+            "работает"
+        ],
+        "hint": "Stem работа-",
         "translation": "He works in a bank.",
         "topic": "type1"
     },
     {
         "text": "Вы ___ сего́дня?",
         "base": "рабо́тать",
-        "answers": ["работаете"],
-        "hint": "Type 1 (знать-type), stem работа-",
+        "answers": [
+            "работаете"
+        ],
+        "hint": "Stem работа-",
         "translation": "Are you working today?",
         "topic": "type1"
     },
     {
         "text": "Я не ___ вопро́с.",
         "base": "понима́ть",
-        "answers": ["понимаю"],
-        "hint": "Type 1 (знать-type), stem понима-",
+        "answers": [
+            "понимаю"
+        ],
+        "hint": "Stem понима-",
         "translation": "I do not understand the question.",
         "topic": "type1"
     },
     {
         "text": "Ты ___ меня́?",
         "base": "понима́ть",
-        "answers": ["понимаешь"],
-        "hint": "Type 1 (знать-type), stem понима-",
+        "answers": [
+            "понимаешь"
+        ],
+        "hint": "Stem понима-",
         "translation": "Do you understand me?",
         "topic": "type1"
     },
     {
         "text": "Мы ___ ра́дио.",
         "base": "слу́шать",
-        "answers": ["слушаем"],
-        "hint": "Type 1 (знать-type), stem слуша-",
+        "answers": [
+            "слушаем"
+        ],
+        "hint": "Stem слуша-",
         "translation": "We are listening to the radio.",
         "topic": "type1"
     },
     {
         "text": "Она́ ___ му́зыку.",
         "base": "слу́шать",
-        "answers": ["слушает"],
-        "hint": "Type 1 (знать-type), stem слуша-",
+        "answers": [
+            "слушает"
+        ],
+        "hint": "Stem слуша-",
         "translation": "She is listening to music.",
         "topic": "type1"
     },
     {
         "text": "Он ___ на вопро́с.",
         "base": "отвеча́ть",
-        "answers": ["отвечает"],
-        "hint": "Type 1 (знать-type), stem отвеча-",
+        "answers": [
+            "отвечает"
+        ],
+        "hint": "Stem отвеча-",
         "translation": "He answers the question.",
         "topic": "type1"
     },
     {
         "text": "Я ___ телеви́зор.",
         "base": "смотре́ть",
-        "answers": ["смотрю"],
-        "hint": "Type 2 (говорить-type), stem смотр-",
+        "answers": [
+            "смотрю"
+        ],
+        "hint": "Stem смотр-",
         "translation": "I am watching TV.",
         "topic": "type2"
     },
     {
         "text": "Они́ ___ фильм.",
         "base": "смотре́ть",
-        "answers": ["смотрят"],
-        "hint": "Type 2 (говорить-type), stem смотр-",
+        "answers": [
+            "смотрят"
+        ],
+        "hint": "Stem смотр-",
         "translation": "They are watching a movie.",
         "topic": "type2"
     },
     {
         "text": "Он ___ ма́ме.",
         "base": "звони́ть",
-        "answers": ["звонит"],
-        "hint": "Type 2 (говорить-type), stem звон-",
+        "answers": [
+            "звонит"
+        ],
+        "hint": "Stem звон-",
         "translation": "He is calling his mom.",
         "topic": "type2"
     },
     {
         "text": "Мы ___ ба́бушке.",
         "base": "звони́ть",
-        "answers": ["звоним"],
-        "hint": "Type 2 (говорить-type), stem звон-",
+        "answers": [
+            "звоним"
+        ],
+        "hint": "Stem звон-",
         "translation": "We are calling grandma.",
         "topic": "type2"
     },
     {
         "text": "Я ___ тебя́.",
         "base": "люби́ть",
-        "answers": ["люблю"],
-        "hint": "Type 2, л appears in the я-form: любить → люблю",
+        "answers": [
+            "люблю"
+        ],
+        "hint": "л appears in the я-form: любить → люблю",
         "translation": "I love you.",
         "topic": "mutation"
     },
     {
         "text": "Ты ___ ко́фе?",
         "base": "люби́ть",
-        "answers": ["любишь"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "любишь"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "Do you like coffee?",
         "topic": "mutation"
     },
     {
         "text": "Я ___ его́ в па́рке.",
         "base": "ви́деть",
-        "answers": ["вижу"],
-        "hint": "Type 2, д → ж in the я-form: видеть → вижу",
+        "answers": [
+            "вижу"
+        ],
+        "hint": "д → ж in the я-form: видеть → вижу",
         "translation": "I see him in the park.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ до́ма весь день.",
         "base": "сиде́ть",
-        "answers": ["сижу"],
-        "hint": "Type 2, д → ж in the я-form: сидеть → сижу",
+        "answers": [
+            "сижу"
+        ],
+        "hint": "д → ж in the я-form: сидеть → сижу",
         "translation": "I sit at home all day.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ в шко́лу пешко́м.",
         "base": "ходи́ть",
-        "answers": ["хожу"],
-        "hint": "Type 2, д → ж in the я-form: ходить → хожу",
+        "answers": [
+            "хожу"
+        ],
+        "hint": "д → ж in the я-form: ходить → хожу",
         "translation": "I walk to school.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ проще́ния.",
         "base": "проси́ть",
-        "answers": ["прошу"],
-        "hint": "Type 2, с → ш in the я-form: просить → прошу",
+        "answers": [
+            "прошу"
+        ],
+        "hint": "с → ш in the я-form: просить → прошу",
         "translation": "I ask for forgiveness.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ у́жин.",
         "base": "гото́вить",
-        "answers": ["готовлю"],
-        "hint": "Type 2, л appears in the я-form: готовить → готовлю",
+        "answers": [
+            "готовлю"
+        ],
+        "hint": "л appears in the я-form: готовить → готовлю",
         "translation": "I am cooking dinner.",
         "topic": "mutation"
     },
     {
         "text": "Она́ ___ ма́му ка́ждый день.",
         "base": "ви́деть",
-        "answers": ["видит"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "видит"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "She sees her mom every day.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ карти́ну.",
         "base": "рисова́ть",
-        "answers": ["рисую"],
+        "answers": [
+            "рисую"
+        ],
         "hint": "-овать becomes -у- before the endings: рисовать → рису-",
         "translation": "I am drawing a picture.",
         "topic": "ovat"
@@ -370,7 +462,9 @@
     {
         "text": "Он хорошо́ ___.",
         "base": "рисова́ть",
-        "answers": ["рисует"],
+        "answers": [
+            "рисует"
+        ],
         "hint": "-овать becomes -у- before the endings: рисовать → рису-",
         "translation": "He draws well.",
         "topic": "ovat"
@@ -378,7 +472,9 @@
     {
         "text": "Мы ___ на вечери́нке.",
         "base": "танцева́ть",
-        "answers": ["танцуем"],
+        "answers": [
+            "танцуем"
+        ],
         "hint": "-евать becomes -у- before the endings: танцевать → танцу-",
         "translation": "We are dancing at the party.",
         "topic": "ovat"
@@ -386,7 +482,9 @@
     {
         "text": "Она́ краси́во ___.",
         "base": "танцева́ть",
-        "answers": ["танцует"],
+        "answers": [
+            "танцует"
+        ],
         "hint": "-евать becomes -у- before the endings: танцевать → танцу-",
         "translation": "She dances beautifully.",
         "topic": "ovat"
@@ -394,7 +492,9 @@
     {
         "text": "Я ___ тебе́ отдохну́ть.",
         "base": "сове́товать",
-        "answers": ["советую"],
+        "answers": [
+            "советую"
+        ],
         "hint": "-овать becomes -у- before the endings: советовать → совету-",
         "translation": "I advise you to rest.",
         "topic": "ovat"
@@ -402,7 +502,9 @@
     {
         "text": "Я ___ но́вое блю́до.",
         "base": "про́бовать",
-        "answers": ["пробую"],
+        "answers": [
+            "пробую"
+        ],
         "hint": "-овать becomes -у- before the endings: пробовать → пробу-",
         "translation": "I am trying a new dish.",
         "topic": "ovat"
@@ -410,7 +512,9 @@
     {
         "text": "Я ___ тебе́ сло́во.",
         "base": "дава́ть",
-        "answers": ["даю"],
+        "answers": [
+            "даю"
+        ],
         "hint": "-авать loses -ва- in the present: давать → да- (даю, даёшь)",
         "translation": "I give you my word.",
         "topic": "avat"
@@ -418,7 +522,9 @@
     {
         "text": "Он ___ уро́ки му́зыки.",
         "base": "дава́ть",
-        "answers": ["даёт"],
+        "answers": [
+            "даёт"
+        ],
         "hint": "-авать loses -ва- in the present: давать → да- (даю, даёшь)",
         "translation": "He gives music lessons.",
         "topic": "avat"
@@ -426,7 +532,9 @@
     {
         "text": "Ты ___ мне свой но́мер?",
         "base": "дава́ть",
-        "answers": ["даёшь"],
+        "answers": [
+            "даёшь"
+        ],
         "hint": "-авать loses -ва- in the present: давать → да- (даю, даёшь)",
         "translation": "Are you giving me your number?",
         "topic": "avat"
@@ -434,7 +542,9 @@
     {
         "text": "Я ___ в семь часо́в.",
         "base": "встава́ть",
-        "answers": ["встаю"],
+        "answers": [
+            "встаю"
+        ],
         "hint": "-авать loses -ва- in the present: вставать → вста-",
         "translation": "I get up at seven.",
         "topic": "avat"
@@ -442,7 +552,9 @@
     {
         "text": "Мы ___ о́чень ра́но.",
         "base": "встава́ть",
-        "answers": ["встаём"],
+        "answers": [
+            "встаём"
+        ],
         "hint": "-авать loses -ва- in the present: вставать → вста-",
         "translation": "We get up very early.",
         "topic": "avat"
@@ -450,175 +562,220 @@
     {
         "text": "Я ___ в университе́те.",
         "base": "учи́ться",
-        "answers": ["учусь"],
-        "hint": "Reflexive: -сь after a vowel (учусь), -ся after a consonant (учишься)",
+        "answers": [
+            "учусь"
+        ],
+        "hint": "-сь after a vowel (учусь), -ся after a consonant (учишься)",
         "translation": "I study at a university.",
         "topic": "reflexive"
     },
     {
         "text": "Где ты ___?",
         "base": "учи́ться",
-        "answers": ["учишься"],
-        "hint": "Reflexive: -сь after a vowel (учусь), -ся after a consonant (учишься)",
+        "answers": [
+            "учишься"
+        ],
+        "hint": "-сь after a vowel (учусь), -ся after a consonant (учишься)",
         "translation": "Where do you study?",
         "topic": "reflexive"
     },
     {
         "text": "Уро́к ___ в де́вять.",
         "base": "начина́ться",
-        "answers": ["начинается"],
-        "hint": "Reflexive Type 1: начинается",
+        "answers": [
+            "начинается"
+        ],
+        "hint": "Type 1: начинается",
         "translation": "The lesson starts at nine.",
         "topic": "reflexive"
     },
     {
         "text": "Мы ___ спо́ртом.",
         "base": "занима́ться",
-        "answers": ["занимаемся"],
-        "hint": "Reflexive Type 1: занимаемся",
+        "answers": [
+            "занимаемся"
+        ],
+        "hint": "Type 1: занимаемся",
         "translation": "We do sports.",
         "topic": "reflexive"
     },
     {
         "text": "Она́ ___ о́чень ра́но.",
         "base": "просыпа́ться",
-        "answers": ["просыпается"],
-        "hint": "Reflexive Type 1: просыпается",
+        "answers": [
+            "просыпается"
+        ],
+        "hint": "Type 1: просыпается",
         "translation": "She wakes up very early.",
         "topic": "reflexive"
     },
     {
         "text": "Они́ ___ домо́й в семь.",
         "base": "возвраща́ться",
-        "answers": ["возвращаются"],
-        "hint": "Reflexive Type 1: возвращаются",
+        "answers": [
+            "возвращаются"
+        ],
+        "hint": "Type 1: возвращаются",
         "translation": "They return home at seven.",
         "topic": "reflexive"
     },
     {
         "text": "Я ___ есть.",
         "base": "хоте́ть",
-        "answers": ["хочу"],
-        "hint": "Irregular: хотеть mixes both conjugations (хочу, хочешь, хотим)",
+        "answers": [
+            "хочу"
+        ],
+        "hint": "хотеть mixes both conjugations (хочу, хочешь, хотим)",
         "translation": "I want to eat.",
         "topic": "irregular"
     },
     {
         "text": "Ты ___ чай и́ли ко́фе?",
         "base": "хоте́ть",
-        "answers": ["хочешь"],
-        "hint": "Irregular: хотеть mixes both conjugations (хочу, хочешь, хотим)",
+        "answers": [
+            "хочешь"
+        ],
+        "hint": "хотеть mixes both conjugations (хочу, хочешь, хотим)",
         "translation": "Do you want tea or coffee?",
         "topic": "irregular"
     },
     {
         "text": "Мы ___ домо́й.",
         "base": "хоте́ть",
-        "answers": ["хотим"],
-        "hint": "Irregular: хотеть mixes both conjugations (хочу, хочешь, хотим)",
+        "answers": [
+            "хотим"
+        ],
+        "hint": "хотеть mixes both conjugations (хочу, хочешь, хотим)",
         "translation": "We want to go home.",
         "topic": "irregular"
     },
     {
         "text": "Они́ ___ спать.",
         "base": "хоте́ть",
-        "answers": ["хотят"],
-        "hint": "Irregular: хотеть mixes both conjugations (хочу, хочешь, хотят)",
+        "answers": [
+            "хотят"
+        ],
+        "hint": "хотеть mixes both conjugations (хочу, хочешь, хотят)",
         "translation": "They want to sleep.",
         "topic": "irregular"
     },
     {
         "text": "Я ___ тебе́ помо́чь.",
         "base": "мочь",
-        "answers": ["могу"],
-        "hint": "Irregular: мочь → могу, можешь, могут",
+        "answers": [
+            "могу"
+        ],
+        "hint": "мочь → могу, можешь, могут",
         "translation": "I can help you.",
         "topic": "irregular"
     },
     {
         "text": "Ты ___ прийти́ за́втра?",
         "base": "мочь",
-        "answers": ["можешь"],
-        "hint": "Irregular: мочь → могу, можешь, могут",
+        "answers": [
+            "можешь"
+        ],
+        "hint": "мочь → могу, можешь, могут",
         "translation": "Can you come tomorrow?",
         "topic": "irregular"
     },
     {
         "text": "Он не ___ сего́дня.",
         "base": "мочь",
-        "answers": ["может"],
-        "hint": "Irregular: мочь → могу, можешь, могут",
+        "answers": [
+            "может"
+        ],
+        "hint": "мочь → могу, можешь, могут",
         "translation": "He cannot today.",
         "topic": "irregular"
     },
     {
         "text": "Я ___ ка́шу на за́втрак.",
         "base": "есть",
-        "answers": ["ем"],
-        "hint": "Irregular: есть → ем, ешь, ест, едим, едите, едят",
+        "answers": [
+            "ем"
+        ],
+        "hint": "есть → ем, ешь, ест, едим, едите, едят",
         "translation": "I eat porridge for breakfast.",
         "topic": "irregular"
     },
     {
         "text": "Они́ ___ в кафе́.",
         "base": "есть",
-        "answers": ["едят"],
-        "hint": "Irregular: есть → ем, ешь, ест, едим, едите, едят",
+        "answers": [
+            "едят"
+        ],
+        "hint": "есть → ем, ешь, ест, едим, едите, едят",
         "translation": "They eat at a cafe.",
         "topic": "irregular"
     },
     {
         "text": "Вчера́ я ___ кни́гу.",
         "base": "чита́ть",
-        "answers": ["читал", "читала"],
-        "hint": "Past tense: stem + -л, agrees with the subject's gender",
+        "answers": [
+            "читал",
+            "читала"
+        ],
+        "hint": "Stem + -л, agrees with the subject's gender",
         "translation": "Yesterday I read a book.",
         "topic": "past"
     },
     {
         "text": "Она́ ___ фильм ве́чером.",
         "base": "смотре́ть",
-        "answers": ["смотрела"],
-        "hint": "Past tense: feminine -ла",
+        "answers": [
+            "смотрела"
+        ],
+        "hint": "Feminine -ла",
         "translation": "She watched a movie in the evening.",
         "topic": "past"
     },
     {
         "text": "Он ___ в Москве́ ра́ньше.",
         "base": "жить",
-        "answers": ["жил"],
-        "hint": "Past tense: masculine -л",
+        "answers": [
+            "жил"
+        ],
+        "hint": "Masculine -л",
         "translation": "He lived in Moscow before.",
         "topic": "past"
     },
     {
         "text": "Мы ___ до́ма вчера́.",
         "base": "быть",
-        "answers": ["были"],
-        "hint": "Past tense: plural -ли",
+        "answers": [
+            "были"
+        ],
+        "hint": "Plural -ли",
         "translation": "We were at home yesterday.",
         "topic": "past"
     },
     {
         "text": "Она́ ___ письмо́ у́тром.",
         "base": "писа́ть",
-        "answers": ["писала"],
-        "hint": "Past tense: feminine -ла",
+        "answers": [
+            "писала"
+        ],
+        "hint": "Feminine -ла",
         "translation": "She was writing a letter in the morning.",
         "topic": "past"
     },
     {
         "text": "Они́ ___ в па́рке.",
         "base": "гуля́ть",
-        "answers": ["гуляли"],
-        "hint": "Past tense: plural -ли",
+        "answers": [
+            "гуляли"
+        ],
+        "hint": "Plural -ли",
         "translation": "They walked in the park.",
         "topic": "past"
     },
     {
         "text": "За́втра я ___ чита́ть.",
         "base": "быть",
-        "answers": ["буду"],
+        "answers": [
+            "буду"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "Tomorrow I will read.",
         "topic": "future"
@@ -626,7 +783,9 @@
     {
         "text": "Мы ___ смотре́ть фильм ве́чером.",
         "base": "быть",
-        "answers": ["будем"],
+        "answers": [
+            "будем"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "We will watch a movie in the evening.",
         "topic": "future"
@@ -634,7 +793,9 @@
     {
         "text": "Ты ___ у́жинать с на́ми?",
         "base": "быть",
-        "answers": ["будешь"],
+        "answers": [
+            "будешь"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "Will you have dinner with us?",
         "topic": "future"
@@ -642,7 +803,9 @@
     {
         "text": "Они́ ___ игра́ть в футбо́л.",
         "base": "быть",
-        "answers": ["будут"],
+        "answers": [
+            "будут"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "They will play soccer.",
         "topic": "future"
@@ -650,7 +813,9 @@
     {
         "text": "Она́ ___ учи́ться в Москве́.",
         "base": "быть",
-        "answers": ["будет"],
+        "answers": [
+            "будет"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "She will study in Moscow.",
         "topic": "future"
@@ -658,295 +823,369 @@
     {
         "text": "Я ___ о тебе́.",
         "base": "ду́мать",
-        "answers": ["думаю"],
-        "hint": "Type 1 (знать-type), stem дума-",
+        "answers": [
+            "думаю"
+        ],
+        "hint": "Stem дума-",
         "translation": "I am thinking about you.",
         "topic": "type1"
     },
     {
         "text": "Ты ___ в футбо́л?",
         "base": "игра́ть",
-        "answers": ["играешь"],
-        "hint": "Type 1 (знать-type), stem игра-",
+        "answers": [
+            "играешь"
+        ],
+        "hint": "Stem игра-",
         "translation": "Do you play soccer?",
         "topic": "type1"
     },
     {
         "text": "Он ___ дома́шнее зада́ние.",
         "base": "де́лать",
-        "answers": ["делает"],
-        "hint": "Type 1 (знать-type), stem дела-",
+        "answers": [
+            "делает"
+        ],
+        "hint": "Stem дела-",
         "translation": "He is doing his homework.",
         "topic": "type1"
     },
     {
         "text": "Мы ___ в па́рке ка́ждый день.",
         "base": "гуля́ть",
-        "answers": ["гуляем"],
-        "hint": "Type 1 (знать-type), stem гуля-",
+        "answers": [
+            "гуляем"
+        ],
+        "hint": "Stem гуля-",
         "translation": "We walk in the park every day.",
         "topic": "type1"
     },
     {
         "text": "Вы ___ учи́теля?",
         "base": "спра́шивать",
-        "answers": ["спрашиваете"],
-        "hint": "Type 1 (знать-type), stem спрашива-",
+        "answers": [
+            "спрашиваете"
+        ],
+        "hint": "Stem спрашива-",
         "translation": "Are you asking the teacher?",
         "topic": "type1"
     },
     {
         "text": "Они́ ___ вме́сте.",
         "base": "рабо́тать",
-        "answers": ["работают"],
-        "hint": "Type 1 (знать-type), stem работа-",
+        "answers": [
+            "работают"
+        ],
+        "hint": "Stem работа-",
         "translation": "They work together.",
         "topic": "type1"
     },
     {
         "text": "Она́ ___ на пиани́но.",
         "base": "игра́ть",
-        "answers": ["играет"],
-        "hint": "Type 1 (знать-type), stem игра-",
+        "answers": [
+            "играет"
+        ],
+        "hint": "Stem игра-",
         "translation": "She plays the piano.",
         "topic": "type1"
     },
     {
         "text": "Вы ___ э́тот текст?",
         "base": "понима́ть",
-        "answers": ["понимаете"],
-        "hint": "Type 1 (знать-type), stem понима-",
+        "answers": [
+            "понимаете"
+        ],
+        "hint": "Stem понима-",
         "translation": "Do you understand this text?",
         "topic": "type1"
     },
     {
         "text": "Я ___ за́втрак у́тром.",
         "base": "де́лать",
-        "answers": ["делаю"],
-        "hint": "Type 1 (знать-type), stem дела-",
+        "answers": [
+            "делаю"
+        ],
+        "hint": "Stem дела-",
         "translation": "I make breakfast in the morning.",
         "topic": "type1"
     },
     {
         "text": "Ты ___ в окно́?",
         "base": "смотре́ть",
-        "answers": ["смотришь"],
-        "hint": "Type 2 (говорить-type), stem смотр-",
+        "answers": [
+            "смотришь"
+        ],
+        "hint": "Stem смотр-",
         "translation": "Are you looking out the window?",
         "topic": "type2"
     },
     {
         "text": "Она́ ___ подру́ге ве́чером.",
         "base": "звони́ть",
-        "answers": ["звонит"],
-        "hint": "Type 2 (говорить-type), stem звон-",
+        "answers": [
+            "звонит"
+        ],
+        "hint": "Stem звон-",
         "translation": "She calls her friend in the evening.",
         "topic": "type2"
     },
     {
         "text": "Я ___ ру́сские слова́.",
         "base": "учи́ть",
-        "answers": ["учу"],
-        "hint": "Type 2 (говорить-type), stem уч-",
+        "answers": [
+            "учу"
+        ],
+        "hint": "Stem уч-",
         "translation": "I am learning Russian words.",
         "topic": "type2"
     },
     {
         "text": "Мы ___ фильм вме́сте.",
         "base": "смотре́ть",
-        "answers": ["смотрим"],
-        "hint": "Type 2 (говорить-type), stem смотр-",
+        "answers": [
+            "смотрим"
+        ],
+        "hint": "Stem смотр-",
         "translation": "We are watching a movie together.",
         "topic": "type2"
     },
     {
         "text": "Вы ___ на остано́вке?",
         "base": "стоя́ть",
-        "answers": ["стоите"],
-        "hint": "Type 2 (говорить-type), stem сто-",
+        "answers": [
+            "стоите"
+        ],
+        "hint": "Stem сто-",
         "translation": "Are you standing at the bus stop?",
         "topic": "type2"
     },
     {
         "text": "Они́ ___ у окна́.",
         "base": "стоя́ть",
-        "answers": ["стоят"],
-        "hint": "Type 2 (говорить-type), stem сто-",
+        "answers": [
+            "стоят"
+        ],
+        "hint": "Stem сто-",
         "translation": "They are standing by the window.",
         "topic": "type2"
     },
     {
         "text": "Он ___ её но́мер.",
         "base": "по́мнить",
-        "answers": ["помнит"],
-        "hint": "Type 2 (говорить-type), stem помн-",
+        "answers": [
+            "помнит"
+        ],
+        "hint": "Stem помн-",
         "translation": "He remembers her number.",
         "topic": "type2"
     },
     {
         "text": "Я ___ на авто́бус.",
         "base": "спеши́ть",
-        "answers": ["спешу"],
-        "hint": "Type 2 (говорить-type), stem спеш-",
+        "answers": [
+            "спешу"
+        ],
+        "hint": "Stem спеш-",
         "translation": "I am hurrying to the bus.",
         "topic": "type2"
     },
     {
         "text": "Ты ___ моё и́мя?",
         "base": "по́мнить",
-        "answers": ["помнишь"],
-        "hint": "Type 2 (говорить-type), stem помн-",
+        "answers": [
+            "помнишь"
+        ],
+        "hint": "Stem помн-",
         "translation": "Do you remember my name?",
         "topic": "type2"
     },
     {
         "text": "Я ___ ко́фе у́тром.",
         "base": "пить",
-        "answers": ["пью"],
-        "hint": "Type 1B (пить), stem пь-",
+        "answers": [
+            "пью"
+        ],
+        "hint": "Stem пь-",
         "translation": "I drink coffee in the morning.",
         "topic": "type1b"
     },
     {
         "text": "Ты ___ чай с са́харом?",
         "base": "пить",
-        "answers": ["пьёшь"],
-        "hint": "Type 1B (пить), stem пь-",
+        "answers": [
+            "пьёшь"
+        ],
+        "hint": "Stem пь-",
         "translation": "Do you drink tea with sugar?",
         "topic": "type1b"
     },
     {
         "text": "Она́ ___ молоко́.",
         "base": "пить",
-        "answers": ["пьёт"],
-        "hint": "Type 1B (пить), stem пь-",
+        "answers": [
+            "пьёт"
+        ],
+        "hint": "Stem пь-",
         "translation": "She drinks milk.",
         "topic": "type1b"
     },
     {
         "text": "Они́ ___ сок.",
         "base": "пить",
-        "answers": ["пьют"],
-        "hint": "Type 1B (пить), stem пь-",
+        "answers": [
+            "пьют"
+        ],
+        "hint": "Stem пь-",
         "translation": "They are drinking juice.",
         "topic": "type1b"
     },
     {
         "text": "Я ___ авто́бус.",
         "base": "ждать",
-        "answers": ["жду"],
-        "hint": "Type 1B (ждать), stem жд-",
+        "answers": [
+            "жду"
+        ],
+        "hint": "Stem жд-",
         "translation": "I am waiting for the bus.",
         "topic": "type1b"
     },
     {
         "text": "Мы ___ дру́га у метро́.",
         "base": "ждать",
-        "answers": ["ждём"],
-        "hint": "Type 1B (ждать), stem жд-",
+        "answers": [
+            "ждём"
+        ],
+        "hint": "Stem жд-",
         "translation": "We are waiting for a friend by the metro.",
         "topic": "type1b"
     },
     {
         "text": "Вы ___ такси́?",
         "base": "ждать",
-        "answers": ["ждёте"],
-        "hint": "Type 1B (ждать), stem жд-",
+        "answers": [
+            "ждёте"
+        ],
+        "hint": "Stem жд-",
         "translation": "Are you waiting for a taxi?",
         "topic": "type1b"
     },
     {
         "text": "Он ___ ря́дом с па́рком.",
         "base": "жить",
-        "answers": ["живёт"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живёт"
+        ],
+        "hint": "Stem жив-",
         "translation": "He lives next to the park.",
         "topic": "type1b"
     },
     {
         "text": "Вы ___ в э́том до́ме?",
         "base": "жить",
-        "answers": ["живёте"],
-        "hint": "Type 1B (жить), stem жив-",
+        "answers": [
+            "живёте"
+        ],
+        "hint": "Stem жив-",
         "translation": "Do you live in this building?",
         "topic": "type1b"
     },
     {
         "text": "Я ___ джи́нсы ка́ждый день.",
         "base": "носи́ть",
-        "answers": ["ношу"],
-        "hint": "Type 2, с → ш in the я-form: носить → ношу",
+        "answers": [
+            "ношу"
+        ],
+        "hint": "с → ш in the я-form: носить → ношу",
         "translation": "I wear jeans every day.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ за кварти́ру.",
         "base": "плати́ть",
-        "answers": ["плачу"],
-        "hint": "Type 2, т → ч in the я-form: платить → плачу",
+        "answers": [
+            "плачу"
+        ],
+        "hint": "т → ч in the я-form: платить → плачу",
         "translation": "I pay for the apartment.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ во́семь часо́в.",
         "base": "спать",
-        "answers": ["сплю"],
-        "hint": "Type 2, л appears in the я-form: спать → сплю",
+        "answers": [
+            "сплю"
+        ],
+        "hint": "л appears in the я-form: спать → сплю",
         "translation": "I sleep eight hours.",
         "topic": "mutation"
     },
     {
         "text": "Я ___ кни́гу на по́лку.",
         "base": "ста́вить",
-        "answers": ["ставлю"],
-        "hint": "Type 2, л appears in the я-form: ставить → ставлю",
+        "answers": [
+            "ставлю"
+        ],
+        "hint": "л appears in the я-form: ставить → ставлю",
         "translation": "I put the book on the shelf.",
         "topic": "mutation"
     },
     {
         "text": "Она́ ___ суп.",
         "base": "гото́вить",
-        "answers": ["готовит"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "готовит"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "She is cooking soup.",
         "topic": "mutation"
     },
     {
         "text": "Он ___ в магази́н ка́ждый день.",
         "base": "ходи́ть",
-        "answers": ["ходит"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "ходит"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "He goes to the store every day.",
         "topic": "mutation"
     },
     {
         "text": "Мы ___ в кафе́.",
         "base": "сиде́ть",
-        "answers": ["сидим"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "сидим"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "We are sitting in a cafe.",
         "topic": "mutation"
     },
     {
         "text": "Ты ___ очки́?",
         "base": "носи́ть",
-        "answers": ["носишь"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "носишь"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "Do you wear glasses?",
         "topic": "mutation"
     },
     {
         "text": "Они́ ___ ка́ртой.",
         "base": "плати́ть",
-        "answers": ["платят"],
-        "hint": "Type 2, mutation happens only in the я-form",
+        "answers": [
+            "платят"
+        ],
+        "hint": "Mutation happens only in the я-form",
         "translation": "They pay by card.",
         "topic": "mutation"
     },
     {
         "text": "Я хорошо́ себя́ ___.",
         "base": "чу́вствовать",
-        "answers": ["чувствую"],
+        "answers": [
+            "чувствую"
+        ],
         "hint": "-овать becomes -у- before the endings: чувствовать → чувству-",
         "translation": "I feel well.",
         "topic": "ovat"
@@ -954,7 +1193,9 @@
     {
         "text": "Ты ___ себя́ лу́чше?",
         "base": "чу́вствовать",
-        "answers": ["чувствуешь"],
+        "answers": [
+            "чувствуешь"
+        ],
         "hint": "-овать becomes -у- before the endings: чувствовать → чувству-",
         "translation": "Do you feel better?",
         "topic": "ovat"
@@ -962,7 +1203,9 @@
     {
         "text": "Он мно́го ___.",
         "base": "путеше́ствовать",
-        "answers": ["путешествует"],
+        "answers": [
+            "путешествует"
+        ],
         "hint": "-овать becomes -у- before the endings: путешествовать → путешеству-",
         "translation": "He travels a lot.",
         "topic": "ovat"
@@ -970,7 +1213,9 @@
     {
         "text": "Мы ___ по Росси́и ле́том.",
         "base": "путеше́ствовать",
-        "answers": ["путешествуем"],
+        "answers": [
+            "путешествуем"
+        ],
         "hint": "-овать becomes -у- before the endings: путешествовать → путешеству-",
         "translation": "We travel around Russia in the summer.",
         "topic": "ovat"
@@ -978,7 +1223,9 @@
     {
         "text": "Она́ ___ го́род.",
         "base": "фотографи́ровать",
-        "answers": ["фотографирует"],
+        "answers": [
+            "фотографирует"
+        ],
         "hint": "-овать becomes -у- before the endings: фотографировать → фотографиру-",
         "translation": "She photographs the city.",
         "topic": "ovat"
@@ -986,7 +1233,9 @@
     {
         "text": "Вы ___ э́тот суп?",
         "base": "про́бовать",
-        "answers": ["пробуете"],
+        "answers": [
+            "пробуете"
+        ],
         "hint": "-овать becomes -у- before the endings: пробовать → пробу-",
         "translation": "Are you trying this soup?",
         "topic": "ovat"
@@ -994,7 +1243,9 @@
     {
         "text": "Они́ ___ весь ве́чер.",
         "base": "танцева́ть",
-        "answers": ["танцуют"],
+        "answers": [
+            "танцуют"
+        ],
         "hint": "-евать becomes -у- before the endings: танцевать → танцу-",
         "translation": "They dance all evening.",
         "topic": "ovat"
@@ -1002,7 +1253,9 @@
     {
         "text": "Что ты мне ___?",
         "base": "сове́товать",
-        "answers": ["советуешь"],
+        "answers": [
+            "советуешь"
+        ],
         "hint": "-овать becomes -у- before the endings: советовать → совету-",
         "translation": "What do you advise me?",
         "topic": "ovat"
@@ -1010,7 +1263,9 @@
     {
         "text": "Де́ти ___ на уро́ке.",
         "base": "рисова́ть",
-        "answers": ["рисуют"],
+        "answers": [
+            "рисуют"
+        ],
         "hint": "-овать becomes -у- before the endings: рисовать → рису-",
         "translation": "The children are drawing in class.",
         "topic": "ovat"
@@ -1018,7 +1273,9 @@
     {
         "text": "Она́ ___ ра́но у́тром.",
         "base": "встава́ть",
-        "answers": ["встаёт"],
+        "answers": [
+            "встаёт"
+        ],
         "hint": "-авать loses -ва- in the present: вставать → вста-",
         "translation": "She gets up early in the morning.",
         "topic": "avat"
@@ -1026,7 +1283,9 @@
     {
         "text": "Вы ___ в шесть часо́в?",
         "base": "встава́ть",
-        "answers": ["встаёте"],
+        "answers": [
+            "встаёте"
+        ],
         "hint": "-авать loses -ва- in the present: вставать → вста-",
         "translation": "Do you get up at six?",
         "topic": "avat"
@@ -1034,7 +1293,9 @@
     {
         "text": "Они́ ___ по́здно.",
         "base": "встава́ть",
-        "answers": ["встают"],
+        "answers": [
+            "встают"
+        ],
         "hint": "-авать loses -ва- in the present: вставать → вста-",
         "translation": "They get up late.",
         "topic": "avat"
@@ -1042,7 +1303,9 @@
     {
         "text": "Он ___ фру́кты на ры́нке.",
         "base": "продава́ть",
-        "answers": ["продаёт"],
+        "answers": [
+            "продаёт"
+        ],
         "hint": "-авать loses -ва- in the present: продавать → прода- (продаю, продаёшь)",
         "translation": "He sells fruit at the market.",
         "topic": "avat"
@@ -1050,7 +1313,9 @@
     {
         "text": "Мы ___ ста́рую маши́ну.",
         "base": "продава́ть",
-        "answers": ["продаём"],
+        "answers": [
+            "продаём"
+        ],
         "hint": "-авать loses -ва- in the present: продавать → прода- (продаю, продаёшь)",
         "translation": "We are selling our old car.",
         "topic": "avat"
@@ -1058,7 +1323,9 @@
     {
         "text": "Я ___ соба́ке еду́.",
         "base": "дава́ть",
-        "answers": ["даю"],
+        "answers": [
+            "даю"
+        ],
         "hint": "-авать loses -ва- in the present: давать → да- (даю, даёшь)",
         "translation": "I give the dog food.",
         "topic": "avat"
@@ -1066,7 +1333,9 @@
     {
         "text": "Вы ___ кни́ги де́тям?",
         "base": "дава́ть",
-        "answers": ["даёте"],
+        "answers": [
+            "даёте"
+        ],
         "hint": "-авать loses -ва- in the present: давать → да- (даю, даёшь)",
         "translation": "Do you give books to the children?",
         "topic": "avat"
@@ -1074,7 +1343,9 @@
     {
         "text": "Ты ___ на рабо́те?",
         "base": "устава́ть",
-        "answers": ["устаёшь"],
+        "answers": [
+            "устаёшь"
+        ],
         "hint": "-авать loses -ва- in the present: уставать → уста-",
         "translation": "Do you get tired at work?",
         "topic": "avat"
@@ -1082,7 +1353,9 @@
     {
         "text": "Я о́чень ___ ве́чером.",
         "base": "устава́ть",
-        "answers": ["устаю"],
+        "answers": [
+            "устаю"
+        ],
         "hint": "-авать loses -ва- in the present: уставать → уста-",
         "translation": "I get very tired in the evening.",
         "topic": "avat"
@@ -1090,223 +1363,282 @@
     {
         "text": "Я ___ в семь утра́.",
         "base": "просыпа́ться",
-        "answers": ["просыпаюсь"],
-        "hint": "Reflexive: -сь after a vowel (просыпаюсь), -ся after a consonant (просыпаешься)",
+        "answers": [
+            "просыпаюсь"
+        ],
+        "hint": "-сь after a vowel (просыпаюсь), -ся after a consonant (просыпаешься)",
         "translation": "I wake up at seven in the morning.",
         "topic": "reflexive"
     },
     {
         "text": "Ты ча́сто ___?",
         "base": "улыба́ться",
-        "answers": ["улыбаешься"],
-        "hint": "Reflexive: -сь after a vowel (улыбаюсь), -ся after a consonant (улыбаешься)",
+        "answers": [
+            "улыбаешься"
+        ],
+        "hint": "-сь after a vowel (улыбаюсь), -ся after a consonant (улыбаешься)",
         "translation": "Do you smile often?",
         "topic": "reflexive"
     },
     {
         "text": "Он ___ спо́ртом ка́ждый день.",
         "base": "занима́ться",
-        "answers": ["занимается"],
-        "hint": "Reflexive Type 1: занимается",
+        "answers": [
+            "занимается"
+        ],
+        "hint": "Type 1: занимается",
         "translation": "He does sports every day.",
         "topic": "reflexive"
     },
     {
         "text": "Мы ___ домо́й по́здно.",
         "base": "возвраща́ться",
-        "answers": ["возвращаемся"],
-        "hint": "Reflexive Type 1: возвращаемся",
+        "answers": [
+            "возвращаемся"
+        ],
+        "hint": "Type 1: возвращаемся",
         "translation": "We return home late.",
         "topic": "reflexive"
     },
     {
         "text": "Вы ___ ру́сским языко́м?",
         "base": "занима́ться",
-        "answers": ["занимаетесь"],
-        "hint": "Reflexive Type 1: занимаетесь",
+        "answers": [
+            "занимаетесь"
+        ],
+        "hint": "Type 1: занимаетесь",
         "translation": "Do you study Russian?",
         "topic": "reflexive"
     },
     {
         "text": "Они́ ___ в университе́те.",
         "base": "учи́ться",
-        "answers": ["учатся"],
-        "hint": "Reflexive: -сь after a vowel (учусь), -ся after a consonant (учатся)",
+        "answers": [
+            "учатся"
+        ],
+        "hint": "-сь after a vowel (учусь), -ся after a consonant (учатся)",
         "translation": "They study at a university.",
         "topic": "reflexive"
     },
     {
         "text": "Уро́к ___ в де́сять.",
         "base": "зака́нчиваться",
-        "answers": ["заканчивается"],
-        "hint": "Reflexive Type 1: заканчивается",
+        "answers": [
+            "заканчивается"
+        ],
+        "hint": "Type 1: заканчивается",
         "translation": "The lesson ends at ten.",
         "topic": "reflexive"
     },
     {
         "text": "Она́ ___ холо́дной воды́.",
         "base": "боя́ться",
-        "answers": ["боится"],
-        "hint": "Reflexive Type 2: боюсь, боишься, боится",
+        "answers": [
+            "боится"
+        ],
+        "hint": "Type 2: боюсь, боишься, боится",
         "translation": "She is afraid of cold water.",
         "topic": "reflexive"
     },
     {
         "text": "Я ___ соба́к.",
         "base": "боя́ться",
-        "answers": ["боюсь"],
-        "hint": "Reflexive Type 2: боюсь, боишься, боится",
+        "answers": [
+            "боюсь"
+        ],
+        "hint": "Type 2: боюсь, боишься, боится",
         "translation": "I am afraid of dogs.",
         "topic": "reflexive"
     },
     {
         "text": "Она́ ___ купи́ть пла́тье.",
         "base": "хоте́ть",
-        "answers": ["хочет"],
-        "hint": "Irregular: хотеть mixes both conjugations (хочу, хочешь, хотим)",
+        "answers": [
+            "хочет"
+        ],
+        "hint": "хотеть mixes both conjugations (хочу, хочешь, хотим)",
         "translation": "She wants to buy a dress.",
         "topic": "irregular"
     },
     {
         "text": "Вы ___ пить?",
         "base": "хоте́ть",
-        "answers": ["хотите"],
-        "hint": "Irregular: хотеть mixes both conjugations (хочу, хочешь, хотите)",
+        "answers": [
+            "хотите"
+        ],
+        "hint": "хотеть mixes both conjugations (хочу, хочешь, хотите)",
         "translation": "Do you want something to drink?",
         "topic": "irregular"
     },
     {
         "text": "Мы ___ прийти́ в суббо́ту.",
         "base": "мочь",
-        "answers": ["можем"],
-        "hint": "Irregular: мочь → могу, можешь, могут",
+        "answers": [
+            "можем"
+        ],
+        "hint": "мочь → могу, можешь, могут",
         "translation": "We can come on Saturday.",
         "topic": "irregular"
     },
     {
         "text": "Вы ___ говори́ть гро́мче?",
         "base": "мочь",
-        "answers": ["можете"],
-        "hint": "Irregular: мочь → могу, можешь, могут",
+        "answers": [
+            "можете"
+        ],
+        "hint": "мочь → могу, можешь, могут",
         "translation": "Can you speak louder?",
         "topic": "irregular"
     },
     {
         "text": "Они́ не ___ ждать.",
         "base": "мочь",
-        "answers": ["могут"],
-        "hint": "Irregular: мочь → могу, можешь, могут",
+        "answers": [
+            "могут"
+        ],
+        "hint": "мочь → могу, можешь, могут",
         "translation": "They cannot wait.",
         "topic": "irregular"
     },
     {
         "text": "Ты ___ суп?",
         "base": "есть",
-        "answers": ["ешь"],
-        "hint": "Irregular: есть → ем, ешь, ест, едим, едите, едят",
+        "answers": [
+            "ешь"
+        ],
+        "hint": "есть → ем, ешь, ест, едим, едите, едят",
         "translation": "Are you eating soup?",
         "topic": "irregular"
     },
     {
         "text": "Он не ___ мя́со.",
         "base": "есть",
-        "answers": ["ест"],
-        "hint": "Irregular: есть → ем, ешь, ест, едим, едите, едят",
+        "answers": [
+            "ест"
+        ],
+        "hint": "есть → ем, ешь, ест, едим, едите, едят",
         "translation": "He does not eat meat.",
         "topic": "irregular"
     },
     {
         "text": "Мы ___ до́ма ве́чером.",
         "base": "есть",
-        "answers": ["едим"],
-        "hint": "Irregular: есть → ем, ешь, ест, едим, едите, едят",
+        "answers": [
+            "едим"
+        ],
+        "hint": "есть → ем, ешь, ест, едим, едите, едят",
         "translation": "We eat at home in the evening.",
         "topic": "irregular"
     },
     {
         "text": "Я ___ на уро́к.",
         "base": "бежа́ть",
-        "answers": ["бегу"],
-        "hint": "Irregular: бежать → бегу, бежишь, бегут",
+        "answers": [
+            "бегу"
+        ],
+        "hint": "бежать → бегу, бежишь, бегут",
         "translation": "I am running to class.",
         "topic": "irregular"
     },
     {
         "text": "Вчера́ мы ___ телеви́зор.",
         "base": "смотре́ть",
-        "answers": ["смотрели"],
-        "hint": "Past tense: plural -ли",
+        "answers": [
+            "смотрели"
+        ],
+        "hint": "Plural -ли",
         "translation": "Yesterday we watched TV.",
         "topic": "past"
     },
     {
         "text": "Я ___ письмо́ ве́чером.",
         "base": "писа́ть",
-        "answers": ["писал", "писала"],
-        "hint": "Past tense: stem + -л, agrees with the subject's gender",
+        "answers": [
+            "писал",
+            "писала"
+        ],
+        "hint": "Stem + -л, agrees with the subject's gender",
         "translation": "I was writing a letter in the evening.",
         "topic": "past"
     },
     {
         "text": "Он ___ в шко́ле вчера́.",
         "base": "быть",
-        "answers": ["был"],
-        "hint": "Past tense: masculine -л",
+        "answers": [
+            "был"
+        ],
+        "hint": "Masculine -л",
         "translation": "He was at school yesterday.",
         "topic": "past"
     },
     {
         "text": "Она́ ___ в Петербу́рге ле́том.",
         "base": "быть",
-        "answers": ["была"],
-        "hint": "Past tense: feminine -ла",
+        "answers": [
+            "была"
+        ],
+        "hint": "Feminine -ла",
         "translation": "She was in St. Petersburg in the summer.",
         "topic": "past"
     },
     {
         "text": "Ты ___ му́зыку вчера́?",
         "base": "слу́шать",
-        "answers": ["слушал", "слушала"],
-        "hint": "Past tense: stem + -л, agrees with the subject's gender",
+        "answers": [
+            "слушал",
+            "слушала"
+        ],
+        "hint": "Stem + -л, agrees with the subject's gender",
         "translation": "Did you listen to music yesterday?",
         "topic": "past"
     },
     {
         "text": "Вы ___ вчера́ в кино́?",
         "base": "быть",
-        "answers": ["были"],
-        "hint": "Past tense: plural -ли",
+        "answers": [
+            "были"
+        ],
+        "hint": "Plural -ли",
         "translation": "Were you at the movies yesterday?",
         "topic": "past"
     },
     {
         "text": "Они́ ___ у́жин вме́сте.",
         "base": "гото́вить",
-        "answers": ["готовили"],
-        "hint": "Past tense: plural -ли",
+        "answers": [
+            "готовили"
+        ],
+        "hint": "Plural -ли",
         "translation": "They cooked dinner together.",
         "topic": "past"
     },
     {
         "text": "Вчера́ я ___ до́ма.",
         "base": "быть",
-        "answers": ["был", "была"],
-        "hint": "Past tense: stem + -л, agrees with the subject's gender",
+        "answers": [
+            "был",
+            "была"
+        ],
+        "hint": "Stem + -л, agrees with the subject's gender",
         "translation": "Yesterday I was at home.",
         "topic": "past"
     },
     {
         "text": "Он ___ ко́фе у́тром.",
         "base": "пить",
-        "answers": ["пил"],
-        "hint": "Past tense: masculine -л",
+        "answers": [
+            "пил"
+        ],
+        "hint": "Masculine -л",
         "translation": "He drank coffee in the morning.",
         "topic": "past"
     },
     {
         "text": "Я ___ рабо́тать за́втра.",
         "base": "быть",
-        "answers": ["буду"],
+        "answers": [
+            "буду"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "I will work tomorrow.",
         "topic": "future"
@@ -1314,7 +1646,9 @@
     {
         "text": "Ты ___ смотре́ть матч?",
         "base": "быть",
-        "answers": ["будешь"],
+        "answers": [
+            "будешь"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "Will you watch the game?",
         "topic": "future"
@@ -1322,7 +1656,9 @@
     {
         "text": "Он ___ жить в Петербу́рге.",
         "base": "быть",
-        "answers": ["будет"],
+        "answers": [
+            "будет"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "He will live in St. Petersburg.",
         "topic": "future"
@@ -1330,7 +1666,9 @@
     {
         "text": "Мы ___ гуля́ть в па́рке.",
         "base": "быть",
-        "answers": ["будем"],
+        "answers": [
+            "будем"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "We will walk in the park.",
         "topic": "future"
@@ -1338,7 +1676,9 @@
     {
         "text": "Вы ___ рабо́тать в суббо́ту?",
         "base": "быть",
-        "answers": ["будете"],
+        "answers": [
+            "будете"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "Will you work on Saturday?",
         "topic": "future"
@@ -1346,7 +1686,9 @@
     {
         "text": "Они́ ___ учи́ть ру́сский язы́к.",
         "base": "быть",
-        "answers": ["будут"],
+        "answers": [
+            "будут"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "They will study Russian.",
         "topic": "future"
@@ -1354,7 +1696,9 @@
     {
         "text": "Она́ ___ гото́вить у́жин.",
         "base": "быть",
-        "answers": ["будет"],
+        "answers": [
+            "будет"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "She will cook dinner.",
         "topic": "future"
@@ -1362,7 +1706,9 @@
     {
         "text": "Ле́том мы ___ отдыха́ть на мо́ре.",
         "base": "быть",
-        "answers": ["будем"],
+        "answers": [
+            "будем"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "In the summer we will vacation at the sea.",
         "topic": "future"
@@ -1370,7 +1716,9 @@
     {
         "text": "Ве́чером я ___ писа́ть письмо́.",
         "base": "быть",
-        "answers": ["буду"],
+        "answers": [
+            "буду"
+        ],
         "hint": "Imperfective future: present of быть + infinitive",
         "translation": "In the evening I will write a letter.",
         "topic": "future"

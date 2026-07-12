@@ -1,0 +1,1082 @@
+[
+    {
+        "text": "Э́то ___ дом.",
+        "base": "но́вый",
+        "answers": [
+            "новый"
+        ],
+        "hint": "(новый → новый)",
+        "translation": "This is a new house.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ студе́нт.",
+        "base": "у́мный",
+        "answers": [
+            "умный"
+        ],
+        "hint": "(умный → умный)",
+        "translation": "This is a smart student.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Мой ___ брат живёт здесь.",
+        "base": "ста́рый",
+        "answers": [
+            "старый"
+        ],
+        "hint": "(старый → старый)",
+        "translation": "My old brother lives here.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ го́род.",
+        "base": "большо́й",
+        "answers": [
+            "большой"
+        ],
+        "hint": "(большой → большой)",
+        "translation": "This is a big city.",
+        "topic": "masculine"
+    },
+    {
+        "text": "___ учи́тель о́чень до́брый.",
+        "base": "молодо́й",
+        "answers": [
+            "молодой"
+        ],
+        "hint": "(молодой → молодой)",
+        "translation": "The young teacher is very kind.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ журна́л.",
+        "base": "интере́сный",
+        "answers": [
+            "интересный"
+        ],
+        "hint": "(интересный → интересный)",
+        "translation": "This is an interesting magazine.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ каранда́ш.",
+        "base": "си́ний",
+        "answers": [
+            "синий"
+        ],
+        "hint": "(синий → синий)",
+        "translation": "This is a blue pencil.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ студе́нт.",
+        "base": "ру́сский",
+        "answers": [
+            "русский"
+        ],
+        "hint": "(русский → русский)",
+        "translation": "This is a Russian student.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ стол.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленький"
+        ],
+        "hint": "(маленький → маленький)",
+        "translation": "This is a small table.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ костю́м.",
+        "base": "дорого́й",
+        "answers": [
+            "дорогой"
+        ],
+        "hint": "(дорогой → дорогой)",
+        "translation": "This is an expensive suit.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ шарф.",
+        "base": "голубо́й",
+        "answers": [
+            "голубой"
+        ],
+        "hint": "(голубой → голубой)",
+        "translation": "This is a light-blue scarf.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ хлеб.",
+        "base": "хоро́ший",
+        "answers": [
+            "хороший"
+        ],
+        "hint": "(хороший → хороший)",
+        "translation": "This is good bread.",
+        "topic": "masculine"
+    },
+    {
+        "text": "Э́то ___ маши́на.",
+        "base": "но́вый",
+        "answers": [
+            "новая"
+        ],
+        "hint": "(новый → новая)",
+        "translation": "This is a new car.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ кни́га.",
+        "base": "интере́сный",
+        "answers": [
+            "интересная"
+        ],
+        "hint": "(интересный → интересная)",
+        "translation": "This is an interesting book.",
+        "topic": "feminine"
+    },
+    {
+        "text": "___ де́вушка о́чень краси́вая.",
+        "base": "молодо́й",
+        "answers": [
+            "молодая"
+        ],
+        "hint": "(молодой → молодая)",
+        "translation": "The young woman is very beautiful.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ ко́мната.",
+        "base": "большо́й",
+        "answers": [
+            "большая"
+        ],
+        "hint": "(большой → большая)",
+        "translation": "This is a big room.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ ру́чка.",
+        "base": "си́ний",
+        "answers": [
+            "синяя"
+        ],
+        "hint": "(синий → синяя)",
+        "translation": "This is a blue pen.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ студе́нтка.",
+        "base": "ру́сский",
+        "answers": [
+            "русская"
+        ],
+        "hint": "(русский → русская)",
+        "translation": "This is a Russian student.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ соба́ка.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленькая"
+        ],
+        "hint": "(маленький → маленькая)",
+        "translation": "This is a small dog.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ пого́да.",
+        "base": "хоро́ший",
+        "answers": [
+            "хорошая"
+        ],
+        "hint": "(хороший → хорошая)",
+        "translation": "This is good weather.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ у́лица.",
+        "base": "широ́кий",
+        "answers": [
+            "широкая"
+        ],
+        "hint": "(широкий → широкая)",
+        "translation": "This is a wide street.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ еда́.",
+        "base": "вку́сный",
+        "answers": [
+            "вкусная"
+        ],
+        "hint": "(вкусный → вкусная)",
+        "translation": "This is tasty food.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ ла́мпа.",
+        "base": "голубо́й",
+        "answers": [
+            "голубая"
+        ],
+        "hint": "(голубой → голубая)",
+        "translation": "This is a light-blue lamp.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ рабо́та.",
+        "base": "дома́шний",
+        "answers": [
+            "домашняя"
+        ],
+        "hint": "(домашний → домашняя)",
+        "translation": "This is homework.",
+        "topic": "feminine"
+    },
+    {
+        "text": "Э́то ___ окно́.",
+        "base": "большо́й",
+        "answers": [
+            "большое"
+        ],
+        "hint": "(большой → большое)",
+        "translation": "This is a big window.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ письмо́.",
+        "base": "интере́сный",
+        "answers": [
+            "интересное"
+        ],
+        "hint": "(интересный → интересное)",
+        "translation": "This is an interesting letter.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ пла́тье.",
+        "base": "краси́вый",
+        "answers": [
+            "красивое"
+        ],
+        "hint": "(красивый → красивое)",
+        "translation": "This is a beautiful dress.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ мо́ре.",
+        "base": "си́ний",
+        "answers": [
+            "синее"
+        ],
+        "hint": "(синий → синее)",
+        "translation": "This is a blue sea.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ у́тро.",
+        "base": "хоро́ший",
+        "answers": [
+            "хорошее"
+        ],
+        "hint": "(хороший → хорошее)",
+        "translation": "This is a good morning.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ сло́во.",
+        "base": "но́вый",
+        "answers": [
+            "новое"
+        ],
+        "hint": "(новый → новое)",
+        "translation": "This is a new word.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ зда́ние.",
+        "base": "ста́рый",
+        "answers": [
+            "старое"
+        ],
+        "hint": "(старый → старое)",
+        "translation": "This is an old building.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ молоко́.",
+        "base": "вку́сный",
+        "answers": [
+            "вкусное"
+        ],
+        "hint": "(вкусный → вкусное)",
+        "translation": "This is tasty milk.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ де́рево.",
+        "base": "высо́кий",
+        "answers": [
+            "высокое"
+        ],
+        "hint": "(высокий → высокое)",
+        "translation": "This is a tall tree.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ упражне́ние.",
+        "base": "после́дний",
+        "answers": [
+            "последнее"
+        ],
+        "hint": "(последний → последнее)",
+        "translation": "This is the last exercise.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ ме́сто.",
+        "base": "свобо́дный",
+        "answers": [
+            "свободное"
+        ],
+        "hint": "(свободный → свободное)",
+        "translation": "This is a free seat.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ ле́то.",
+        "base": "жа́ркий",
+        "answers": [
+            "жаркое"
+        ],
+        "hint": "(жаркий → жаркое)",
+        "translation": "This is a hot summer.",
+        "topic": "neuter"
+    },
+    {
+        "text": "Э́то ___ дома́.",
+        "base": "но́вый",
+        "answers": [
+            "новые"
+        ],
+        "hint": "(новый → новые)",
+        "translation": "These are new houses.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ кни́ги.",
+        "base": "интере́сный",
+        "answers": [
+            "интересные"
+        ],
+        "hint": "(интересный → интересные)",
+        "translation": "These are interesting books.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ студе́нты.",
+        "base": "у́мный",
+        "answers": [
+            "умные"
+        ],
+        "hint": "(умный → умные)",
+        "translation": "These are smart students.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ города́.",
+        "base": "большо́й",
+        "answers": [
+            "большие"
+        ],
+        "hint": "(большой → большие)",
+        "translation": "These are big cities.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ ру́чки.",
+        "base": "си́ний",
+        "answers": [
+            "синие"
+        ],
+        "hint": "(синий → синие)",
+        "translation": "These are blue pens.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ студе́нты.",
+        "base": "ру́сский",
+        "answers": [
+            "русские"
+        ],
+        "hint": "(русский → русские)",
+        "translation": "These are Russian students.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ соба́ки.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленькие"
+        ],
+        "hint": "(маленький → маленькие)",
+        "translation": "These are small dogs.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ цветы́.",
+        "base": "краси́вый",
+        "answers": [
+            "красивые"
+        ],
+        "hint": "(красивый → красивые)",
+        "translation": "These are beautiful flowers.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ друзья́.",
+        "base": "ста́рый",
+        "answers": [
+            "старые"
+        ],
+        "hint": "(старый → старые)",
+        "translation": "These are old friends.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ у́лицы.",
+        "base": "широ́кий",
+        "answers": [
+            "широкие"
+        ],
+        "hint": "(широкий → широкие)",
+        "translation": "These are wide streets.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ маши́ны.",
+        "base": "дорого́й",
+        "answers": [
+            "дорогие"
+        ],
+        "hint": "(дорогой → дорогие)",
+        "translation": "These are expensive cars.",
+        "topic": "plural"
+    },
+    {
+        "text": "Э́то ___ я́блоки.",
+        "base": "вку́сный",
+        "answers": [
+            "вкусные"
+        ],
+        "hint": "(вкусный → вкусные)",
+        "translation": "These are tasty apples.",
+        "topic": "plural"
+    },
+    {
+        "text": "Я купи́л ___ маши́ну.",
+        "base": "но́вый",
+        "answers": [
+            "новую"
+        ],
+        "hint": "Feminine (новый → новую)",
+        "translation": "I bought a new car.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я чита́ю ___ кни́гу.",
+        "base": "интере́сный",
+        "answers": [
+            "интересную"
+        ],
+        "hint": "Feminine (интересный → интересную)",
+        "translation": "I am reading an interesting book.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ви́жу ___ дом.",
+        "base": "большо́й",
+        "answers": [
+            "большой"
+        ],
+        "hint": "Masculine inanimate (большой → большой)",
+        "translation": "I see a big house.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я зна́ю ___ студе́нта.",
+        "base": "у́мный",
+        "answers": [
+            "умного"
+        ],
+        "hint": "Masculine animate (умный → умного)",
+        "translation": "I know a smart student.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я люблю́ ___ соба́ку.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленькую"
+        ],
+        "hint": "Feminine (маленький → маленькую)",
+        "translation": "I love the little dog.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ви́жу ___ ма́льчика.",
+        "base": "молодо́й",
+        "answers": [
+            "молодого"
+        ],
+        "hint": "Masculine animate (молодой → молодого)",
+        "translation": "I see a young boy.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я купи́л ___ ру́чку.",
+        "base": "си́ний",
+        "answers": [
+            "синюю"
+        ],
+        "hint": "Feminine (синий → синюю)",
+        "translation": "I bought a blue pen.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я чита́ю ___ письмо́.",
+        "base": "дли́нный",
+        "answers": [
+            "длинное"
+        ],
+        "hint": "Neuter (длинный → длинное)",
+        "translation": "I am reading a long letter.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ви́жу ___ де́вушку.",
+        "base": "краси́вый",
+        "answers": [
+            "красивую"
+        ],
+        "hint": "Feminine (красивый → красивую)",
+        "translation": "I see a beautiful girl.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я встре́тил ___ дру́га.",
+        "base": "ста́рый",
+        "answers": [
+            "старого"
+        ],
+        "hint": "Masculine animate (старый → старого)",
+        "translation": "I met an old friend.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я купи́л ___ костю́м.",
+        "base": "дорого́й",
+        "answers": [
+            "дорогой"
+        ],
+        "hint": "Masculine inanimate (дорогой → дорогой)",
+        "translation": "I bought an expensive suit.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ем ___ я́блоко.",
+        "base": "вку́сный",
+        "answers": [
+            "вкусное"
+        ],
+        "hint": "Neuter (вкусный → вкусное)",
+        "translation": "I am eating a tasty apple.",
+        "topic": "accusative"
+    },
+    {
+        "text": "У меня́ нет ___ маши́ны.",
+        "base": "но́вый",
+        "answers": [
+            "новой"
+        ],
+        "hint": "Feminine (новый → новой)",
+        "translation": "I do not have a new car.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то дом ___ бра́та.",
+        "base": "ста́рый",
+        "answers": [
+            "старого"
+        ],
+        "hint": "Masculine (старый → старого)",
+        "translation": "This is the old brother's house.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У ___ студе́нта есть кни́га.",
+        "base": "у́мный",
+        "answers": [
+            "умного"
+        ],
+        "hint": "Masculine (умный → умного)",
+        "translation": "The smart student has a book.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У меня́ нет ___ вре́мени.",
+        "base": "свобо́дный",
+        "answers": [
+            "свободного"
+        ],
+        "hint": "Neuter (свободный → свободного)",
+        "translation": "I have no free time.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то маши́на ___ де́вушки.",
+        "base": "краси́вый",
+        "answers": [
+            "красивой"
+        ],
+        "hint": "Feminine (красивый → красивой)",
+        "translation": "This is the beautiful girl's car.",
+        "topic": "genitive"
+    },
+    {
+        "text": "О́коло ___ до́ма стои́т маши́на.",
+        "base": "большо́й",
+        "answers": [
+            "большого"
+        ],
+        "hint": "Masculine (большой → большого)",
+        "translation": "A car stands near the big house.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У меня́ мно́го ___ книг.",
+        "base": "интере́сный",
+        "answers": [
+            "интересных"
+        ],
+        "hint": "Plural (интересный → интересных)",
+        "translation": "I have many interesting books.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У ___ ма́льчика нет соба́ки.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленького"
+        ],
+        "hint": "Masculine (маленький → маленького)",
+        "translation": "The little boy has no dog.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то ко́мната ___ бра́та.",
+        "base": "молодо́й",
+        "answers": [
+            "молодого"
+        ],
+        "hint": "Masculine (молодой → молодого)",
+        "translation": "This is the young brother's room.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У меня́ нет ___ ру́чки.",
+        "base": "си́ний",
+        "answers": [
+            "синей"
+        ],
+        "hint": "Feminine (синий → синей)",
+        "translation": "I do not have a blue pen.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то ключ от ___ до́ма.",
+        "base": "но́вый",
+        "answers": [
+            "нового"
+        ],
+        "hint": "Masculine (новый → нового)",
+        "translation": "This is the key to the new house.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У нас нет ___ молока́.",
+        "base": "све́жий",
+        "answers": [
+            "свежего"
+        ],
+        "hint": "Neuter (свежий → свежего)",
+        "translation": "We have no fresh milk.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Я дал кни́гу ___ студе́нту.",
+        "base": "у́мный",
+        "answers": [
+            "умному"
+        ],
+        "hint": "Masculine (умный → умному)",
+        "translation": "I gave a book to the smart student.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я иду́ к ___ до́му.",
+        "base": "большо́й",
+        "answers": [
+            "большому"
+        ],
+        "hint": "Masculine (большой → большому)",
+        "translation": "I am walking to the big house.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я помога́ю ___ ма́ме.",
+        "base": "ста́рый",
+        "answers": [
+            "старой"
+        ],
+        "hint": "Feminine (старый → старой)",
+        "translation": "I help my old mother.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я подари́л цветы́ ___ де́вушке.",
+        "base": "краси́вый",
+        "answers": [
+            "красивой"
+        ],
+        "hint": "Feminine (красивый → красивой)",
+        "translation": "I gave flowers to the beautiful girl.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я иду́ к ___ дру́гу.",
+        "base": "молодо́й",
+        "answers": [
+            "молодому"
+        ],
+        "hint": "Masculine (молодой → молодому)",
+        "translation": "I am going to my young friend.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я звоню́ ___ бра́ту.",
+        "base": "до́брый",
+        "answers": [
+            "доброму"
+        ],
+        "hint": "Masculine (добрый → доброму)",
+        "translation": "I am calling my kind brother.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я даю́ корм ___ соба́ке.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленькой"
+        ],
+        "hint": "Feminine (маленький → маленькой)",
+        "translation": "I give food to the little dog.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я рад ___ пого́де.",
+        "base": "хоро́ший",
+        "answers": [
+            "хорошей"
+        ],
+        "hint": "Feminine (хороший → хорошей)",
+        "translation": "I am glad about the good weather.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я иду́ к ___ мо́рю.",
+        "base": "си́ний",
+        "answers": [
+            "синему"
+        ],
+        "hint": "Neuter (синий → синему)",
+        "translation": "I am walking to the blue sea.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я помога́ю ___ студе́нтам.",
+        "base": "но́вый",
+        "answers": [
+            "новым"
+        ],
+        "hint": "Plural (новый → новым)",
+        "translation": "I help the new students.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я купи́л пода́рок ___ учи́телю.",
+        "base": "ру́сский",
+        "answers": [
+            "русскому"
+        ],
+        "hint": "Masculine (русский → русскому)",
+        "translation": "I bought a gift for the Russian teacher.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я подошёл к ___ зда́нию.",
+        "base": "ста́рый",
+        "answers": [
+            "старому"
+        ],
+        "hint": "Neuter (старый → старому)",
+        "translation": "I approached the old building.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я говорю́ с ___ студе́нтом.",
+        "base": "у́мный",
+        "answers": [
+            "умным"
+        ],
+        "hint": "Masculine (умный → умным)",
+        "translation": "I am talking with the smart student.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Он стал ___ врачо́м.",
+        "base": "хоро́ший",
+        "answers": [
+            "хорошим"
+        ],
+        "hint": "Masculine (хороший → хорошим)",
+        "translation": "He became a good doctor.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я горжу́сь ___ бра́том.",
+        "base": "ста́рый",
+        "answers": [
+            "старым"
+        ],
+        "hint": "Masculine (старый → старым)",
+        "translation": "I am proud of my old brother.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я пишу́ ___ карандашо́м.",
+        "base": "си́ний",
+        "answers": [
+            "синим"
+        ],
+        "hint": "Masculine (синий → синим)",
+        "translation": "I am writing with a blue pencil.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я иду́ с ___ соба́кой.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленькой"
+        ],
+        "hint": "Feminine (маленький → маленькой)",
+        "translation": "I am walking with the little dog.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Он рабо́тает ___ инжене́ром.",
+        "base": "молодо́й",
+        "answers": [
+            "молодым"
+        ],
+        "hint": "Masculine (молодой → молодым)",
+        "translation": "He works as a young engineer.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я живу́ ря́дом с ___ па́рком.",
+        "base": "большо́й",
+        "answers": [
+            "большим"
+        ],
+        "hint": "Masculine (большой → большим)",
+        "translation": "I live next to the big park.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я познако́мился с ___ де́вушкой.",
+        "base": "краси́вый",
+        "answers": [
+            "красивой"
+        ],
+        "hint": "Feminine (красивый → красивой)",
+        "translation": "I met a beautiful girl.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Мы горди́мся ___ го́родом.",
+        "base": "ру́сский",
+        "answers": [
+            "русским"
+        ],
+        "hint": "Masculine (русский → русским)",
+        "translation": "We are proud of the Russian city.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я люблю́ чай с ___ молоко́м.",
+        "base": "горя́чий",
+        "answers": [
+            "горячим"
+        ],
+        "hint": "Neuter (горячий → горячим)",
+        "translation": "I love tea with hot milk.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я говорю́ с ___ студе́нтами.",
+        "base": "но́вый",
+        "answers": [
+            "новыми"
+        ],
+        "hint": "Plural (новый → новыми)",
+        "translation": "I am talking with the new students.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Она́ ста́ла ___ учи́тельницей.",
+        "base": "до́брый",
+        "answers": [
+            "доброй"
+        ],
+        "hint": "Feminine (добрый → доброй)",
+        "translation": "She became a kind teacher.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я живу́ в ___ до́ме.",
+        "base": "большо́й",
+        "answers": [
+            "большом"
+        ],
+        "hint": "Masculine (большой → большом)",
+        "translation": "I live in a big house.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы говори́м о ___ фи́льме.",
+        "base": "интере́сный",
+        "answers": [
+            "интересном"
+        ],
+        "hint": "Masculine (интересный → интересном)",
+        "translation": "We are talking about an interesting film.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Кни́га лежи́т на ___ столе́.",
+        "base": "ста́рый",
+        "answers": [
+            "старом"
+        ],
+        "hint": "Masculine (старый → старом)",
+        "translation": "The book is on the old table.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я ду́маю о ___ де́вушке.",
+        "base": "краси́вый",
+        "answers": [
+            "красивой"
+        ],
+        "hint": "Feminine (красивый → красивой)",
+        "translation": "I am thinking about the beautiful girl.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы живём в ___ го́роде.",
+        "base": "ру́сский",
+        "answers": [
+            "русском"
+        ],
+        "hint": "Masculine (русский → русском)",
+        "translation": "We live in a Russian city.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Он в ___ маши́не.",
+        "base": "но́вый",
+        "answers": [
+            "новой"
+        ],
+        "hint": "Feminine (новый → новой)",
+        "translation": "He is in the new car.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я мечта́ю о ___ путеше́ствии.",
+        "base": "интере́сный",
+        "answers": [
+            "интересном"
+        ],
+        "hint": "Neuter (интересный → интересном)",
+        "translation": "I dream about an interesting journey.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы говори́м о ___ пого́де.",
+        "base": "хоро́ший",
+        "answers": [
+            "хорошей"
+        ],
+        "hint": "Feminine (хороший → хорошей)",
+        "translation": "We are talking about the good weather.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Ры́ба пла́вает в ___ мо́ре.",
+        "base": "си́ний",
+        "answers": [
+            "синем"
+        ],
+        "hint": "Neuter (синий → синем)",
+        "translation": "The fish swims in the blue sea.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я расска́зываю о ___ друзья́х.",
+        "base": "ста́рый",
+        "answers": [
+            "старых"
+        ],
+        "hint": "Plural (старый → старых)",
+        "translation": "I am telling about old friends.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Он живёт в ___ кварти́ре.",
+        "base": "ма́ленький",
+        "answers": [
+            "маленькой"
+        ],
+        "hint": "Feminine (маленький → маленькой)",
+        "translation": "He lives in a small apartment.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы говори́м о ___ уро́ке.",
+        "base": "после́дний",
+        "answers": [
+            "последнем"
+        ],
+        "hint": "Masculine (последний → последнем)",
+        "translation": "We are talking about the last lesson.",
+        "topic": "prepositional"
+    }
+]

@@ -1,0 +1,1053 @@
+[
+    {
+        "text": "Я чита́ю ___.",
+        "base": "кни́га",
+        "answers": [
+            "книгу"
+        ],
+        "hint": "Feminine inanimate (книга → книгу)",
+        "translation": "I am reading a book.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ви́жу ___.",
+        "base": "брат",
+        "answers": [
+            "брата"
+        ],
+        "hint": "Masculine animate (брат → брата)",
+        "translation": "I see my brother.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Она́ лю́бит ___.",
+        "base": "му́зыка",
+        "answers": [
+            "музыку"
+        ],
+        "hint": "Feminine inanimate (музыка → музыку)",
+        "translation": "She loves music.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Мы зна́ем э́ту ___.",
+        "base": "де́вушка",
+        "answers": [
+            "девушку"
+        ],
+        "hint": "Feminine animate (девушка → девушку)",
+        "translation": "We know this girl.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я встре́тил ___.",
+        "base": "друг",
+        "answers": [
+            "друга"
+        ],
+        "hint": "Masculine animate (друг → друга)",
+        "translation": "I met a friend.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Он покупа́ет ___.",
+        "base": "газе́та",
+        "answers": [
+            "газету"
+        ],
+        "hint": "Feminine inanimate (газета → газету)",
+        "translation": "He is buying a newspaper.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ви́жу ___.",
+        "base": "соба́ка",
+        "answers": [
+            "собаку"
+        ],
+        "hint": "Feminine animate (собака → собаку)",
+        "translation": "I see a dog.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Ты зна́ешь ___?",
+        "base": "учи́тель",
+        "answers": [
+            "учителя"
+        ],
+        "hint": "Masculine animate (учитель → учителя)",
+        "translation": "Do you know the teacher?",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я жду ___.",
+        "base": "сестра́",
+        "answers": [
+            "сестру"
+        ],
+        "hint": "Feminine animate (сестра → сестру)",
+        "translation": "I am waiting for my sister.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Мы слу́шаем ___.",
+        "base": "преподава́тель",
+        "answers": [
+            "преподавателя"
+        ],
+        "hint": "Masculine animate (преподаватель → преподавателя)",
+        "translation": "We are listening to the lecturer.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я пишу́ ___.",
+        "base": "письмо́",
+        "answers": [
+            "письмо"
+        ],
+        "hint": "Neuter inanimate (письмо → письмо)",
+        "translation": "I am writing a letter.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Он чита́ет ___.",
+        "base": "журна́л",
+        "answers": [
+            "журнал"
+        ],
+        "hint": "Masculine inanimate (журнал → журнал)",
+        "translation": "He is reading a magazine.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я люблю́ ___.",
+        "base": "ко́шка",
+        "answers": [
+            "кошку"
+        ],
+        "hint": "Feminine animate (кошка → кошку)",
+        "translation": "I love the cat.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Она́ ви́дит ___.",
+        "base": "ма́ма",
+        "answers": [
+            "маму"
+        ],
+        "hint": "Feminine animate (мама → маму)",
+        "translation": "She sees her mom.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Я ви́жу ___.",
+        "base": "оте́ц",
+        "answers": [
+            "отца"
+        ],
+        "hint": "Masculine animate (отец → отца)",
+        "translation": "I see my father.",
+        "topic": "accusative"
+    },
+    {
+        "text": "Э́то дом ___.",
+        "base": "брат",
+        "answers": [
+            "брата"
+        ],
+        "hint": "Masculine (брат → брата)",
+        "translation": "This is my brother's house.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У меня́ нет ___.",
+        "base": "вре́мя",
+        "answers": [
+            "времени"
+        ],
+        "hint": "Neuter irregular (время → времени)",
+        "translation": "I don't have time.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Стака́н ___, пожа́луйста.",
+        "base": "вода́",
+        "answers": [
+            "воды"
+        ],
+        "hint": "Feminine (вода → воды)",
+        "translation": "A glass of water, please.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то маши́на ___.",
+        "base": "оте́ц",
+        "answers": [
+            "отца"
+        ],
+        "hint": "Masculine (отец → отца)",
+        "translation": "This is father's car.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У неё нет ___.",
+        "base": "соба́ка",
+        "answers": [
+            "собаки"
+        ],
+        "hint": "Feminine (собака → собаки)",
+        "translation": "She doesn't have a dog.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то кни́га ___.",
+        "base": "учи́тель",
+        "answers": [
+            "учителя"
+        ],
+        "hint": "Masculine (учитель → учителя)",
+        "translation": "This is the teacher's book.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Ча́шка ___, пожа́луйста.",
+        "base": "чай",
+        "answers": [
+            "чая"
+        ],
+        "hint": "Masculine (чай → чая)",
+        "translation": "A cup of tea, please.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У меня́ нет ___.",
+        "base": "рабо́та",
+        "answers": [
+            "работы"
+        ],
+        "hint": "Feminine (работа → работы)",
+        "translation": "I don't have a job.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то центр ___.",
+        "base": "го́род",
+        "answers": [
+            "города"
+        ],
+        "hint": "Masculine (город → города)",
+        "translation": "This is the center of the city.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У меня́ нет ___.",
+        "base": "брат",
+        "answers": [
+            "брата"
+        ],
+        "hint": "Masculine (брат → брата)",
+        "translation": "I don't have a brother.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Дом моего́ ___ большо́й.",
+        "base": "друг",
+        "answers": [
+            "друга"
+        ],
+        "hint": "Masculine (друг → друга)",
+        "translation": "My friend's house is big.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Кусо́к ___, пожа́луйста.",
+        "base": "хлеб",
+        "answers": [
+            "хлеба"
+        ],
+        "hint": "Masculine (хлеб → хлеба)",
+        "translation": "A piece of bread, please.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Э́то су́мка ___.",
+        "base": "сестра́",
+        "answers": [
+            "сестры"
+        ],
+        "hint": "Feminine (сестра → сестры)",
+        "translation": "This is my sister's bag.",
+        "topic": "genitive"
+    },
+    {
+        "text": "У него́ нет ___.",
+        "base": "маши́на",
+        "answers": [
+            "машины"
+        ],
+        "hint": "Feminine (машина → машины)",
+        "translation": "He doesn't have a car.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Нача́ло ___ интере́сное.",
+        "base": "фильм",
+        "answers": [
+            "фильма"
+        ],
+        "hint": "Masculine (фильм → фильма)",
+        "translation": "The beginning of the film is interesting.",
+        "topic": "genitive"
+    },
+    {
+        "text": "Я дал кни́гу ___.",
+        "base": "друг",
+        "answers": [
+            "другу"
+        ],
+        "hint": "Masculine (друг → другу)",
+        "translation": "I gave the book to my friend.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я звоню́ ___.",
+        "base": "брат",
+        "answers": [
+            "брату"
+        ],
+        "hint": "Masculine (брат → брату)",
+        "translation": "I am calling my brother.",
+        "topic": "dative"
+    },
+    {
+        "text": "Он помога́ет ___.",
+        "base": "ма́ма",
+        "answers": [
+            "маме"
+        ],
+        "hint": "Feminine (мама → маме)",
+        "translation": "He is helping his mom.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я иду́ к ___.",
+        "base": "врач",
+        "answers": [
+            "врачу"
+        ],
+        "hint": "Masculine (врач → врачу)",
+        "translation": "I am going to the doctor.",
+        "topic": "dative"
+    },
+    {
+        "text": "Учи́тель объясня́ет уро́к ___.",
+        "base": "студе́нт",
+        "answers": [
+            "студенту"
+        ],
+        "hint": "Masculine (студент → студенту)",
+        "translation": "The teacher explains the lesson to the student.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я подари́л цветы́ ___.",
+        "base": "сестра́",
+        "answers": [
+            "сестре"
+        ],
+        "hint": "Feminine (сестра → сестре)",
+        "translation": "I gave flowers to my sister.",
+        "topic": "dative"
+    },
+    {
+        "text": "Мы идём к ___.",
+        "base": "друг",
+        "answers": [
+            "другу"
+        ],
+        "hint": "Masculine (друг → другу)",
+        "translation": "We are going to a friend's place.",
+        "topic": "dative"
+    },
+    {
+        "text": "Она́ пи́шет письмо́ ___.",
+        "base": "оте́ц",
+        "answers": [
+            "отцу"
+        ],
+        "hint": "Masculine (отец → отцу)",
+        "translation": "She is writing a letter to her father.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я рассказа́л исто́рию ___.",
+        "base": "де́вушка",
+        "answers": [
+            "девушке"
+        ],
+        "hint": "Feminine (девушка → девушке)",
+        "translation": "I told the story to the girl.",
+        "topic": "dative"
+    },
+    {
+        "text": "Ребёнок ра́дуется ___.",
+        "base": "пода́рок",
+        "answers": [
+            "подарку"
+        ],
+        "hint": "Masculine (подарок → подарку)",
+        "translation": "The child is happy about the gift.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я иду́ к ___.",
+        "base": "учи́тель",
+        "answers": [
+            "учителю"
+        ],
+        "hint": "Masculine (учитель → учителю)",
+        "translation": "I am going to the teacher.",
+        "topic": "dative"
+    },
+    {
+        "text": "Он дал де́ньги ___.",
+        "base": "мать",
+        "answers": [
+            "матери"
+        ],
+        "hint": "Feminine irregular (мать → матери)",
+        "translation": "He gave money to his mother.",
+        "topic": "dative"
+    },
+    {
+        "text": "Мы помога́ем ___.",
+        "base": "друг",
+        "answers": [
+            "другу"
+        ],
+        "hint": "Masculine (друг → другу)",
+        "translation": "We help our friend.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я купи́л игру́шку ___.",
+        "base": "ребёнок",
+        "answers": [
+            "ребенку"
+        ],
+        "hint": "Masculine (ребёнок → ребёнку)",
+        "translation": "I bought a toy for the child.",
+        "topic": "dative"
+    },
+    {
+        "text": "Преподава́тель отвеча́ет ___.",
+        "base": "студе́нтка",
+        "answers": [
+            "студентке"
+        ],
+        "hint": "Feminine (студентка → студентке)",
+        "translation": "The lecturer answers the student.",
+        "topic": "dative"
+    },
+    {
+        "text": "Я пишу́ ___.",
+        "base": "каранда́ш",
+        "answers": [
+            "карандашом"
+        ],
+        "hint": "Masculine (карандаш → карандашом)",
+        "translation": "I am writing with a pencil.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Он рабо́тает ___.",
+        "base": "врач",
+        "answers": [
+            "врачом"
+        ],
+        "hint": "Masculine (врач → врачом)",
+        "translation": "He works as a doctor.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я е́ду с ___.",
+        "base": "брат",
+        "answers": [
+            "братом"
+        ],
+        "hint": "Masculine (брат → братом)",
+        "translation": "I am traveling with my brother.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Она́ говори́т с ___.",
+        "base": "учи́тель",
+        "answers": [
+            "учителем"
+        ],
+        "hint": "Masculine (учитель → учителем)",
+        "translation": "She is talking with the teacher.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Мы гуля́ем с ___.",
+        "base": "соба́ка",
+        "answers": [
+            "собакой"
+        ],
+        "hint": "Feminine (собака → собакой)",
+        "translation": "We are walking with the dog.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я ем суп ___.",
+        "base": "ло́жка",
+        "answers": [
+            "ложкой"
+        ],
+        "hint": "Feminine (ложка → ложкой)",
+        "translation": "I am eating soup with a spoon.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Он стал ___.",
+        "base": "инжене́р",
+        "answers": [
+            "инженером"
+        ],
+        "hint": "Masculine (инженер → инженером)",
+        "translation": "He became an engineer.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я пью чай с ___.",
+        "base": "са́хар",
+        "answers": [
+            "сахаром"
+        ],
+        "hint": "Masculine (сахар → сахаром)",
+        "translation": "I drink tea with sugar.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Мы разгова́риваем с ___.",
+        "base": "преподава́тель",
+        "answers": [
+            "преподавателем"
+        ],
+        "hint": "Masculine (преподаватель → преподавателем)",
+        "translation": "We are talking with the lecturer.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Она́ рабо́тает ___.",
+        "base": "учи́тельница",
+        "answers": [
+            "учительницей"
+        ],
+        "hint": "Feminine (учительница → учительницей)",
+        "translation": "She works as a teacher.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я иду́ в парк с ___.",
+        "base": "друг",
+        "answers": [
+            "другом"
+        ],
+        "hint": "Masculine (друг → другом)",
+        "translation": "I am going to the park with a friend.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Он ре́жет хлеб ___.",
+        "base": "нож",
+        "answers": [
+            "ножом"
+        ],
+        "hint": "Masculine (нож → ножом)",
+        "translation": "He cuts bread with a knife.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Я горжу́сь ___.",
+        "base": "сестра́",
+        "answers": [
+            "сестрой"
+        ],
+        "hint": "Feminine (сестра → сестрой)",
+        "translation": "I am proud of my sister.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Ма́льчик пи́шет ___.",
+        "base": "ру́чка",
+        "answers": [
+            "ручкой"
+        ],
+        "hint": "Feminine (ручка → ручкой)",
+        "translation": "The boy writes with a pen.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Мой оте́ц был ___.",
+        "base": "солда́т",
+        "answers": [
+            "солдатом"
+        ],
+        "hint": "Masculine (солдат → солдатом)",
+        "translation": "My father was a soldier.",
+        "topic": "instrumental"
+    },
+    {
+        "text": "Кни́га на ___.",
+        "base": "стол",
+        "answers": [
+            "столе"
+        ],
+        "hint": "Masculine (стол → столе)",
+        "translation": "The book is on the table.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я ду́маю о ___.",
+        "base": "рабо́та",
+        "answers": [
+            "работе"
+        ],
+        "hint": "Feminine (работа → работе)",
+        "translation": "I am thinking about work.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы живём в ___.",
+        "base": "го́род",
+        "answers": [
+            "городе"
+        ],
+        "hint": "Masculine (город → городе)",
+        "translation": "We live in the city.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Соба́ка в ___.",
+        "base": "маши́на",
+        "answers": [
+            "машине"
+        ],
+        "hint": "Feminine (машина → машине)",
+        "translation": "The dog is in the car.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Он рабо́тает в ___.",
+        "base": "шко́ла",
+        "answers": [
+            "школе"
+        ],
+        "hint": "Feminine (школа → школе)",
+        "translation": "He works at a school.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я чита́ю о ___.",
+        "base": "война́",
+        "answers": [
+            "войне"
+        ],
+        "hint": "Feminine (война → войне)",
+        "translation": "I am reading about the war.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Ко́шка сиди́т на ___.",
+        "base": "дива́н",
+        "answers": [
+            "диване"
+        ],
+        "hint": "Masculine (диван → диване)",
+        "translation": "The cat is sitting on the sofa.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы говори́м о ___.",
+        "base": "фильм",
+        "answers": [
+            "фильме"
+        ],
+        "hint": "Masculine (фильм → фильме)",
+        "translation": "We are talking about the film.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я учу́сь в ___.",
+        "base": "университе́т",
+        "answers": [
+            "университете"
+        ],
+        "hint": "Masculine (университет → университете)",
+        "translation": "I study at the university.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Пти́ца на ___.",
+        "base": "де́рево",
+        "answers": [
+            "дереве"
+        ],
+        "hint": "Neuter (дерево → дереве)",
+        "translation": "The bird is on the tree.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Она́ мечта́ет о ___.",
+        "base": "путеше́ствие",
+        "answers": [
+            "путешествии"
+        ],
+        "hint": "Neuter -ие (путешествие → путешествии)",
+        "translation": "She dreams about a journey.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Де́ти игра́ют в ___.",
+        "base": "парк",
+        "answers": [
+            "парке"
+        ],
+        "hint": "Masculine (парк → парке)",
+        "translation": "The children are playing in the park.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Письмо́ лежи́т в ___.",
+        "base": "су́мка",
+        "answers": [
+            "сумке"
+        ],
+        "hint": "Feminine (сумка → сумке)",
+        "translation": "The letter is in the bag.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Мы говори́ли о ___.",
+        "base": "мать",
+        "answers": [
+            "матери"
+        ],
+        "hint": "Feminine irregular (мать → матери)",
+        "translation": "We talked about mother.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Я живу́ в ___.",
+        "base": "Росси́я",
+        "answers": [
+            "России",
+            "россии"
+        ],
+        "hint": "Feminine -ия (Россия → России)",
+        "translation": "I live in Russia.",
+        "topic": "prepositional"
+    },
+    {
+        "text": "Здесь краси́вые ___.",
+        "base": "парк",
+        "answers": [
+            "парки"
+        ],
+        "hint": "Masculine (парк → парки)",
+        "translation": "Here are beautiful parks.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "В го́роде но́вые ___.",
+        "base": "дом",
+        "answers": [
+            "дома"
+        ],
+        "hint": "Masculine irregular (дом → дома)",
+        "translation": "In the city there are new houses.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "У меня́ есть хоро́шие ___.",
+        "base": "друг",
+        "answers": [
+            "друзья"
+        ],
+        "hint": "Masculine irregular (друг → друзья)",
+        "translation": "I have good friends.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "Мои́ ___ живу́т здесь.",
+        "base": "брат",
+        "answers": [
+            "братья"
+        ],
+        "hint": "Masculine irregular (брат → братья)",
+        "translation": "My brothers live here.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "На столе́ лежа́т ___.",
+        "base": "кни́га",
+        "answers": [
+            "книги"
+        ],
+        "hint": "Feminine (книга → книги)",
+        "translation": "There are books on the table.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "В кла́ссе но́вые ___.",
+        "base": "студе́нт",
+        "answers": [
+            "студенты"
+        ],
+        "hint": "Masculine (студент → студенты)",
+        "translation": "There are new students in the class.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "Э́ти ___ о́чень дороги́е.",
+        "base": "маши́на",
+        "answers": [
+            "машины"
+        ],
+        "hint": "Feminine (машина → машины)",
+        "translation": "These cars are very expensive.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "В саду́ расту́т ___.",
+        "base": "де́рево",
+        "answers": [
+            "деревья"
+        ],
+        "hint": "Neuter irregular (дерево → деревья)",
+        "translation": "Trees grow in the garden.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "___ в до́ме больши́е.",
+        "base": "окно́",
+        "answers": [
+            "окна"
+        ],
+        "hint": "Neuter (окно → окна)",
+        "translation": "The windows in the house are big.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "Мои́ ___ о́чень до́брые.",
+        "base": "сестра́",
+        "answers": [
+            "сестры"
+        ],
+        "hint": "Feminine irregular (сестра → сёстры)",
+        "translation": "My sisters are very kind.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "Здесь живу́т ___.",
+        "base": "врач",
+        "answers": [
+            "врачи"
+        ],
+        "hint": "Masculine (врач → врачи)",
+        "translation": "Doctors live here.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "На у́лице игра́ют ___.",
+        "base": "ребёнок",
+        "answers": [
+            "дети"
+        ],
+        "hint": "Suppletive (ребёнок → дети)",
+        "translation": "Children are playing outside.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "___ прове́рили рабо́ты.",
+        "base": "учи́тель",
+        "answers": [
+            "учителя"
+        ],
+        "hint": "Masculine irregular (учитель → учителя)",
+        "translation": "The teachers checked the work.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "В ко́мнате но́вые ___.",
+        "base": "стул",
+        "answers": [
+            "стулья"
+        ],
+        "hint": "Masculine irregular (стул → стулья)",
+        "translation": "There are new chairs in the room.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "На не́бе я́ркие ___.",
+        "base": "звезда́",
+        "answers": [
+            "звезды"
+        ],
+        "hint": "Feminine (звезда → звёзды)",
+        "translation": "There are bright stars in the sky.",
+        "topic": "nominative-plural"
+    },
+    {
+        "text": "В библиоте́ке мно́го ___.",
+        "base": "кни́га",
+        "answers": [
+            "книг"
+        ],
+        "hint": "Feminine zero ending (книга → книг)",
+        "translation": "There are many books in the library.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "У меня́ пять ___.",
+        "base": "рубль",
+        "answers": [
+            "рублей"
+        ],
+        "hint": "Masculine -ей (рубль → рублей)",
+        "translation": "I have five rubles.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "В го́роде мно́го ___.",
+        "base": "тури́ст",
+        "answers": [
+            "туристов"
+        ],
+        "hint": "Masculine -ов (турист → туристов)",
+        "translation": "There are many tourists in the city.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "У неё нет ___.",
+        "base": "де́ньги",
+        "answers": [
+            "денег"
+        ],
+        "hint": "Plurale tantum (деньги → денег)",
+        "translation": "She has no money.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "В кла́ссе мно́го ___.",
+        "base": "студе́нт",
+        "answers": [
+            "студентов"
+        ],
+        "hint": "Masculine -ов (студент → студентов)",
+        "translation": "There are many students in the class.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "Здесь нет ___.",
+        "base": "магази́н",
+        "answers": [
+            "магазинов"
+        ],
+        "hint": "Masculine -ов (магазин → магазинов)",
+        "translation": "There are no shops here.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "В зоопа́рке мно́го ___.",
+        "base": "зверь",
+        "answers": [
+            "зверей"
+        ],
+        "hint": "Masculine -ей (зверь → зверей)",
+        "translation": "There are many animals in the zoo.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "У меня́ мно́го ___.",
+        "base": "друг",
+        "answers": [
+            "друзей"
+        ],
+        "hint": "Masculine -ей (друг → друзей)",
+        "translation": "I have many friends.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "На у́лице мно́го ___.",
+        "base": "маши́на",
+        "answers": [
+            "машин"
+        ],
+        "hint": "Feminine zero ending (машина → машин)",
+        "translation": "There are many cars on the street.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "В па́рке мно́го ___.",
+        "base": "де́рево",
+        "answers": [
+            "деревьев"
+        ],
+        "hint": "Neuter -ев (дерево → деревьев)",
+        "translation": "There are many trees in the park.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "Ско́лько сто́ит килогра́мм ___?",
+        "base": "я́блоко",
+        "answers": [
+            "яблок"
+        ],
+        "hint": "Neuter zero ending (яблоко → яблок)",
+        "translation": "How much does a kilogram of apples cost?",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "У нас мно́го ___ сего́дня.",
+        "base": "уро́к",
+        "answers": [
+            "уроков"
+        ],
+        "hint": "Masculine -ов (урок → уроков)",
+        "translation": "We have many lessons today.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "В го́роде нет ___.",
+        "base": "теа́тр",
+        "answers": [
+            "театров"
+        ],
+        "hint": "Masculine -ов (театр → театров)",
+        "translation": "There are no theaters in the city.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "Я купи́л шесть ___.",
+        "base": "яйцо́",
+        "answers": [
+            "яиц"
+        ],
+        "hint": "Neuter zero ending (яйцо → яиц)",
+        "translation": "I bought six eggs.",
+        "topic": "genitive-plural"
+    },
+    {
+        "text": "В до́ме мно́го ___.",
+        "base": "окно́",
+        "answers": [
+            "окон"
+        ],
+        "hint": "Neuter zero ending (окно → окон)",
+        "translation": "There are many windows in the house.",
+        "topic": "genitive-plural"
+    }
+]

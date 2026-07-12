@@ -1,4 +1,4 @@
-import words from "./words.json";
+import words from "./data/words.json";
 
 export interface Word {
     russian: string;

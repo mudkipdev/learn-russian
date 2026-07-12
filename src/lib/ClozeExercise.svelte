@@ -1,16 +1,5 @@
-<script lang="ts">
-    import { onMount, tick } from "svelte";
-    import { base } from "$app/paths";
-    import { browser } from "$app/environment";
-    import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
-    import { normalize, sleep } from "$lib/utils";
-    import { TOPICS, TOPIC_GROUPS } from "$lib/topics";
-    import Reference from "$lib/Reference.svelte";
-    import StressText from "$lib/StressText.svelte";
-    import Keyboard from "$lib/Keyboard.svelte";
-    import cloze from "$lib/cloze.json";
-
-    interface ClozeItem {
+<script module lang="ts">
+    export interface ClozeItem {
         text: string;
         base: string;
         answers: string[];
@@ -18,36 +7,57 @@
         translation: string;
         topic: string;
     }
+</script>
 
-    const ITEMS: ClozeItem[] = cloze;
+<script lang="ts">
+    import { onMount, tick, type Snippet } from "svelte";
+    import { base } from "$app/paths";
+    import { browser } from "$app/environment";
+    import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
+    import { normalize, sleep } from "$lib/utils";
+    import type { TopicGroup } from "$lib/topics";
+    import StressText from "$lib/StressText.svelte";
+    import Keyboard from "$lib/Keyboard.svelte";
+
+    let {
+        items,
+        topicGroups,
+        defaultTopics,
+        storagePrefix,
+        title,
+        placeholder,
+        groupNoun,
+        reference,
+    }: {
+        items: ClozeItem[];
+        topicGroups: TopicGroup[];
+        defaultTopics: string[];
+        storagePrefix: string;
+        title: string;
+        placeholder: string;
+        groupNoun: string;
+        reference: Snippet;
+    } = $props();
+
+    const topics = $derived(topicGroups.flatMap((group) => group.topics));
+
     const RECENT_LIMIT = 10;
-    const TOPICS_STORAGE_KEY = "cloze-topics";
-    const STRESS_STORAGE_KEY = "cloze-stress";
-    const DEFAULT_TOPICS = ["type1", "type2", "type1b"];
-
-    function loadEnabledTopics(): string[] {
-        if (!browser) return DEFAULT_TOPICS;
-        try {
-            const saved: string[] = JSON.parse(localStorage.getItem(TOPICS_STORAGE_KEY) ?? "[]");
-            const valid = saved.filter((key) => TOPICS.some((topic) => topic.key === key));
-            return valid.length ? valid : DEFAULT_TOPICS;
-        } catch {
-            return DEFAULT_TOPICS;
-        }
-    }
-
-    let item = $state<ClozeItem | null>(null);
-    let feedback = $state<{ good: boolean } | null>(null);
-    let streak = $state(0);
-    let correctCount = $state(0);
-    let totalCount = $state(0);
-    let awaiting = $state(false);
-    let answer = $state("");
-    let hint = $state("");
-    let shake = $state(false);
     // Rows shown in the history panel; the list is clipped, not scrolled.
     const HISTORY_LIMIT = 10;
-    const HISTORY_STORAGE_KEY = "cloze-history";
+    const TOPICS_STORAGE_KEY = $derived(`${storagePrefix}-topics`);
+    const STRESS_STORAGE_KEY = $derived(`${storagePrefix}-stress`);
+    const HISTORY_STORAGE_KEY = $derived(`${storagePrefix}-history`);
+
+    function loadEnabledTopics(): string[] {
+        if (!browser) return defaultTopics;
+        try {
+            const saved: string[] = JSON.parse(localStorage.getItem(TOPICS_STORAGE_KEY) ?? "[]");
+            const valid = saved.filter((key) => topics.some((topic) => topic.key === key));
+            return valid.length ? valid : defaultTopics;
+        } catch {
+            return defaultTopics;
+        }
+    }
 
     interface HistoryEntry {
         typed: string;
@@ -66,9 +76,22 @@
         }
     }
 
+    function loadStress(): boolean {
+        return browser ? localStorage.getItem(STRESS_STORAGE_KEY) !== "false" : true;
+    }
+
+    let item = $state<ClozeItem | null>(null);
+    let feedback = $state<{ good: boolean } | null>(null);
+    let streak = $state(0);
+    let correctCount = $state(0);
+    let totalCount = $state(0);
+    let awaiting = $state(false);
+    let answer = $state("");
+    let hint = $state("");
+    let shake = $state(false);
     let history = $state(loadHistory());
     let enabledTopics = $state(loadEnabledTopics());
-    let showStress = $state(browser ? localStorage.getItem(STRESS_STORAGE_KEY) !== "false" : true);
+    let showStress = $state(loadStress());
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
@@ -86,9 +109,9 @@
     const accuracy = $derived(totalCount ? Math.round((correctCount / totalCount) * 100) + "%" : "-");
     const displayText = $derived.by(() => {
         if (!item) return "";
-        return showStress ? item.text : item.text.replaceAll("\u0301", "");
+        return showStress ? item.text : item.text.replaceAll("́", "");
     });
-    const displayBase = $derived(item ? (showStress ? item.base : item.base.replaceAll("\u0301", "")) : "");
+    const displayBase = $derived(item ? (showStress ? item.base : item.base.replaceAll("́", "")) : "");
     const parts = $derived(displayText ? displayText.split("___") : ["", ""]);
     const maskedHint = $derived.by(() => {
         if (!item) return "";
@@ -101,13 +124,13 @@
     const taskBadges = $derived.by(() => {
         if (!item) return [];
         const current = item;
-        const topicLabel = TOPICS.find((topic) => topic.key === current.topic)?.label ?? "";
+        const topicLabel = topics.find((topic) => topic.key === current.topic)?.label ?? "";
         const groupLabel =
-            TOPIC_GROUPS.find((group) => group.topics.some((topic) => topic.key === current.topic))?.label ?? "";
-        const tense = `${groupLabel} tense`;
-        return topicLabel.toLowerCase().includes(groupLabel.toLowerCase()) ? [topicLabel] : [topicLabel, tense];
+            topicGroups.find((group) => group.topics.some((topic) => topic.key === current.topic))?.label ?? "";
+        const groupBadge = groupNoun ? `${groupLabel} ${groupNoun}` : groupLabel;
+        return topicLabel.toLowerCase().includes(groupLabel.toLowerCase()) ? [topicLabel] : [topicLabel, groupBadge];
     });
-    const activeItems = $derived(ITEMS.filter((entry) => enabledTopics.includes(entry.topic)));
+    const activeItems = $derived(items.filter((entry) => enabledTopics.includes(entry.topic)));
 
     let recentTexts: string[] = [];
     // Missed items, requeued to reappear a few rounds later.
@@ -192,7 +215,7 @@
 {/snippet}
 
 <svelte:head>
-    <title>Grammar Cloze</title>
+    <title>{title}</title>
 </svelte:head>
 
 <svelte:window
@@ -219,7 +242,7 @@
             </aside>
             <aside class="rounded-lg border border-line bg-surface p-6 text-left xl:flex-1">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">Settings</h2>
-                {#each TOPIC_GROUPS as group}
+                {#each topicGroups as group}
                     <div class="mb-5 last:mb-0">
                         <div class="mb-2 text-[0.8rem] text-muted">{group.label}</div>
                         <div class="flex flex-wrap gap-2">
@@ -323,7 +346,7 @@
                     autocomplete="off"
                     autocapitalize="off"
                     spellcheck="false"
-                    placeholder="Type the missing verb form"
+                    {placeholder}
                     disabled={!awaiting}
                     class:shake
                     class="w-full rounded-md border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
@@ -369,7 +392,7 @@
         >
             <div class="p-8 xl:absolute xl:inset-0 xl:overflow-y-auto">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">Grammar Reference</h2>
-                <Reference />
+                {@render reference()}
             </div>
         </div>
     </div>

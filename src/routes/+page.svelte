@@ -1,6 +1,6 @@
 <script lang="ts">
     import { base } from "$app/paths";
-    import { Icon, Bolt, PencilSquare, type IconSource } from "svelte-hero-icons";
+    import { Icon, Bolt, PencilSquare, TableCells, Swatch, type IconSource } from "svelte-hero-icons";
 
     const exercises: { href: string; icon: IconSource; title: string; description: string }[] = [
         {
@@ -10,10 +10,22 @@
             description: "Read a briefly flashed Russian word, then type its English cognate.",
         },
         {
-            href: "/cloze",
+            href: "/verbs",
             icon: PencilSquare,
-            title: "Grammar Cloze",
-            description: "Fill in the correct verb form. Choose which grammar topics to practice.",
+            title: "Verb Conjugation",
+            description: "Fill in the correct verb form.",
+        },
+        {
+            href: "/nouns",
+            icon: TableCells,
+            title: "Noun Declension",
+            description: "Fill in the correct noun case.",
+        },
+        {
+            href: "/adjectives",
+            icon: Swatch,
+            title: "Adjective Agreement",
+            description: "Fill in the agreeing adjective.",
         },
     ];
 </script>
@@ -24,14 +36,16 @@
 
 <main class="w-[min(92vw,720px)]">
     <div class="rounded-lg border border-line bg-surface p-6">
-        <div class="flex flex-col gap-4">
+        <div class="grid auto-rows-fr gap-4">
             {#each exercises as exercise}
                 <a
                     href="{base}{exercise.href}"
-                    class="flex items-center gap-4 rounded-md border border-line px-6 py-5 transition-colors hover:border-accent"
+                    class="exercise flex items-center gap-4 rounded-md border border-line px-6 py-5 transition-colors hover:bg-black/10"
                 >
-                    <div class="flex size-12 shrink-0 items-center justify-center rounded-md border border-line bg-bg">
-                        <Icon src={exercise.icon} size="20" mini />
+                    <div
+                        class="color flex size-12 shrink-0 items-center justify-center rounded-lg border border-red-400/25 bg-red-600/20 text-red-300"
+                    >
+                        <Icon src={exercise.icon} size="24" mini />
                     </div>
                     <div>
                         <div class="font-semibold">{exercise.title}</div>
@@ -42,3 +56,21 @@
         </div>
     </div>
 </main>
+
+<style>
+    .exercise:nth-child(4n + 1) .color {
+        filter: hue-rotate(10deg);
+    }
+
+    .exercise:nth-child(4n + 2) .color {
+        filter: hue-rotate(40deg);
+    }
+
+    .exercise:nth-child(4n + 3) .color {
+        filter: hue-rotate(70deg);
+    }
+
+    .exercise:nth-child(4n + 4) .color {
+        filter: hue-rotate(100deg);
+    }
+</style>
