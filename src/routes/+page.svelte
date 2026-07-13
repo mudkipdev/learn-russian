@@ -42,15 +42,15 @@
 </svelte:head>
 
 <main class="w-[min(92vw,720px)]">
-    <div class="border border-line bg-surface p-6">
+    <div class="rounded-lg border border-line bg-surface p-6">
         <div class="grid auto-rows-fr gap-4">
             {#each exercises as exercise}
                 <a
                     href={resolve(exercise.href)}
-                    class="exercise flex items-center gap-4 border border-line px-6 py-5 hover:bg-black/10"
+                    class="exercise flex items-center gap-4 rounded-md border border-line px-6 py-5 hover:bg-black/10"
                 >
                     <div
-                        class="color flex size-12 shrink-0 items-center justify-center border border-red-400/25 bg-red-600/20 text-red-300"
+                        class="color flex size-12 shrink-0 items-center justify-center rounded-lg border border-red-400/25 bg-red-600/20 text-red-300"
                     >
                         <Icon src={exercise.icon} size="24" mini />
                     </div>

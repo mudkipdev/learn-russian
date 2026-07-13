@@ -151,7 +151,7 @@
     </a>
     <div class="grid items-start gap-4 lg:grid-cols-[340px_1fr] xl:grid-cols-[1fr_560px_1fr]">
         <div class="space-y-4">
-            <aside class="border border-line bg-surface p-6">
+            <aside class="rounded-lg border border-line bg-surface p-6">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">Stats</h2>
                 <div class="space-y-2">
                     {@render stat("Streak", streak)}
@@ -159,7 +159,7 @@
                     {@render stat("Best", bestText)}
                 </div>
             </aside>
-            <aside class="border border-line bg-surface p-6">
+            <aside class="rounded-lg border border-line bg-surface p-6">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">History</h2>
                 <div class="h-72 overflow-hidden">
                     {#if history.length === 0}
@@ -183,11 +183,11 @@
                 </div>
             </aside>
         </div>
-        <div class="relative border border-line bg-surface p-12 text-center">
+        <div class="relative rounded-lg border border-line bg-surface p-12 text-center">
             {#if !started}
-                <div class="absolute inset-0 z-10 flex items-center justify-center bg-surface">
+                <div class="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-surface">
                     <button
-                        class="cursor-pointer bg-accent px-[2.2rem] py-[0.7rem] text-base font-normal text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
+                        class="cursor-pointer rounded-md bg-accent px-[2.2rem] py-[0.7rem] text-base font-normal text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
                         onclick={start}
                     >
                         Start
@@ -221,13 +221,13 @@
                     disabled={!awaiting}
                     class:invisible={!started}
                     class:shake
-                    class="w-full border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
+                    class="w-full rounded-md border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
                 />
                 <button
                     class:invisible={!started}
                     disabled={!awaiting}
                     onclick={check}
-                    class="cursor-pointer bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
+                    class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
                 >
                     Submit
                 </button>
