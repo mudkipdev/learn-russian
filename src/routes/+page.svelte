@@ -1,7 +1,7 @@
 <script lang="ts">
     import { resolve } from "$app/paths";
     import type { RouteId } from "$app/types";
-    import { Icon, Bolt, PencilSquare, TableCells, Swatch, type IconSource } from "svelte-hero-icons";
+    import { Icon, Bolt, PencilSquare, TableCells, Swatch, UserGroup, type IconSource } from "svelte-hero-icons";
 
     const exercises: { href: RouteId; icon: IconSource; title: string; description: string }[] = [
         {
@@ -23,11 +23,17 @@
             description: "Fill in the correct noun case.",
         },
         {
+            href: "/pronouns",
+            icon: UserGroup,
+            title: "Pronoun Declension",
+            description: "Fill in the correct personal or possessive pronoun.",
+        },
+        {
             href: "/adjectives",
             icon: Swatch,
             title: "Adjective Agreement",
             description: "Fill in the agreeing adjective.",
-        },
+        }
     ];
 </script>
 
@@ -41,7 +47,7 @@
             {#each exercises as exercise}
                 <a
                     href={resolve(exercise.href)}
-                    class="exercise flex items-center gap-4 border border-line px-6 py-5 transition-colors hover:bg-black/10"
+                    class="exercise flex items-center gap-4 border border-line px-6 py-5 hover:bg-black/10"
                 >
                     <div
                         class="color flex size-12 shrink-0 items-center justify-center border border-red-400/25 bg-red-600/20 text-red-300"
@@ -64,14 +70,18 @@
     }
 
     .exercise:nth-child(4n + 2) .color {
-        filter: hue-rotate(40deg);
+        filter: hue-rotate(45deg);
     }
 
     .exercise:nth-child(4n + 3) .color {
-        filter: hue-rotate(70deg);
+        filter: hue-rotate(65deg);
     }
 
     .exercise:nth-child(4n + 4) .color {
-        filter: hue-rotate(100deg);
+        filter: hue-rotate(110deg);
+    }
+
+    .exercise:nth-child(4n + 5) .color {
+        filter: hue-rotate(190deg);
     }
 </style>

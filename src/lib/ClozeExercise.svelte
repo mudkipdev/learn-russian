@@ -6,11 +6,13 @@
         hint: string;
         translation: string;
         topic: string;
+        // Optional explicit chips; when absent they are derived from the topic taxonomy.
+        badges?: string[];
     }
 </script>
 
 <script lang="ts">
-    import { onMount, tick, type Snippet } from "svelte";
+    import { tick, type Snippet } from "svelte";
     import { resolve } from "$app/paths";
     import { browser } from "$app/environment";
     import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
@@ -28,6 +30,8 @@
         placeholder,
         groupNoun,
         reference,
+        filterGroups,
+        defaultFilters,
     }: {
         items: ClozeItem[];
         topicGroups: TopicGroup[];
@@ -37,6 +41,9 @@
         placeholder: string;
         groupNoun: string;
         reference: Snippet;
+        // Optional second selection axis matched against each item's badges (e.g. case).
+        filterGroups?: TopicGroup[];
+        defaultFilters?: string[];
     } = $props();
 
     const topics = $derived(topicGroups.flatMap((group) => group.topics));
@@ -47,6 +54,7 @@
     const TOPICS_STORAGE_KEY = $derived(`${storagePrefix}-topics`);
     const STRESS_STORAGE_KEY = $derived(`${storagePrefix}-stress`);
     const HISTORY_STORAGE_KEY = $derived(`${storagePrefix}-history`);
+    const FILTERS_STORAGE_KEY = $derived(`${storagePrefix}-filters`);
 
     function loadEnabledTopics(): string[] {
         if (!browser) return defaultTopics;
@@ -56,6 +64,20 @@
             return valid.length ? valid : defaultTopics;
         } catch {
             return defaultTopics;
+        }
+    }
+
+    function loadEnabledFilters(): string[] {
+        if (!filterGroups) return [];
+        const all = filterGroups.flatMap((group) => group.topics).map((topic) => topic.key);
+        const fallback = defaultFilters ?? all;
+        if (!browser) return fallback;
+        try {
+            const saved: string[] = JSON.parse(localStorage.getItem(FILTERS_STORAGE_KEY) ?? "[]");
+            const valid = saved.filter((key) => all.includes(key));
+            return valid.length ? valid : fallback;
+        } catch {
+            return fallback;
         }
     }
 
@@ -91,11 +113,16 @@
     let shake = $state(false);
     let history = $state(loadHistory());
     let enabledTopics = $state(loadEnabledTopics());
+    let enabledFilters = $state(loadEnabledFilters());
     let showStress = $state(loadStress());
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
         localStorage.setItem(TOPICS_STORAGE_KEY, JSON.stringify(enabledTopics));
+    });
+
+    $effect(() => {
+        if (filterGroups) localStorage.setItem(FILTERS_STORAGE_KEY, JSON.stringify(enabledFilters));
     });
 
     $effect(() => {
@@ -124,13 +151,21 @@
     const taskBadges = $derived.by(() => {
         if (!item) return [];
         const current = item;
+        if (current.badges) return current.badges;
         const topicLabel = topics.find((topic) => topic.key === current.topic)?.label ?? "";
         const groupLabel =
             topicGroups.find((group) => group.topics.some((topic) => topic.key === current.topic))?.label ?? "";
         const groupBadge = groupNoun ? `${groupLabel} ${groupNoun}` : groupLabel;
         return topicLabel.toLowerCase().includes(groupLabel.toLowerCase()) ? [topicLabel] : [topicLabel, groupBadge];
     });
-    const activeItems = $derived(items.filter((entry) => enabledTopics.includes(entry.topic)));
+    const activeItems = $derived(
+        items.filter(
+            (entry) =>
+                enabledTopics.includes(entry.topic) &&
+                (!filterGroups || (entry.badges != null && entry.badges.some((badge) => enabledFilters.includes(badge)))),
+        ),
+    );
+    const noItems = $derived(activeItems.length === 0);
 
     let recentTexts: string[] = [];
     // Missed items, requeued to reappear a few rounds later.
@@ -144,10 +179,18 @@
         }
     }
 
+    function toggleFilter(key: string) {
+        if (enabledFilters.includes(key)) {
+            if (enabledFilters.length > 1) enabledFilters = enabledFilters.filter((filter) => filter !== key);
+        } else {
+            enabledFilters = [...enabledFilters, key];
+        }
+    }
+
     function pickItem(): ClozeItem {
         // A missed item that has waited long enough comes back for another try.
         for (const entry of retryQueue) entry.due--;
-        const readyIndex = retryQueue.findIndex((entry) => entry.due <= 0 && enabledTopics.includes(entry.item.topic));
+        const readyIndex = retryQueue.findIndex((entry) => entry.due <= 0 && activeItems.includes(entry.item));
         if (readyIndex !== -1) return retryQueue.splice(readyIndex, 1)[0].item;
 
         let next;
@@ -162,6 +205,12 @@
     async function nextRound(delay: number) {
         awaiting = false;
         await sleep(delay);
+        if (activeItems.length === 0) {
+            item = null;
+            feedback = null;
+            hint = "";
+            return;
+        }
         item = pickItem();
         feedback = null;
         hint = "";
@@ -202,8 +251,9 @@
         if (feedback) nextRound(0);
     }
 
-    onMount(() => {
-        nextRound(0);
+    // Start the first round on load, and resume whenever an empty selection becomes non-empty again.
+    $effect(() => {
+        if (activeItems.length > 0 && !item && !awaiting && !feedback) nextRound(0);
     });
 </script>
 
@@ -230,8 +280,8 @@
         <Icon src={ArrowLeft} size="16" mini />
         Back
     </a>
-    <div class="grid items-start gap-4 lg:grid-cols-[340px_1fr] xl:grid-cols-[1fr_640px_1fr]">
-        <div class="flex flex-col gap-4 xl:col-start-1 xl:row-start-1 xl:self-stretch">
+    <div class="grid gap-4 lg:grid-cols-[340px_1fr] xl:h-[calc(100dvh-6rem)] xl:grid-cols-[1fr_640px_1fr]">
+        <div class="flex flex-col gap-4 xl:min-h-0 xl:overflow-hidden">
             <aside class="border border-line bg-surface p-6 text-left">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">Stats</h2>
                 <div class="space-y-2">
@@ -240,7 +290,7 @@
                     {@render stat("Correct", `${correctCount} / ${totalCount}`)}
                 </div>
             </aside>
-            <aside class="border border-line bg-surface p-6 text-left xl:flex-1">
+            <aside class="border border-line bg-surface p-6 text-left">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">Settings</h2>
                 {#each topicGroups as group}
                     <div class="mb-5 last:mb-0">
@@ -261,6 +311,27 @@
                         </div>
                     </div>
                 {/each}
+                {#if filterGroups}
+                    {#each filterGroups as group}
+                        <div class="mb-5 last:mb-0">
+                            <div class="mb-2 text-[0.8rem] text-muted">{group.label}</div>
+                            <div class="flex flex-wrap gap-2">
+                                {#each group.topics as topic}
+                                    <button
+                                        class="cursor-pointer px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {enabledFilters.includes(
+                                            topic.key,
+                                        )
+                                            ? 'bg-fg/20 text-fg'
+                                            : 'bg-fg/10 text-muted'} hover:scale-105"
+                                        onclick={() => toggleFilter(topic.key)}
+                                    >
+                                        {topic.label}
+                                    </button>
+                                {/each}
+                            </div>
+                        </div>
+                    {/each}
+                {/if}
                 <div class="mt-5">
                     <div class="mb-2 text-[0.8rem] text-muted">Display</div>
                     <button
@@ -273,12 +344,9 @@
                     </button>
                 </div>
             </aside>
-        </div>
-        <aside
-            class="border border-line bg-surface p-6 text-left xl:col-start-1 xl:row-start-2 xl:self-stretch"
-        >
-            <h2 class="mb-4 text-[0.95rem] font-semibold">History</h2>
-            <div class="h-72 overflow-hidden">
+            <aside class="flex flex-col border border-line bg-surface p-6 text-left xl:min-h-0 xl:flex-1">
+                <h2 class="mb-4 text-[0.95rem] font-semibold">History</h2>
+                <div class="h-72 overflow-y-auto xl:h-auto xl:min-h-0 xl:flex-1">
                 {#if history.length === 0}
                     <p class="text-[0.85rem] text-muted">Your answers will appear here.</p>
                 {:else}
@@ -297,11 +365,11 @@
                         {/each}
                     </ul>
                 {/if}
-            </div>
-        </aside>
-        <div
-            class="relative border border-line bg-surface p-12 text-center xl:col-start-2 xl:row-start-1 xl:flex xl:flex-col xl:justify-center xl:self-stretch"
-        >
+                </div>
+            </aside>
+        </div>
+        <div class="flex flex-col gap-4 xl:min-h-0">
+        <div class="relative border border-line bg-surface p-12 text-center xl:flex xl:flex-1 xl:flex-col xl:justify-center">
             <div
                 class="mb-2 flex min-h-28 items-center justify-center text-[1.8rem] font-medium leading-snug select-none"
             >
@@ -315,6 +383,8 @@
                                 ></span></span
                             >{/if}<StressText text={parts[1]} />
                     </span>
+                {:else if noItems}
+                    <span class="text-[1.1rem] text-muted">No cards match the current selection.</span>
                 {/if}
             </div>
             <hr class="mb-6 border-line" />
@@ -332,47 +402,51 @@
                 {#if item}{feedback ? item.hint : maskedHint}{/if}
             </div>
             <div class="flex flex-col items-center gap-4">
-                <input
-                    bind:this={input}
-                    bind:value={answer}
-                    onkeydown={(event) => {
-                        if (event.key === "Enter") {
-                            event.stopPropagation();
-                            check();
-                        }
-                    }}
-                    onanimationend={() => (shake = false)}
-                    type="text"
-                    autocomplete="off"
-                    autocapitalize="off"
-                    spellcheck="false"
-                    {placeholder}
-                    disabled={!awaiting}
-                    class:shake
-                    class="w-full border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
-                />
-                {#if feedback}
-                    <button
-                        onclick={next}
-                        class="cursor-pointer bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
-                    >
-                        Next
-                    </button>
+                {#if noItems}
+                    <p class="text-[0.9rem] text-muted">Enable more options in Settings to continue.</p>
                 {:else}
-                    <button
+                    <input
+                        bind:this={input}
+                        bind:value={answer}
+                        onkeydown={(event) => {
+                            if (event.key === "Enter") {
+                                event.stopPropagation();
+                                check();
+                            }
+                        }}
+                        onanimationend={() => (shake = false)}
+                        type="text"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                        {placeholder}
                         disabled={!awaiting}
-                        onclick={check}
-                        class="cursor-pointer bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
-                    >
-                        Submit
-                    </button>
+                        class:shake
+                        class="w-full border border-line bg-bg px-4 py-[0.8rem] text-center text-[1.25rem] text-fg transition-colors outline-none focus:border-accent disabled:opacity-40"
+                    />
+                    {#if feedback}
+                        <button
+                            onclick={next}
+                            class="cursor-pointer bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
+                        >
+                            Next
+                        </button>
+                    {:else}
+                        <button
+                            disabled={!awaiting}
+                            onclick={check}
+                            class="cursor-pointer bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 disabled:opacity-40"
+                        >
+                            Submit
+                        </button>
+                    {/if}
                 {/if}
             </div>
             <div class="mt-5 min-h-[3em] text-[0.9rem] text-muted">
                 {hint}
             </div>
         </div>
-        <div class="border border-line bg-surface p-6 xl:col-start-2 xl:row-start-2 xl:self-stretch">
+        <div class="border border-line bg-surface p-6">
             <h2 class="mb-4 text-left text-[0.95rem] font-semibold">Keyboard</h2>
             <Keyboard
                 onkey={(letter) => {
@@ -387,9 +461,8 @@
                 }}
             />
         </div>
-        <div
-            class="relative border border-line bg-surface text-left lg:col-span-2 xl:col-span-1 xl:col-start-3 xl:row-span-2 xl:row-start-1 xl:self-stretch"
-        >
+        </div>
+        <div class="relative border border-line bg-surface text-left lg:col-span-2 xl:col-span-1 xl:min-h-0">
             <div class="p-8 xl:absolute xl:inset-0 xl:overflow-y-auto">
                 <h2 class="mb-4 text-[0.95rem] font-semibold">Grammar Reference</h2>
                 {@render reference()}

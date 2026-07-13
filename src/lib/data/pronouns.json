@@ -1,0 +1,1861 @@
+[
+    {
+        "text": "Он ча́сто ви́дит ___.",
+        "base": "я",
+        "answers": [
+            "меня"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "He often sees me.",
+        "topic": "ya"
+    },
+    {
+        "text": "Ты понима́ешь ___?",
+        "base": "я",
+        "answers": [
+            "меня"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "Do you understand me?",
+        "topic": "ya"
+    },
+    {
+        "text": "У ___ есть соба́ка.",
+        "base": "я",
+        "answers": [
+            "меня"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "I have a dog.",
+        "topic": "ya"
+    },
+    {
+        "text": "Э́то фо́то без ___.",
+        "base": "я",
+        "answers": [
+            "меня"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "This photo is without me.",
+        "topic": "ya"
+    },
+    {
+        "text": "Он дал ___ кни́гу.",
+        "base": "я",
+        "answers": [
+            "мне"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "He gave me a book.",
+        "topic": "ya"
+    },
+    {
+        "text": "Позвони́ ___ за́втра.",
+        "base": "я",
+        "answers": [
+            "мне"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "Call me tomorrow.",
+        "topic": "ya"
+    },
+    {
+        "text": "Он сиди́т ря́дом со ___.",
+        "base": "я",
+        "answers": [
+            "мной"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "He sits next to me.",
+        "topic": "ya"
+    },
+    {
+        "text": "Ты пойдёшь со ___?",
+        "base": "я",
+        "answers": [
+            "мной"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "Will you go with me?",
+        "topic": "ya"
+    },
+    {
+        "text": "Он ду́мает обо ___.",
+        "base": "я",
+        "answers": [
+            "мне"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "He thinks about me.",
+        "topic": "ya"
+    },
+    {
+        "text": "Они́ говоря́т о ___.",
+        "base": "я",
+        "answers": [
+            "мне"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "They talk about me.",
+        "topic": "ya"
+    },
+    {
+        "text": "Я люблю́ ___.",
+        "base": "ты",
+        "answers": [
+            "тебя"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I love you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Он ждёт ___.",
+        "base": "ты",
+        "answers": [
+            "тебя"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "He is waiting for you.",
+        "topic": "ty"
+    },
+    {
+        "text": "У ___ есть вре́мя?",
+        "base": "ты",
+        "answers": [
+            "тебя"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Do you have time?",
+        "topic": "ty"
+    },
+    {
+        "text": "Э́то пода́рок для ___.",
+        "base": "ты",
+        "answers": [
+            "тебя"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "This is a gift for you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Я дам ___ де́ньги.",
+        "base": "ты",
+        "answers": [
+            "тебе"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I will give you money.",
+        "topic": "ty"
+    },
+    {
+        "text": "Ему́ ну́жно помо́чь ___.",
+        "base": "ты",
+        "answers": [
+            "тебе"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "He needs to help you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Я хочу́ пойти́ с ___.",
+        "base": "ты",
+        "answers": [
+            "тобой"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I want to go with you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Она́ сиди́т за ___.",
+        "base": "ты",
+        "answers": [
+            "тобой"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "She sits behind you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Я ду́маю о ___.",
+        "base": "ты",
+        "answers": [
+            "тебе"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "I think about you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Мы говори́ли о ___.",
+        "base": "ты",
+        "answers": [
+            "тебе"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We talked about you.",
+        "topic": "ty"
+    },
+    {
+        "text": "Они́ ви́дят ___.",
+        "base": "мы",
+        "answers": [
+            "нас"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "They see us.",
+        "topic": "my"
+    },
+    {
+        "text": "Учи́тель спра́шивает ___.",
+        "base": "мы",
+        "answers": [
+            "нас"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "The teacher asks us.",
+        "topic": "my"
+    },
+    {
+        "text": "У ___ есть план.",
+        "base": "мы",
+        "answers": [
+            "нас"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "We have a plan.",
+        "topic": "my"
+    },
+    {
+        "text": "Он рабо́тает без ___.",
+        "base": "мы",
+        "answers": [
+            "нас"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "He works without us.",
+        "topic": "my"
+    },
+    {
+        "text": "Она́ дала́ ___ биле́ты.",
+        "base": "мы",
+        "answers": [
+            "нам"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "She gave us tickets.",
+        "topic": "my"
+    },
+    {
+        "text": "Помоги́ ___, пожа́луйста.",
+        "base": "мы",
+        "answers": [
+            "нам"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "Help us, please.",
+        "topic": "my"
+    },
+    {
+        "text": "Пойдём с ___.",
+        "base": "мы",
+        "answers": [
+            "нами"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "Let's go with us.",
+        "topic": "my"
+    },
+    {
+        "text": "Он сиди́т ме́жду ___.",
+        "base": "мы",
+        "answers": [
+            "нами"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "He sits between us.",
+        "topic": "my"
+    },
+    {
+        "text": "Они́ говоря́т о ___.",
+        "base": "мы",
+        "answers": [
+            "нас"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "They talk about us.",
+        "topic": "my"
+    },
+    {
+        "text": "Не забыва́й о ___.",
+        "base": "мы",
+        "answers": [
+            "нас"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "Do not forget about us.",
+        "topic": "my"
+    },
+    {
+        "text": "Я ви́жу ___.",
+        "base": "вы",
+        "answers": [
+            "вас"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I see you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Мы приглаша́ем ___.",
+        "base": "вы",
+        "answers": [
+            "вас"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "We invite you.",
+        "topic": "vy"
+    },
+    {
+        "text": "У ___ есть вопро́сы?",
+        "base": "вы",
+        "answers": [
+            "вас"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Do you have questions?",
+        "topic": "vy"
+    },
+    {
+        "text": "Э́то письмо́ для ___.",
+        "base": "вы",
+        "answers": [
+            "вас"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "This letter is for you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Я покажу́ ___ го́род.",
+        "base": "вы",
+        "answers": [
+            "вам"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I will show you the city.",
+        "topic": "vy"
+    },
+    {
+        "text": "Ему́ на́до позвони́ть ___.",
+        "base": "вы",
+        "answers": [
+            "вам"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "He needs to call you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Мы хоти́м рабо́тать с ___.",
+        "base": "вы",
+        "answers": [
+            "вами"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "We want to work with you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Я стою́ за ___.",
+        "base": "вы",
+        "answers": [
+            "вами"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I stand behind you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Мы ду́маем о ___.",
+        "base": "вы",
+        "answers": [
+            "вас"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We think about you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Они́ говоря́т о ___.",
+        "base": "вы",
+        "answers": [
+            "вас"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "They talk about you.",
+        "topic": "vy"
+    },
+    {
+        "text": "Я хорошо́ зна́ю ___.",
+        "base": "он",
+        "answers": [
+            "его"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I know him well.",
+        "topic": "on"
+    },
+    {
+        "text": "Она́ смо́трит на ___.",
+        "base": "он",
+        "answers": [
+            "него"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "She looks at him.",
+        "topic": "on"
+    },
+    {
+        "text": "У ___ есть маши́на.",
+        "base": "он",
+        "answers": [
+            "него"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "He has a car.",
+        "topic": "on"
+    },
+    {
+        "text": "Сего́дня нет ___.",
+        "base": "он",
+        "answers": [
+            "его"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "He is not here today.",
+        "topic": "on"
+    },
+    {
+        "text": "Я дал ___ кни́гу.",
+        "base": "он",
+        "answers": [
+            "ему"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I gave him a book.",
+        "topic": "on"
+    },
+    {
+        "text": "Мы идём к ___.",
+        "base": "он",
+        "answers": [
+            "нему"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "We are going to him.",
+        "topic": "on"
+    },
+    {
+        "text": "Я говорю́ с ___.",
+        "base": "он",
+        "answers": [
+            "ним"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am speaking with him.",
+        "topic": "on"
+    },
+    {
+        "text": "Она́ горди́тся ___.",
+        "base": "он",
+        "answers": [
+            "им"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "She is proud of him.",
+        "topic": "on"
+    },
+    {
+        "text": "Я ду́маю о ___.",
+        "base": "он",
+        "answers": [
+            "нём"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "I think about him.",
+        "topic": "on"
+    },
+    {
+        "text": "Мы говори́ли о ___.",
+        "base": "он",
+        "answers": [
+            "нём"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We talked about him.",
+        "topic": "on"
+    },
+    {
+        "text": "Я ви́жу ___.",
+        "base": "она́",
+        "answers": [
+            "её"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I see her.",
+        "topic": "ona"
+    },
+    {
+        "text": "Он смо́трит на ___.",
+        "base": "она́",
+        "answers": [
+            "неё"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "He looks at her.",
+        "topic": "ona"
+    },
+    {
+        "text": "У ___ есть кот.",
+        "base": "она́",
+        "answers": [
+            "неё"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "She has a cat.",
+        "topic": "ona"
+    },
+    {
+        "text": "Сего́дня нет ___.",
+        "base": "она́",
+        "answers": [
+            "её"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "She is not here today.",
+        "topic": "ona"
+    },
+    {
+        "text": "Я дал ___ цветы́.",
+        "base": "она́",
+        "answers": [
+            "ей"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I gave her flowers.",
+        "topic": "ona"
+    },
+    {
+        "text": "Мы идём к ___.",
+        "base": "она́",
+        "answers": [
+            "ней"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "We are going to her.",
+        "topic": "ona"
+    },
+    {
+        "text": "Я говорю́ с ___.",
+        "base": "она́",
+        "answers": [
+            "ней"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am speaking with her.",
+        "topic": "ona"
+    },
+    {
+        "text": "Он горди́тся ___.",
+        "base": "она́",
+        "answers": [
+            "ей"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "He is proud of her.",
+        "topic": "ona"
+    },
+    {
+        "text": "Я ду́маю о ___.",
+        "base": "она́",
+        "answers": [
+            "ней"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "I think about her.",
+        "topic": "ona"
+    },
+    {
+        "text": "Мы говори́ли о ___.",
+        "base": "она́",
+        "answers": [
+            "ней"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We talked about her.",
+        "topic": "ona"
+    },
+    {
+        "text": "Письмо́ пришло́. Я прочита́л ___.",
+        "base": "оно́",
+        "answers": [
+            "его"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "The letter came. I read it.",
+        "topic": "ono"
+    },
+    {
+        "text": "Окно́ откры́то. Посмотри́ на ___.",
+        "base": "оно́",
+        "answers": [
+            "него"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "The window is open. Look at it.",
+        "topic": "ono"
+    },
+    {
+        "text": "Э́то зда́ние ста́рое. О́коло ___ есть парк.",
+        "base": "оно́",
+        "answers": [
+            "него"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "This building is old. Near it there is a park.",
+        "topic": "ono"
+    },
+    {
+        "text": "Письмо́ ва́жное, но здесь нет ___.",
+        "base": "оно́",
+        "answers": [
+            "его"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "The letter is important, but it is not here.",
+        "topic": "ono"
+    },
+    {
+        "text": "Письмо́ пришло́. Я рад ___.",
+        "base": "оно́",
+        "answers": [
+            "ему"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "The letter came. I am glad of it.",
+        "topic": "ono"
+    },
+    {
+        "text": "Мо́ре тёплое. Мы идём к ___.",
+        "base": "оно́",
+        "answers": [
+            "нему"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "The sea is warm. We are going to it.",
+        "topic": "ono"
+    },
+    {
+        "text": "Окно́ большо́е. Пе́ред ___ стои́т стол.",
+        "base": "оно́",
+        "answers": [
+            "ним"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "The window is big. In front of it stands a table.",
+        "topic": "ono"
+    },
+    {
+        "text": "Письмо́ хоро́шее. Я дово́лен ___.",
+        "base": "оно́",
+        "answers": [
+            "им"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "The letter is good. I am pleased with it.",
+        "topic": "ono"
+    },
+    {
+        "text": "Э́то окно́. В ___ я ви́жу сад.",
+        "base": "оно́",
+        "answers": [
+            "нём"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "This is a window. In it I see a garden.",
+        "topic": "ono"
+    },
+    {
+        "text": "Письмо́ пришло́. Я ду́маю о ___.",
+        "base": "оно́",
+        "answers": [
+            "нём"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "The letter came. I think about it.",
+        "topic": "ono"
+    },
+    {
+        "text": "Я ча́сто ви́жу ___.",
+        "base": "они́",
+        "answers": [
+            "их"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I often see them.",
+        "topic": "oni"
+    },
+    {
+        "text": "Он смо́трит на ___.",
+        "base": "они́",
+        "answers": [
+            "них"
+        ],
+        "hint": "",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "He looks at them.",
+        "topic": "oni"
+    },
+    {
+        "text": "У ___ есть де́ти.",
+        "base": "они́",
+        "answers": [
+            "них"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "They have children.",
+        "topic": "oni"
+    },
+    {
+        "text": "Сего́дня нет ___.",
+        "base": "они́",
+        "answers": [
+            "их"
+        ],
+        "hint": "",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "They are not here today.",
+        "topic": "oni"
+    },
+    {
+        "text": "Я дал ___ пода́рки.",
+        "base": "они́",
+        "answers": [
+            "им"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I gave them gifts.",
+        "topic": "oni"
+    },
+    {
+        "text": "Мы идём к ___.",
+        "base": "они́",
+        "answers": [
+            "ним"
+        ],
+        "hint": "",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "We are going to them.",
+        "topic": "oni"
+    },
+    {
+        "text": "Я говорю́ с ___.",
+        "base": "они́",
+        "answers": [
+            "ними"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am speaking with them.",
+        "topic": "oni"
+    },
+    {
+        "text": "Он горди́тся ___.",
+        "base": "они́",
+        "answers": [
+            "ими"
+        ],
+        "hint": "",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "He is proud of them.",
+        "topic": "oni"
+    },
+    {
+        "text": "Я ду́маю о ___.",
+        "base": "они́",
+        "answers": [
+            "них"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "I think about them.",
+        "topic": "oni"
+    },
+    {
+        "text": "Мы говори́ли о ___.",
+        "base": "они́",
+        "answers": [
+            "них"
+        ],
+        "hint": "",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We talked about them.",
+        "topic": "oni"
+    },
+    {
+        "text": "Э́то ___ дом.",
+        "base": "мой",
+        "answers": [
+            "мой"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "This is my house.",
+        "topic": "moy"
+    },
+    {
+        "text": "___ маши́на но́вая.",
+        "base": "мой",
+        "answers": [
+            "моя"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "My car is new.",
+        "topic": "moy"
+    },
+    {
+        "text": "Здесь ___ окно́.",
+        "base": "мой",
+        "answers": [
+            "моё"
+        ],
+        "hint": "Neuter",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Here is my window.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я ви́жу ___ сестру́.",
+        "base": "мой",
+        "answers": [
+            "мою"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I see my sister.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я зна́ю ___ бра́та.",
+        "base": "мой",
+        "answers": [
+            "моего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I know my brother.",
+        "topic": "moy"
+    },
+    {
+        "text": "У ___ бра́та есть соба́ка.",
+        "base": "мой",
+        "answers": [
+            "моего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "My brother has a dog.",
+        "topic": "moy"
+    },
+    {
+        "text": "Здесь нет ___ кни́ги.",
+        "base": "мой",
+        "answers": [
+            "моей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "My book is not here.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я дал ___ дру́гу пода́рок.",
+        "base": "мой",
+        "answers": [
+            "моему"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I gave my friend a gift.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я звоню́ ___ сестре́.",
+        "base": "мой",
+        "answers": [
+            "моей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I am calling my sister.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я горжу́сь ___ отцо́м.",
+        "base": "мой",
+        "answers": [
+            "моим"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am proud of my father.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я горжу́сь ___ детьми́.",
+        "base": "мой",
+        "answers": [
+            "моими"
+        ],
+        "hint": "Plural",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am proud of my children.",
+        "topic": "moy"
+    },
+    {
+        "text": "Я ду́маю о ___ бра́те.",
+        "base": "мой",
+        "answers": [
+            "моём"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "I think about my brother.",
+        "topic": "moy"
+    },
+    {
+        "text": "Мы говори́м о ___ семье́.",
+        "base": "мой",
+        "answers": [
+            "моей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We are talking about my family.",
+        "topic": "moy"
+    },
+    {
+        "text": "Э́то ___ дом?",
+        "base": "твой",
+        "answers": [
+            "твой"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Is this your house?",
+        "topic": "tvoy"
+    },
+    {
+        "text": "___ маши́на но́вая.",
+        "base": "твой",
+        "answers": [
+            "твоя"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Your car is new.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Здесь ___ окно́.",
+        "base": "твой",
+        "answers": [
+            "твоё"
+        ],
+        "hint": "Neuter",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Here is your window.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я ви́жу ___ сестру́.",
+        "base": "твой",
+        "answers": [
+            "твою"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I see your sister.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я зна́ю ___ бра́та.",
+        "base": "твой",
+        "answers": [
+            "твоего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I know your brother.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "У ___ бра́та есть соба́ка.",
+        "base": "твой",
+        "answers": [
+            "твоего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Your brother has a dog.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Здесь нет ___ кни́ги.",
+        "base": "твой",
+        "answers": [
+            "твоей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Your book is not here.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я дал ___ дру́гу пода́рок.",
+        "base": "твой",
+        "answers": [
+            "твоему"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I gave your friend a gift.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я звоню́ ___ сестре́.",
+        "base": "твой",
+        "answers": [
+            "твоей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I am calling your sister.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я горжу́сь ___ отцо́м.",
+        "base": "твой",
+        "answers": [
+            "твоим"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am proud of your father.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я горжу́сь ___ детьми́.",
+        "base": "твой",
+        "answers": [
+            "твоими"
+        ],
+        "hint": "Plural",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am proud of your children.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я ду́маю о ___ бра́те.",
+        "base": "твой",
+        "answers": [
+            "твоём"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "I think about your brother.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Мы говори́м о ___ семье́.",
+        "base": "твой",
+        "answers": [
+            "твоей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We are talking about your family.",
+        "topic": "tvoy"
+    },
+    {
+        "text": "Я люблю́ ___ рабо́ту.",
+        "base": "свой",
+        "answers": [
+            "свою"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I love my own work.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Он потеря́л ___ ключи́.",
+        "base": "свой",
+        "answers": [
+            "свои"
+        ],
+        "hint": "Plural",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "He lost his keys.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Она́ зна́ет ___ де́ло.",
+        "base": "свой",
+        "answers": [
+            "своё"
+        ],
+        "hint": "Neuter",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "She knows her own business.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Он не по́мнит ___ а́дреса.",
+        "base": "свой",
+        "answers": [
+            "своего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "He does not remember his own address.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Она́ не нашла́ ___ су́мки.",
+        "base": "свой",
+        "answers": [
+            "своей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "She did not find her own bag.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Он помога́ет ___ бра́ту.",
+        "base": "свой",
+        "answers": [
+            "своему"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "He helps his own brother.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Она́ пи́шет ___ ма́ме.",
+        "base": "свой",
+        "answers": [
+            "своей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "She writes to her own mother.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Он горди́тся ___ сы́ном.",
+        "base": "свой",
+        "answers": [
+            "своим"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "He is proud of his own son.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Она́ дово́льна ___ рабо́той.",
+        "base": "свой",
+        "answers": [
+            "своей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "She is pleased with her own work.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Он ду́мает о ___ бу́дущем.",
+        "base": "свой",
+        "answers": [
+            "своём"
+        ],
+        "hint": "Neuter",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "He thinks about his own future.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Она́ забо́тится о ___ семье́.",
+        "base": "свой",
+        "answers": [
+            "своей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "She cares about her own family.",
+        "topic": "svoy"
+    },
+    {
+        "text": "Э́то ___ дом.",
+        "base": "наш",
+        "answers": [
+            "наш"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "This is our house.",
+        "topic": "nash"
+    },
+    {
+        "text": "___ шко́ла больша́я.",
+        "base": "наш",
+        "answers": [
+            "наша"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Our school is big.",
+        "topic": "nash"
+    },
+    {
+        "text": "Здесь ___ окно́.",
+        "base": "наш",
+        "answers": [
+            "наше"
+        ],
+        "hint": "Neuter",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Here is our window.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы лю́бим ___ шко́лу.",
+        "base": "наш",
+        "answers": [
+            "нашу"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "We love our school.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы зна́ем ___ сосе́да.",
+        "base": "наш",
+        "answers": [
+            "нашего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "We know our neighbor.",
+        "topic": "nash"
+    },
+    {
+        "text": "У ___ го́рода есть парк.",
+        "base": "наш",
+        "answers": [
+            "нашего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Our city has a park.",
+        "topic": "nash"
+    },
+    {
+        "text": "Здесь нет ___ маши́ны.",
+        "base": "наш",
+        "answers": [
+            "нашей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Our car is not here.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы идём к ___ учи́телю.",
+        "base": "наш",
+        "answers": [
+            "нашему"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "We are going to our teacher.",
+        "topic": "nash"
+    },
+    {
+        "text": "Я звоню́ ___ ма́ме.",
+        "base": "наш",
+        "answers": [
+            "нашей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I am calling our mother.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы горди́мся ___ го́родом.",
+        "base": "наш",
+        "answers": [
+            "нашим"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "We are proud of our city.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы горди́мся ___ детьми́.",
+        "base": "наш",
+        "answers": [
+            "нашими"
+        ],
+        "hint": "Plural",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "We are proud of our children.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы говори́м о ___ до́ме.",
+        "base": "наш",
+        "answers": [
+            "нашем"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We are talking about our house.",
+        "topic": "nash"
+    },
+    {
+        "text": "Мы ду́маем о ___ шко́ле.",
+        "base": "наш",
+        "answers": [
+            "нашей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We think about our school.",
+        "topic": "nash"
+    },
+    {
+        "text": "Э́то ___ дом?",
+        "base": "ваш",
+        "answers": [
+            "ваш"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Is this your house?",
+        "topic": "vash"
+    },
+    {
+        "text": "___ кварти́ра больша́я.",
+        "base": "ваш",
+        "answers": [
+            "ваша"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Your apartment is big.",
+        "topic": "vash"
+    },
+    {
+        "text": "Здесь ___ ме́сто.",
+        "base": "ваш",
+        "answers": [
+            "ваше"
+        ],
+        "hint": "Neuter",
+        "badges": [
+            "Nominative"
+        ],
+        "translation": "Here is your seat.",
+        "topic": "vash"
+    },
+    {
+        "text": "Я ви́жу ___ маши́ну.",
+        "base": "ваш",
+        "answers": [
+            "вашу"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I see your car.",
+        "topic": "vash"
+    },
+    {
+        "text": "Я зна́ю ___ сы́на.",
+        "base": "ваш",
+        "answers": [
+            "вашего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Accusative"
+        ],
+        "translation": "I know your son.",
+        "topic": "vash"
+    },
+    {
+        "text": "У ___ го́рода есть река́.",
+        "base": "ваш",
+        "answers": [
+            "вашего"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Your city has a river.",
+        "topic": "vash"
+    },
+    {
+        "text": "Здесь нет ___ кни́ги.",
+        "base": "ваш",
+        "answers": [
+            "вашей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Genitive"
+        ],
+        "translation": "Your book is not here.",
+        "topic": "vash"
+    },
+    {
+        "text": "Я звоню́ ___ дире́ктору.",
+        "base": "ваш",
+        "answers": [
+            "вашему"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I am calling your director.",
+        "topic": "vash"
+    },
+    {
+        "text": "Я пишу́ ___ до́чери.",
+        "base": "ваш",
+        "answers": [
+            "вашей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Dative"
+        ],
+        "translation": "I am writing to your daughter.",
+        "topic": "vash"
+    },
+    {
+        "text": "Я горжу́сь ___ сы́ном.",
+        "base": "ваш",
+        "answers": [
+            "вашим"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am proud of your son.",
+        "topic": "vash"
+    },
+    {
+        "text": "Я дово́лен ___ отве́тами.",
+        "base": "ваш",
+        "answers": [
+            "вашими"
+        ],
+        "hint": "Plural",
+        "badges": [
+            "Instrumental"
+        ],
+        "translation": "I am pleased with your answers.",
+        "topic": "vash"
+    },
+    {
+        "text": "Мы говори́м о ___ пла́не.",
+        "base": "ваш",
+        "answers": [
+            "вашем"
+        ],
+        "hint": "Masculine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We are talking about your plan.",
+        "topic": "vash"
+    },
+    {
+        "text": "Мы ду́маем о ___ рабо́те.",
+        "base": "ваш",
+        "answers": [
+            "вашей"
+        ],
+        "hint": "Feminine",
+        "badges": [
+            "Prepositional"
+        ],
+        "translation": "We think about your work.",
+        "topic": "vash"
+    }
+]

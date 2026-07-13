@@ -14,8 +14,8 @@ export const NOUN_TOPIC_GROUPS: TopicGroup[] = [
     {
         label: "Plural",
         topics: [
-            { key: "nominative-plural", label: "Nominative pl." },
-            { key: "genitive-plural", label: "Genitive pl." },
+            { key: "nominative-plural", label: "Nominative (plural)" },
+            { key: "genitive-plural", label: "Genitive (plural)" },
         ],
     },
 ];
