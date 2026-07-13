@@ -16,7 +16,7 @@
     import { resolve } from "$app/paths";
     import { browser } from "$app/environment";
     import { Icon, ArrowLeft, Check, XMark } from "svelte-hero-icons";
-    import { normalize, sleep } from "$lib/utils";
+    import { normalize, sleep, transliterate } from "$lib/utils";
     import type { TopicGroup } from "$lib/topics";
     import StressText from "$lib/StressText.svelte";
     import Keyboard from "$lib/Keyboard.svelte";
@@ -53,6 +53,7 @@
     const HISTORY_LIMIT = 10;
     const TOPICS_STORAGE_KEY = $derived(`${storagePrefix}-topics`);
     const STRESS_STORAGE_KEY = $derived(`${storagePrefix}-stress`);
+    const PHONETIC_STORAGE_KEY = $derived(`${storagePrefix}-phonetic`);
     const HISTORY_STORAGE_KEY = $derived(`${storagePrefix}-history`);
     const FILTERS_STORAGE_KEY = $derived(`${storagePrefix}-filters`);
 
@@ -102,6 +103,10 @@
         return browser ? localStorage.getItem(STRESS_STORAGE_KEY) !== "false" : true;
     }
 
+    function loadPhoneticTyping(): boolean {
+        return browser ? localStorage.getItem(PHONETIC_STORAGE_KEY) === "true" : false;
+    }
+
     let item = $state<ClozeItem | null>(null);
     let feedback = $state<{ good: boolean } | null>(null);
     let streak = $state(0);
@@ -115,6 +120,7 @@
     let enabledTopics = $state(loadEnabledTopics());
     let enabledFilters = $state(loadEnabledFilters());
     let showStress = $state(loadStress());
+    let phoneticTyping = $state(loadPhoneticTyping());
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
@@ -131,6 +137,10 @@
 
     $effect(() => {
         localStorage.setItem(STRESS_STORAGE_KEY, String(showStress));
+    });
+
+    $effect(() => {
+        localStorage.setItem(PHONETIC_STORAGE_KEY, String(phoneticTyping));
     });
 
     const accuracy = $derived(totalCount ? Math.round((correctCount / totalCount) * 100) + "%" : "-");
@@ -251,6 +261,19 @@
         if (feedback) nextRound(0);
     }
 
+    async function handleInput() {
+        if (!input) return;
+        if (!phoneticTyping) {
+            answer = input.value;
+            return;
+        }
+        const caret = input.selectionStart ?? input.value.length;
+        const converted = transliterate(input.value.slice(0, caret));
+        answer = converted + input.value.slice(caret);
+        await tick();
+        input.setSelectionRange(converted.length, converted.length);
+    }
+
     // Start the first round on load, and resume whenever an empty selection becomes non-empty again.
     $effect(() => {
         if (activeItems.length > 0 && !item && !awaiting && !feedback) nextRound(0);
@@ -334,14 +357,24 @@
                 {/if}
                 <div class="mt-5">
                     <div class="mb-2 text-[0.8rem] text-muted">Display</div>
-                    <button
-                        class="cursor-pointer px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {showStress
-                            ? 'bg-fg/20 text-fg'
-                            : 'bg-fg/10 text-muted'} hover:scale-105"
-                        onclick={() => (showStress = !showStress)}
-                    >
-                        Stress marks
-                    </button>
+                    <div class="flex flex-wrap gap-2">
+                        <button
+                            class="cursor-pointer px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {showStress
+                                ? 'bg-fg/20 text-fg'
+                                : 'bg-fg/10 text-muted'} hover:scale-105"
+                            onclick={() => (showStress = !showStress)}
+                        >
+                            Stress marks
+                        </button>
+                        <button
+                            class="cursor-pointer px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {phoneticTyping
+                                ? 'bg-fg/20 text-fg'
+                                : 'bg-fg/10 text-muted'} hover:scale-105"
+                            onclick={() => (phoneticTyping = !phoneticTyping)}
+                        >
+                            Phonetic typing
+                        </button>
+                    </div>
                 </div>
             </aside>
             <aside class="flex flex-col border border-line bg-surface p-6 text-left xl:min-h-0 xl:flex-1">
@@ -407,7 +440,8 @@
                 {:else}
                     <input
                         bind:this={input}
-                        bind:value={answer}
+                        value={answer}
+                        oninput={handleInput}
                         onkeydown={(event) => {
                             if (event.key === "Enter") {
                                 event.stopPropagation();
