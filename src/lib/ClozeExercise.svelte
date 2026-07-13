@@ -32,6 +32,7 @@
         reference,
         filterGroups,
         defaultFilters,
+        confusionGroups,
     }: {
         items: ClozeItem[];
         topicGroups: TopicGroup[];
@@ -44,6 +45,9 @@
         // Optional second selection axis matched against each item's badges (e.g. case).
         filterGroups?: TopicGroup[];
         defaultFilters?: string[];
+        // Optional sets of mutually confusable bases; multiple-choice distractors for a
+        // word in a group come only from that group.
+        confusionGroups?: string[][];
     } = $props();
 
     const topics = $derived(topicGroups.flatMap((group) => group.topics));
@@ -209,16 +213,25 @@
         return copy;
     }
 
-    // The correct answer plus distractors, drawn from forms of the same word first,
-    // then the same topic, then everything else.
+    function stripStress(text: string): string {
+        return text.replaceAll("́", "");
+    }
+
+    // The correct answer plus distractors: all forms of the same word first, then
+    // filled up to eight from other words. Words in a confusion group only fill
+    // from that group.
     function buildOptions(current: ClozeItem): string[] {
         const taken = new Set(current.answers.map(normalize));
-        const pools = [
-            items.filter((entry) => entry !== current && entry.base === current.base),
-            items.filter((entry) => entry !== current && entry.base !== current.base && entry.topic === current.topic),
-            items.filter((entry) => entry !== current && entry.base !== current.base && entry.topic !== current.topic),
-        ];
         const result = [current.answers[0]];
+        const sameBase = (entry: ClozeItem) => stripStress(entry.base) === stripStress(current.base);
+        const group = confusionGroups?.find((bases) => bases.includes(stripStress(current.base)));
+        const fillPools = group
+            ? [items.filter((entry) => !sameBase(entry) && group.includes(stripStress(entry.base)))]
+            : [
+                  items.filter((entry) => !sameBase(entry) && entry.topic === current.topic),
+                  items.filter((entry) => !sameBase(entry) && entry.topic !== current.topic),
+              ];
+        const pools = [items.filter((entry) => entry !== current && sameBase(entry)), ...fillPools];
         for (const pool of pools) {
             for (const entry of shuffle(pool)) {
                 if (result.length >= OPTION_COUNT) break;
@@ -501,14 +514,14 @@
                             </button>
                         {/each}
                     </div>
-                    {#if feedback}
-                        <button
-                            onclick={next}
-                            class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
-                        >
-                            Next
-                        </button>
-                    {/if}
+                    <button
+                        onclick={next}
+                        class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95 {feedback
+                            ? ''
+                            : 'invisible'}"
+                    >
+                        Next
+                    </button>
                 {:else}
                     <input
                         bind:this={input}

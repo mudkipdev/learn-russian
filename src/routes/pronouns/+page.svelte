@@ -14,6 +14,11 @@
     title="Pronoun Declension"
     placeholder="Type the correct pronoun"
     groupNoun=""
+    confusionGroups={[
+        ["я", "ты", "мы", "вы"],
+        ["он", "она", "оно", "они"],
+        ["мой", "твой", "свой", "наш", "ваш"],
+    ]}
 >
     {#snippet reference()}
         <PronounReference />
