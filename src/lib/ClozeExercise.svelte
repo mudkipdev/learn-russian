@@ -51,8 +51,10 @@
     const RECENT_LIMIT = 10;
     // Rows shown in the history panel; the list is clipped, not scrolled.
     const HISTORY_LIMIT = 10;
+    const OPTION_COUNT = 8;
     const TOPICS_STORAGE_KEY = $derived(`${storagePrefix}-topics`);
     const STRESS_STORAGE_KEY = $derived(`${storagePrefix}-stress`);
+    const MULTIPLE_CHOICE_STORAGE_KEY = $derived(`${storagePrefix}-multiple-choice`);
     const HISTORY_STORAGE_KEY = $derived(`${storagePrefix}-history`);
     const FILTERS_STORAGE_KEY = $derived(`${storagePrefix}-filters`);
 
@@ -102,6 +104,10 @@
         return browser ? localStorage.getItem(STRESS_STORAGE_KEY) !== "false" : true;
     }
 
+    function loadMultipleChoice(): boolean {
+        return browser ? localStorage.getItem(MULTIPLE_CHOICE_STORAGE_KEY) === "true" : false;
+    }
+
     let item = $state<ClozeItem | null>(null);
     let feedback = $state<{ good: boolean } | null>(null);
     let streak = $state(0);
@@ -115,6 +121,9 @@
     let enabledTopics = $state(loadEnabledTopics());
     let enabledFilters = $state(loadEnabledFilters());
     let showStress = $state(loadStress());
+    let multipleChoice = $state(loadMultipleChoice());
+    let options = $state<string[]>([]);
+    let chosen = $state("");
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
@@ -131,6 +140,10 @@
 
     $effect(() => {
         localStorage.setItem(STRESS_STORAGE_KEY, String(showStress));
+    });
+
+    $effect(() => {
+        localStorage.setItem(MULTIPLE_CHOICE_STORAGE_KEY, String(multipleChoice));
     });
 
     const accuracy = $derived(totalCount ? Math.round((correctCount / totalCount) * 100) + "%" : "-");
@@ -187,6 +200,37 @@
         }
     }
 
+    function shuffle<T>(list: T[]): T[] {
+        const copy = [...list];
+        for (let i = copy.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+    }
+
+    // The correct answer plus distractors, drawn from forms of the same word first,
+    // then the same topic, then everything else.
+    function buildOptions(current: ClozeItem): string[] {
+        const taken = new Set(current.answers.map(normalize));
+        const pools = [
+            items.filter((entry) => entry !== current && entry.base === current.base),
+            items.filter((entry) => entry !== current && entry.base !== current.base && entry.topic === current.topic),
+            items.filter((entry) => entry !== current && entry.base !== current.base && entry.topic !== current.topic),
+        ];
+        const result = [current.answers[0]];
+        for (const pool of pools) {
+            for (const entry of shuffle(pool)) {
+                if (result.length >= OPTION_COUNT) break;
+                const candidate = entry.answers[0];
+                if (taken.has(normalize(candidate))) continue;
+                taken.add(normalize(candidate));
+                result.push(candidate);
+            }
+        }
+        return shuffle(result);
+    }
+
     function pickItem(): ClozeItem {
         // A missed item that has waited long enough comes back for another try.
         for (const entry of retryQueue) entry.due--;
@@ -212,6 +256,8 @@
             return;
         }
         item = pickItem();
+        options = multipleChoice ? buildOptions(item) : [];
+        chosen = "";
         feedback = null;
         hint = "";
         awaiting = true;
@@ -247,6 +293,22 @@
         );
     }
 
+    function choose(option: string) {
+        if (!awaiting) return;
+        chosen = option;
+        answer = option;
+        check();
+    }
+
+    async function toggleMultipleChoice() {
+        multipleChoice = !multipleChoice;
+        if (multipleChoice && item && awaiting) options = buildOptions(item);
+        if (!multipleChoice && awaiting) {
+            await tick();
+            input?.focus();
+        }
+    }
+
     function next() {
         if (feedback) nextRound(0);
     }
@@ -271,7 +333,10 @@
 <svelte:window
     onkeydown={(event) => {
         if (event.key === "Enter" && feedback) next();
-        else if (awaiting && document.activeElement !== input) input?.focus();
+        else if (multipleChoice && awaiting && /^[1-8]$/.test(event.key)) {
+            const option = options[Number(event.key) - 1];
+            if (option) choose(option);
+        } else if (awaiting && document.activeElement !== input) input?.focus();
     }}
 />
 
@@ -334,14 +399,24 @@
                 {/if}
                 <div class="mt-5">
                     <div class="mb-2 text-[0.8rem] text-muted">Display</div>
-                    <button
-                        class="cursor-pointer rounded-md px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {showStress
-                            ? 'bg-fg/20 text-fg'
-                            : 'bg-fg/10 text-muted'} hover:scale-105"
-                        onclick={() => (showStress = !showStress)}
-                    >
-                        Stress marks
-                    </button>
+                    <div class="flex flex-wrap gap-2">
+                        <button
+                            class="cursor-pointer rounded-md px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {showStress
+                                ? 'bg-fg/20 text-fg'
+                                : 'bg-fg/10 text-muted'} hover:scale-105"
+                            onclick={() => (showStress = !showStress)}
+                        >
+                            Stress marks
+                        </button>
+                        <button
+                            class="cursor-pointer rounded-md px-3 py-1 text-[0.8rem] font-medium transition-all duration-100 active:scale-95 {multipleChoice
+                                ? 'bg-fg/20 text-fg'
+                                : 'bg-fg/10 text-muted'} hover:scale-105"
+                            onclick={toggleMultipleChoice}
+                        >
+                            Multiple choice
+                        </button>
+                    </div>
                 </div>
             </aside>
             <aside class="flex flex-col rounded-lg border border-line bg-surface p-6 text-left xl:min-h-0 xl:flex-1">
@@ -404,6 +479,36 @@
             <div class="flex flex-col items-center gap-4">
                 {#if noItems}
                     <p class="text-[0.9rem] text-muted">Enable more options in Settings to continue.</p>
+                {:else if multipleChoice}
+                    <div class="grid w-full grid-cols-2 gap-2 sm:grid-cols-4">
+                        {#each options as option}
+                            {@const isAnswer = item != null && item.answers.map(normalize).includes(normalize(option))}
+                            <button
+                                disabled={!awaiting}
+                                onclick={() => choose(option)}
+                                class="cursor-pointer rounded-md border px-3 py-[0.6rem] text-[1.05rem] font-medium transition-all duration-100 active:scale-95 disabled:cursor-default {feedback &&
+                                isAnswer
+                                    ? 'border-good bg-good/15 text-good'
+                                    : feedback && option === chosen
+                                      ? 'border-bad bg-bad/15 text-bad'
+                                      : 'border-line bg-bg text-fg'} {awaiting ? 'hover:border-accent' : ''} {feedback &&
+                                !isAnswer &&
+                                option !== chosen
+                                    ? 'opacity-40'
+                                    : ''}"
+                            >
+                                {showStress ? option : option.replaceAll("́", "")}
+                            </button>
+                        {/each}
+                    </div>
+                    {#if feedback}
+                        <button
+                            onclick={next}
+                            class="cursor-pointer rounded-md bg-accent px-6 py-2 text-[0.95rem] font-medium text-accent-fg transition-all duration-100 hover:brightness-110 active:scale-95"
+                        >
+                            Next
+                        </button>
+                    {/if}
                 {:else}
                     <input
                         bind:this={input}
@@ -446,6 +551,7 @@
                 {hint}
             </div>
         </div>
+        {#if !multipleChoice}
         <div class="rounded-lg border border-line bg-surface p-6">
             <h2 class="mb-4 text-left text-[0.95rem] font-semibold">Keyboard</h2>
             <Keyboard
@@ -461,6 +567,7 @@
                 }}
             />
         </div>
+        {/if}
         </div>
         <div class="relative rounded-lg border border-line bg-surface text-left lg:col-span-2 xl:col-span-1 xl:min-h-0">
             <div class="p-8 xl:absolute xl:inset-0 xl:overflow-y-auto">
