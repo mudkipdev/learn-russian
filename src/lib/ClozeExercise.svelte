@@ -56,6 +56,10 @@
     // Rows shown in the history panel; the list is clipped, not scrolled.
     const HISTORY_LIMIT = 10;
     const OPTION_COUNT = 8;
+    // Rough pixel metrics for the option buttons, used to pick a column count.
+    const APPROXIMATE_CHARACTER_WIDTH = 11;
+    const BUTTON_PADDING = 34;
+    const OPTION_GAP = 8;
     const TOPICS_STORAGE_KEY = $derived(`${storagePrefix}-topics`);
     const STRESS_STORAGE_KEY = $derived(`${storagePrefix}-stress`);
     const MULTIPLE_CHOICE_STORAGE_KEY = $derived(`${storagePrefix}-multiple-choice`);
@@ -128,6 +132,7 @@
     let multipleChoice = $state(loadMultipleChoice());
     let options = $state<string[]>([]);
     let chosen = $state("");
+    let optionsWidth = $state(0);
     let input = $state<HTMLInputElement>();
 
     $effect(() => {
@@ -174,6 +179,18 @@
             topicGroups.find((group) => group.topics.some((topic) => topic.key === current.topic))?.label ?? "";
         const groupBadge = groupNoun ? `${groupLabel} ${groupNoun}` : groupLabel;
         return topicLabel.toLowerCase().includes(groupLabel.toLowerCase()) ? [topicLabel] : [topicLabel, groupBadge];
+    });
+    // Most columns that evenly divide the options and fit the measured width,
+    // so rows are always full and buttons stay equal-width.
+    const optionColumnCount = $derived.by(() => {
+        const longest = options.reduce((max, option) => Math.max(max, stripStress(option).length), 0);
+        const buttonWidth = longest * APPROXIMATE_CHARACTER_WIDTH + BUTTON_PADDING;
+        return (
+            [8, 4, 2].find(
+                (count) =>
+                    options.length % count === 0 && count * buttonWidth + (count - 1) * OPTION_GAP <= optionsWidth,
+            ) ?? 1
+        );
     });
     const activeItems = $derived(
         items.filter(
@@ -493,13 +510,17 @@
                 {#if noItems}
                     <p class="text-[0.9rem] text-muted">Enable more options in Settings to continue.</p>
                 {:else if multipleChoice}
-                    <div class="grid w-full grid-cols-2 gap-2 sm:grid-cols-4">
+                    <div
+                        bind:clientWidth={optionsWidth}
+                        class="grid w-full gap-2"
+                        style="grid-template-columns: repeat({optionColumnCount}, minmax(0, 1fr))"
+                    >
                         {#each options as option}
                             {@const isAnswer = item != null && item.answers.map(normalize).includes(normalize(option))}
                             <button
                                 disabled={!awaiting}
                                 onclick={() => choose(option)}
-                                class="cursor-pointer rounded-md border px-3 py-[0.6rem] text-[1.05rem] font-medium transition-all duration-100 active:scale-95 disabled:cursor-default {feedback &&
+                                class="cursor-pointer rounded-md border px-4 py-[0.6rem] text-[1.05rem] font-medium transition-all duration-100 active:scale-95 disabled:cursor-default {feedback &&
                                 isAnswer
                                     ? 'border-good bg-good/15 text-good'
                                     : feedback && option === chosen
